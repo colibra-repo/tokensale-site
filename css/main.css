@@ -6051,7 +6051,7 @@ bloquote {
     left: 0px;
     top: 0px;
     pointer-events: none;
-    background: rgba(0, 0, 0, 0.7); }
+    background: rgba(255, 255, 255, 0.7); }
 
 .opaque-overlay-25 {
   overflow: hidden;
