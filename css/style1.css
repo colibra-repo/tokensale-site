@@ -147,3 +147,9 @@
 	opacity: 1;background-image: url(../img/cover.jpg) 
 }
 
+.rounded-circle:hover {
+  opacity:0.9;
+  transform:scale3d(1.1, 1.1, 1);
+  opacity 1s,transform 1s,-webkit-transform 1s;
+}
+
