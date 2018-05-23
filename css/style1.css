@@ -153,3 +153,8 @@
   opacity 1s,transform 1s,-webkit-transform 1s;
 }
 
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
