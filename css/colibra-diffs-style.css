@@ -292,6 +292,11 @@
 .diffs-section-disabled {
   pointer-events: none;  /**<-----------*/
 }
+.diffs-section-logo-title {
+  height: 36px;
+  margin-top: -10px;
+}
+
 
 /* keyframe animations */
 @keyframes diffs-wrapper-fadeIn {
