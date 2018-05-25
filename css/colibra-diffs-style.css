@@ -11,6 +11,13 @@
   background: url(../img/diffs-table-bckgrnd.jpg);
   font-family: "Open Sans", sans-serif;
   line-height: 1;
+        background-size: 100% 100%, cover;
+		display:block;
+    width:100%;
+}
+
+.diffs-table-fixed-h {
+	 height:900px;
 }
 
 .diffs-table *, .diffs-table *::before, .diffs-table *::after {
