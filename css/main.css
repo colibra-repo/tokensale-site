@@ -23,6 +23,17 @@
   padding: 0.75rem 1.25rem;
   color: inherit; }
 
+.img-center{
+	    display: block;
+    margin-left: auto;
+    margin-right: auto;	
+}
+  .button-center{
+	      position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+  
 .alert-primary {
   color: #1b1b1b;
   background-color: #d6d6d6;
@@ -3916,7 +3927,7 @@ h6, .h6 {
   line-height: 1.1; }
 
 .display-4 {
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.1; }
 
@@ -5997,24 +6008,23 @@ bloquote {
   max-width: 100px; }
 
 .blink-arr {
+	color: #696969;     margin-left: -50px;
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -80px;
   width: 160px;
   height: 90px; }
 
 .blink-arr:after {
+	color: #696969;     margin-left: 35px;
   display: table;
-  margin: 0px auto 0 auto;
   -webkit-animation: jump .4s linear alternate infinite;
   animation: jump .4s linear alternate infinite;
   font-family: FontAwesome;
   content: "\f103";
   line-height: 1;
   -webkit-font-smoothing: antialiased;
-  color: #ffffff;
-  font-size: 65px; }
+  font-size: 40px; }
 
 .hr-line:after {
   content: "";
@@ -6040,7 +6050,8 @@ bloquote {
 
 .opaque-overlay-50 {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  height:500px;  }
   .opaque-overlay-50 > *:first-child:before {
     content: '';
     width: 100%;
@@ -6048,6 +6059,7 @@ bloquote {
     display: block;
     position: absolute;
     left: 0px;
+	
     top: 0px;
     pointer-events: none;
     background: rgba(255, 255, 255, 0.7); }
@@ -6242,3 +6254,11 @@ button.close {
 .dropdown-toggle::after {
   margin-left: 0;
   vertical-align: middle; }
+
+  
+  
+  /* video css */
+ 
+
+
+
