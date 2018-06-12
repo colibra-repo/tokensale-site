@@ -170,7 +170,7 @@ color:#57bc7a
 /* Hover title */
 
 .imgButton:before {
-  content: attr(title) ;
+  content: attr(info) ;
   position: absolute;
   padding: 10px 20px;
   left: -20px;

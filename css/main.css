@@ -31,7 +31,7 @@
   .button-center{
 	      position: absolute;
     top: 40%;
-    left: 40%;
+    left: 25%;
   }
   
 .alert-primary {
@@ -1986,7 +1986,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     max-width: 16.66667%; }
   .col-md-3 {
     flex: 0 0 25%;
-    max-width: 25%; }
+    max-width: 50%; }
   .col-md-4 {
     flex: 0 0 33.33333%;
     max-width: 33.33333%; }
@@ -6211,6 +6211,13 @@ li.list-group-item.active {
     width: 160px;
     margin: 0 auto 7px auto;
     font-size: 1em; } }
+	
+@media (min-width: 768px){
+
+  .whitepaper {
+	  margin-left:1rem;
+  }
+}	
 
 button.navbar-toggler {
   border: 0; }
@@ -6255,7 +6262,33 @@ button.close {
 
   
   
-  /* video css */
+  /* menu css */
+  
+  .container-menu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #828282;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 5px);
+    transform: rotate(-45deg) translate(-9px, 5px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -7px);
+    transform: rotate(45deg) translate(-9px, -7px);
+}
+
  
 
 

@@ -24,28 +24,41 @@
     <div class="container-fluid">
       <a class="navbar-brand" href="#topa">
         <img class="d-block" src="img/logo.png" width="140"> </a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon">
+	 
+	  <div id= "container-menu" class="container-menu" onclick="myFunction()">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+	  
+	  </span> </button>
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
         <ul class="navbar-nav mx-2">
           <li class="nav-item">
-             <!-- <a class="nav-link play-video2" href="#"> Problem</a>-->
-			 <a class="nav-link" href="https://youtu.be/m7UU6hBJYNI" target="_blank"> Problem</a>
+             <!-- <a class="nav-link play-video2" href="#"> Problem</a>--><div onclick="myFunction(container-menu)">
+			 <a class="nav-link" onclick="myFunction()"  href="https://youtu.be/m7UU6hBJYNI" target="_blank"> Problem</a></div>
           </li>
           <li class="nav-item">
              <!-- <a class="nav-link play-video" href="#"> Product Demo</a></div-->
-			  <a class="nav-link" href="https://youtu.be/_NmUOV1YkB8" target="_blank"> Product Demo</a>
+			  <a class="nav-link" onclick="myFunction()" href="https://youtu.be/_NmUOV1YkB8" target="_blank"> Product Demo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#ico"> ICO</a>
+            <a class="nav-link" onclick="myFunction()" href="#ico"> ICO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#team"> Team</a>
+            <a class="nav-link" onclick="myFunction()" href="#team"> Team</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="#formpos"> Subscribe</a>
+            <a class="nav-link" onclick="myFunction()"  href="#formpos"> Subscribe</a>
+			
           </li>
+
         </ul>
-        <a class="btn navbar-btn text-white btn-secondary whitepaper my-2" href="pdf/whitepaper.pdf"> Whitepaper</a>
+		<a class="btn navbar-btn text-white btn-secondary whitepaper  my-2" href="pdf/one-pager.pdf"> One-Pager</a>
+        <a class="btn navbar-btn text-white btn-secondary whitepaper  my-2" href="pdf/whitepaper.pdf"> Whitepaper</a></div>
         <!--div class="btn-group p-0 mx-1">
           <button class="btn dropdown-toggle btn-secondary" data-toggle="dropdown">
             <img class="float-left mr-2" src="img/en.jpg" width="30"> </button>
@@ -79,15 +92,15 @@
           <p class="mb-4 py-0 py-lg-0 text-left lead"><b>CoLibra is a new type of insurance company<br/>utilizing a decentralized network protocol to handle<br/>insurance claims in a trustless manner
               </b> </b></b></b></p></br>
           <div class="row mb2 justify-content-left">
-            <div class="col-md-3 py-1">
+          <!--     <div class="col-md-3 py-1">
 			<a class="btn btn-lg btn-block btn-outline-secondary withico" href="https://youtu.be/m7UU6hBJYNI" target="_blank"><i class="fa fa-play-circle text-secondary fa-lg d-inline-block fa-fw"></i>&nbsp;Problem</a>
-              <!--   <a class="btn btn-lg btn-block btn-outline-secondary withico play-video2"><i class="fa fa-play-circle text-secondary fa-lg d-inline-block fa-fw"></i>&nbsp;Problem</a>
+              <a class="btn btn-lg btn-block btn-outline-secondary withico play-video2"><i class="fa fa-play-circle text-secondary fa-lg d-inline-block fa-fw"></i>&nbsp;Problem</a>
             
            
 			  <video id="myVideo2" style="display:none" preload="preload">
 								<source type="video/ogg" src="video/Insurance.mp4">
-							</video>-->
-</div>
+							</video>
+</div>-->
 		   <div class="col-md-3 py-1">
 		   <a  class="btn btn-lg btn-block btn-outline-secondary withico playButton" href="https://youtu.be/_NmUOV1YkB8" target="_blank"><i class="fa fa-play-circle text-secondary fa-lg d-inline-block fa-fw"></i>&nbsp;Product Demo</a>
              <!--    <a  class="btn btn-lg btn-block btn-outline-secondary withico playButton play-video"><i class="fa fa-play-circle text-secondary fa-lg d-inline-block fa-fw"></i>&nbsp;Product Demo</a>
@@ -105,13 +118,14 @@
       </div>
       <div class="row py-5 my-3">
         <div class="col-md-12 mb-5">
-          <a href="#problem" class="blink-arr lead"><b>Learn More</b></a>
+          <a href="#problem" class="blink-arr lead"><b></b></a>
         </div>
       </div>
     </div>
   </div>
   <div class="pt-5" id="problem">
     <div class="container">
+	 <h1 class="text-center mb-4 py-4">Insurance Industry</h1>
       <div class="row pb-5 text-left pt-0 vertical-align">
         <div class="col-md-6 text-md-left mt-6 text-left px-4">
           <div id="problemCarouselIndicators" class="carousel slide mt-6" data-ride="carousel">
@@ -139,10 +153,10 @@
               </a>
            </div>
          </div>  
-        <div class="col-md-6 align-right">
-		<a class="btn btn-lg btn-inline-block btn-outline-secondary w-25 button-center text-white" href="https://youtu.be/m7UU6hBJYNI" target="_blank"><i class="fa  text-secondary"></i>&nbsp;Play Video</a>
+        <div class="col-md-6 align-left">
+		<a class="btn btn-lg btn-inline-block btn-outline-secondary w-50 button-center text-white" href="https://youtu.be/m7UU6hBJYNI" target="_blank"><i class="fa  text-secondary"></i>&nbsp;Problem Video</a>
 		 <!--<a class="btn btn-lg btn-inline-block btn-outline-secondary play-video2 w-25 button-center text-white"><i class="fa  text-secondary"></i>&nbsp;Play Video</a>-->
-          <img class="img-center  w-75 " src="img/Videobg.png">
+          <img class="img-center  w-100 " src="img/Videobg.png">
         </div>
       </div>
     </div>
@@ -437,7 +451,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
              <a href="https://www.linkedin.com/in/kalojan/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i title="Kalojan is the founding partner of K-Pharm Global Group (KPGG), $100mln+ pharma trading group of companies. The company is a one-stop shop offering services such as logistics, distribution, marketing and regulatory support for pharma manufacturers covering over 50 countries in Africa, Europe and Asia." class="imgButton">The founding partner of K-Pharm Global Group (KPGG), $100mln+ pharma trading group of companies.
+          <p><i info="Kalojan is the founding partner of K-Pharm Global Group (KPGG), $100mln+ pharma trading group of companies. The company is a one-stop shop offering services such as logistics, distribution, marketing and regulatory support for pharma manufacturers covering over 50 countries in Africa, Europe and Asia." class="imgButton">The founding partner of K-Pharm Global Group (KPGG), $100mln+ pharma trading group of companies.
           </i></p>
         </div>
         <div class="col-md-3 p-4" >
@@ -447,7 +461,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
             <a href="https://www.linkedin.com/in/boris-strandjev-9a714325/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i  title="Boris is a solutions architect that has a long proven track record of designing and delivering complex technical solutions with multiple front-end applications and high availability backend systems. He has a BSc in Informatics and a MSc in Artificial Intelligence. He used to work at: Google and Musala Soft, where he developed software solutions for companies such as IBM, Deutsche Telekom, Commerzbank and many more."  class="imgButton ">Ex-Google, projects at IBM, Deutsche Telekom, Swisscom, Commerzbank. AI research.
+          <p><i  info="Boris is a solutions architect that has a long proven track record of designing and delivering complex technical solutions with multiple front-end applications and high availability backend systems. He has a BSc in Informatics and a MSc in Artificial Intelligence. He used to work at: Google and Musala Soft, where he developed software solutions for companies such as IBM, Deutsche Telekom, Commerzbank and many more."  class="imgButton ">Ex-Google, projects at IBM, Deutsche Telekom, Swisscom, Commerzbank. AI research.
  </i></p>
         </div>
       		  <div class="col-md-3 p-4" >
@@ -457,7 +471,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
             <a href="https://www.linkedin.com/in/teuta-oruci-bakalli/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i title="Teuta is a CFO/Executive Director with 19 years in regulated financial markets covering investment banking, insurance and asset management. Former director at Willis Towers, one of the largest insurance brokerage companies in the UK she is bringing invaluable insurance expertise on the team."  class="imgButton">Ex Financial Director at Willis Towers, Executive with heavy insurance experience
+          <p><i info="Teuta is a CFO/Executive Director with 19 years in regulated financial markets covering investment banking, insurance and asset management. Former director at Willis Towers, one of the largest insurance brokerage companies in the UK she is bringing invaluable insurance expertise on the team."  class="imgButton">Ex Financial Director at Willis Towers, Executive with heavy insurance experience
  </i></p>
         </div>
         <div  class="col-md-3 p-4" >
@@ -467,7 +481,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
             <a href="https://www.linkedin.com/in/ivanbelomorski/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i title="Ivan has extensive experience as a Product and Project Manager in multiple successful mobile and backend systems. Understanding product added value from a customer standpoint and translating it via meaningful functional and ux design into a software product as a coherent solution is something Ivan excels at. Ivan has gained experience with developing large-scale operation with multiple teams and deliverables from scratch." class="imgButton">Product Manager at MobiSystems, Projects at Deutsche Telekom, IBM-Watson, Coca Cola
+          <p><i info="Ivan has extensive experience as a Product and Project Manager in multiple successful mobile and backend systems. Understanding product added value from a customer standpoint and translating it via meaningful functional and ux design into a software product as a coherent solution is something Ivan excels at. Ivan has gained experience with developing large-scale operation with multiple teams and deliverables from scratch." class="imgButton">Product Manager at MobiSystems, Projects at Deutsche Telekom, IBM-Watson, Coca Cola
  </i></p>
         </div>
      <div  class="col-md-3 p-4" >
@@ -477,7 +491,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
             <a href="https://www.linkedin.com/in/miroslavzaporozhanov/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i title="Miroslav is a former business consultant to some of the largest energy companies in Europe - OMV, E.ON. He’s also a co-founder of Zapomedia, which is one of the most prominent digital marketing companies in Bulgaria. Miroslav is a former international markets stock broker in the largest investment company in Bulgaria - Karoll."  class="imgButton">Ex Business Consultant to OMV, E.ON, Founder of Zapomedia</i></p>
+          <p><i info="Miroslav is a former business consultant to some of the largest energy companies in Europe - OMV, E.ON. He’s also a co-founder of Zapomedia, which is one of the most prominent digital marketing companies in Bulgaria. Miroslav is a former international markets stock broker in the largest investment company in Bulgaria - Karoll."  class="imgButton">Ex Business Consultant to OMV, E.ON, Founder of Zapomedia</i></p>
         </div>
 
         
@@ -488,7 +502,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
             <a href="https://www.linkedin.com/in/velizar-velichkov-2615ab27/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i  title="Velizar is a co-founder of Grabo.bg - the biggest daily deal website with 2 million visitors per month and EUR 15 mln. annual turnover. He is also a co-founder of Trendo.bg - an online shopping club in Bulgaria with 2 million annual revenue. He is also co-founder of worldwide digital company for online personal meal plans, operating on more than 100 markets with annual revenue of 10 mln. Euro"  class="imgButton">Co-founder of several online platforms with combined annual turnover of over EUR 30 mln.</i></p>
+          <p><i  info="Velizar is a co-founder of Grabo.bg - the biggest daily deal website with 2 million visitors per month and EUR 15 mln. annual turnover. He is also a co-founder of Trendo.bg - an online shopping club in Bulgaria with 2 million annual revenue. He is also co-founder of worldwide digital company for online personal meal plans, operating on more than 100 markets with annual revenue of 10 mln. Euro"  class="imgButton">Co-founder of several online platforms with combined annual turnover of over EUR 30 mln.</i></p>
         </div>
        
    
@@ -500,7 +514,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
             <a href="https://www.linkedin.com/in/borislavpetrovdesigner/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i Title="Working at the intersection of product design and brand identity, Borislav had the privilege of influencing products used and loved by millions. He worked as lead product designer & art director in companies like Safecharge and Mobisystems. Borislav is a founder of BLINK, digital agency specialized in product design, art and creative direction." class="imgButton">Founder of BLINK</i></p>
+          <p><i info="Working at the intersection of product design and brand identity, Borislav had the privilege of influencing products used and loved by millions. He worked as lead product designer & art director in companies like Safecharge and Mobisystems. Borislav is a founder of BLINK, digital agency specialized in product design, art and creative direction." class="imgButton">Founder of BLINK</i></p>
         </div>
                
   <div class="col-md-3 p-4 " >
@@ -510,7 +524,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
             <a href="https://www.linkedin.com/in/svetlinzhekov/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i title="Experienced hands-on Team Lead with a demonstrated history of working in the computer software industry. Skilled in J2EE, Hibernate, Spring and Calypso." class="imgButton">MunichRe</i></p>
+          <p><i info="Experienced hands-on Team Lead with a demonstrated history of working in the computer software industry. Skilled in J2EE, Hibernate, Spring and Calypso." class="imgButton">MunichRe</i></p>
         </div></div>
           <h1><br>Advisors<br></h1>
 		        <div class="row">
@@ -522,7 +536,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
              <a href="https://www.linkedin.com/in/tunioz/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i Title="Тop5 Cloud Storage service pCloud. Former CSO of one of the largest hosting companies in Bulgaria - Host.bg. Web Marketing veteran with 12y experience" class="imgButton">Top5 Cloud Storage service pCloud. Former CSO of one of the largest hosting companies in Bulgaria - Host.bg. Web Marketing veteran with 12y experience</i></p>
+          <p><i info="Тop5 Cloud Storage service pCloud. Former CSO of one of the largest hosting companies in Bulgaria - Host.bg. Web Marketing veteran with 12y experience" class="imgButton">Top5 Cloud Storage service pCloud. Former CSO of one of the largest hosting companies in Bulgaria - Host.bg. Web Marketing veteran with 12y experience</i></p>
         </div>
 		
 				<div  class="col-md-3 p-4" >
@@ -531,7 +545,7 @@ Purchase methods accepted: BTC and ETH
             <br>Security/Technology</p>
           <p class="my-2">
             <a href="https://www.linkedin.com/in/anton-titov-3368bb5b/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a></p>
-          <p><i title="Founder of Hotfile.com - one of the largest p2p file sharing websites. Co-founder and CTO of the leading hosting company in Bulgaria. CTO of the Top5 Cloud Storage service pCloud with 7 million users." class="imgButton">Founder ofhotfile.com – Large p2p file sharing website, CTO of pCloud – top 5 Cloud storage service
+          <p><i info="Founder of Hotfile.com - one of the largest p2p file sharing websites. Co-founder and CTO of the leading hosting company in Bulgaria. CTO of the Top5 Cloud Storage service pCloud with 7 million users." class="imgButton">Founder ofhotfile.com – Large p2p file sharing website, CTO of pCloud – top 5 Cloud storage service
          </i></p></div>
  <div class="col-md-3 p-4 " >
           <img class="d-block rounded-circle m-2 mx-auto" src="img/AtanasRaykov.png" width="150">
@@ -540,7 +554,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
             <a href="https://www.linkedin.com/in/atanasraykov/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i  title="Currently as Director Business Development CIS & CEE I'm responsible for leveraging Viber's incomparable reach and exposure opportunities across 25 countries in the two regions to build a strong eco-system and partnership network in order to drive increased customer growth, user engagement and revenue opportunities.  In my other role at Viber - as Head of Global Telecom Partnerships - I'm responsible for the forging of strategic partnerships with the leading telecom groups around the world to create winning B2C propositions based on Viber's cutting-edge technology."  class="imgButton"> Viber - Head of Global Telecom Partnerships & Director Business Development CIS & CEE</i></p>
+          <p><i  info="Currently as Director Business Development CIS & CEE I'm responsible for leveraging Viber's incomparable reach and exposure opportunities across 25 countries in the two regions to build a strong eco-system and partnership network in order to drive increased customer growth, user engagement and revenue opportunities.  In my other role at Viber - as Head of Global Telecom Partnerships - I'm responsible for the forging of strategic partnerships with the leading telecom groups around the world to create winning B2C propositions based on Viber's cutting-edge technology."  class="imgButton"> Viber - Head of Global Telecom Partnerships & Director Business Development CIS & CEE</i></p>
         </div>
 		   <div class="col-md-3 p-4 " >
           <img class="d-block rounded-circle m-2 mx-auto" src="img/MarinPenekov.png" width="150">
@@ -549,7 +563,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
             <a href="https://www.linkedin.com/in/marin-panekov-2227bb69/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i title="Marin has extensive experience as a document management system designer of one of the highest volume document systems in Europe. &nbsp;As such he has gained experience as Optical Character Recognition vendor manager and functionality designer, Electronic Data Interchange expert and Document Archive expert. He holds key knowledge and skills to deliver a working and highly efficient claims processing solution in a short period of time."  class="imgButton">Document Scan, Management and Archive Solution Architect for Coca Cola Hellenic</i></p>
+          <p><i info="Marin has extensive experience as a document management system designer of one of the highest volume document systems in Europe. &nbsp;As such he has gained experience as Optical Character Recognition vendor manager and functionality designer, Electronic Data Interchange expert and Document Archive expert. He holds key knowledge and skills to deliver a working and highly efficient claims processing solution in a short period of time."  class="imgButton">Document Scan, Management and Archive Solution Architect for Coca Cola Hellenic</i></p>
         </div>
         <div class="row">
         <div class="col-md-12"></div>
@@ -562,7 +576,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
             <a href="https://www.linkedin.com/in/ivaylo-strandjev-84889239/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i title="Advanced Machine Learning and Artificial Intelligence solutions architect. Ivaylo excels at delivering high performing algorithms for machine learning. His role on the team would be to design and monitor the implementation of the self-learning artificial intelligence modules that would monitor the system’s performance and adjust product pricing, product generation, customer segmentation and more." class="imgButton">Ex Google, Ex VMWare, Ex Software Developer at Hyperscience</i></p>
+          <p><i info="Advanced Machine Learning and Artificial Intelligence solutions architect. Ivaylo excels at delivering high performing algorithms for machine learning. His role on the team would be to design and monitor the implementation of the self-learning artificial intelligence modules that would monitor the system’s performance and adjust product pricing, product generation, customer segmentation and more." class="imgButton">Ex Google, Ex VMWare, Ex Software Developer at Hyperscience</i></p>
         </div>
 		        <div  class="col-md-3 p-4 " >
           <img class="d-block rounded-circle m-2 mx-auto" src="img/GeorgiStoyanov.png" width="150">
@@ -571,7 +585,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
             <a href="https://www.linkedin.com/in/george-stoyanov-3b6ba357/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i title="George has launched two Deep Learning products with hundreds of thousands of users, processing millions of images per day and contained millions of analyzed events, first to commercially pioneer video style transfer. Currently focusing on bespoke Deep & Machine Learning consultancy – delivered Predictive and NLP solutions for companies with millions of users. Featured on the cover of Forbes Bulgaria as part of the selection for 30 under 30. He used to work for Uber prior to starting his entrepreneurial journey."  class="imgButton">Forbes 30 under 30, Ex Uber, Ex Deep &amp; Machine learning consultant
+          <p><i info="George has launched two Deep Learning products with hundreds of thousands of users, processing millions of images per day and contained millions of analyzed events, first to commercially pioneer video style transfer. Currently focusing on bespoke Deep & Machine Learning consultancy – delivered Predictive and NLP solutions for companies with millions of users. Featured on the cover of Forbes Bulgaria as part of the selection for 30 under 30. He used to work for Uber prior to starting his entrepreneurial journey."  class="imgButton">Forbes 30 under 30, Ex Uber, Ex Deep &amp; Machine learning consultant
  </i></p>
         </div>
         <div class="col-md-3 p-4">
@@ -581,7 +595,7 @@ Purchase methods accepted: BTC and ETH
           <p class="my-2">
              <a href="https://www.linkedin.com/in/zlatolina-mukova-b5765b27/" class="text-dark" target="_blank"><i class="fa fa-fw fa-linkedin fa-lg mx-1 ln"></i></a>
           </p>
-          <p><i class="imgButton" Title="Managing partner at the largest private equity fund in Bulgaria NEVEQ. Former CEO of Euroins Bulgaria. Former deputy prime minister of transport and telecommunications. ACCA holder. Master’s degree in Mechanical Engineering."> Neveq, ex-CEO Euroins Bulgaria, Former Deputiy Prime Minister of Bulgaria </i></p>
+          <p><i class="imgButton" info="Managing partner at the largest private equity fund in Bulgaria NEVEQ. Former CEO of Euroins Bulgaria. Former deputy prime minister of transport and telecommunications. ACCA holder. Master’s degree in Mechanical Engineering."> Neveq, ex-CEO Euroins Bulgaria, Former Deputiy Prime Minister of Bulgaria </i></p>
         
 		     
       </div>
@@ -787,6 +801,14 @@ Purchase methods accepted: BTC and ETH
     								
   
   </script>
+  <script>
+function myFunction() {
+    
+	var element = document.getElementById("container-menu");
+    element.classList.toggle("change");
+}
+</script>
+
 </body>
 
 </html>
