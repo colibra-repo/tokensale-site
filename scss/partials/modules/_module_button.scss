@@ -1,0 +1,131 @@
+/* ------------------------------------------------------------ *\
+ Button
+\* ------------------------------------------------------------ */
+.btn { 
+    background: linear-gradient(to right, #ff9800 0%, #ffc200 100%);
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    transition: ease-in-out .3s;
+    text-align: center;
+    font-size: 18px;
+    text-transform:uppercase;
+    min-width: 240px;
+    height: 57px;
+    line-height: 57px;
+    font-family: $font-family;
+    font-weight: 700;
+    border-radius: 5px;
+    color: $white;
+    position: relative;
+    cursor: pointer;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    &:focus {
+        color: $white;
+    }
+    &:hover {
+        color: $white;
+        background-position: 100% 0;
+        moz-transition: all .1s ease-in-out;
+        -o-transition: all .1s ease-in-out;
+        -webkit-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+        background-image: linear-gradient(to right, #ffc200, #ff9800);
+        opacity: 0.7;
+    }
+}
+.read_more {
+    background: linear-gradient(to right, #0f7076 0%, #06ba70 100%);
+    &:hover {
+        color: $white;
+        background-position: 100% 0;
+        moz-transition: all .1s ease-in-out;
+        -o-transition: all .1s ease-in-out;
+        -webkit-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+        background-image: linear-gradient(to right, #06ba70, #0f7076);
+        // box-shadow: 0 4px 15px 0 rgba(7, 80, 85, 0.75);
+    }
+}
+.btn_main {
+    background: $white;
+    color:$green;
+    margin: 0 auto 20px;
+    &:hover {
+        color: $white;
+        background: #06ba70;
+        box-shadow: 0 4px 15px 0 rgba(7, 80, 85, 0.75);
+    }
+    &.video_play {
+        color:$white;
+        background: transparent;
+        text-transform: none;
+        & i {
+            margin-right: 10px;
+        }
+    }
+}
+.btn_main_fixed {
+    display: none;
+    float: right;
+    font-size: 13px;
+    min-width: 80px;
+    height: 40px;
+    line-height: 40px;
+    background:$green;
+    color:$white;
+    box-shadow: 0 4px 15px 0 rgba(7, 80, 85, 0.75);
+    margin-top: 5px;
+    &:hover {
+        opacity: 0.8;
+        background:$green;
+        color:$white;
+        box-shadow: 0 4px 15px 0 rgba(7, 80, 85, 0.75);
+    }
+    &.visible {
+        display: inline-block;
+    }
+}
+
+.btn_register {
+    display: block;
+    min-width: 208px;
+    margin-top: 30px;
+    
+}
+@media #{$mobile} {
+    .btn_main {
+        margin: 0 10px 20px;
+    } 
+}
+@media screen and (min-width:620px){
+    .btn_main_fixed {
+        font-size: 14px;
+        min-width: 180px;
+    }
+}
+@media #{$tablet} {
+    .btn_form {
+        text-align: center;
+        & .btn_register {
+            display: inline-block;
+            min-width: 435px;
+            margin: 30px auto 0;
+        }
+    }
+    .btn_main {
+        margin: 0 5px 0;
+    }
+}
+
+@media #{desktop} {
+    
+    .btn_main {
+        margin: 0 20px 0 0;
+    }
+}
+

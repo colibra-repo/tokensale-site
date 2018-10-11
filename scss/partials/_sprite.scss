@@ -1,0 +1,123 @@
+/* ------------------------------------------------------------ *\
+	Sprite
+\* ------------------------------------------------------------ */
+
+[class^="ico-"] {
+	background-image: url("../css/images/sprite_solution_green.png");
+	display: inline-block;
+	vertical-align: middle;
+}
+// .ico-num-2 {
+// 	width: 27px; 
+// 	height: 30px;
+// 	background-position: -71px -10px;
+// 	margin-right: 10px;
+// }
+// .ico-num-3 {
+// 	width: 41px; 
+// 	height: 30px;
+// 	background-position: -10px -10px;
+// 	margin-right: 10px;
+// }
+// .ico-num-4 {
+// 	width: 29px; 
+// 	height: 36px;
+// 	background-position:-10px -60px;
+// 	margin-right: 10px;
+// }
+
+// .ico-num-2 {
+// 	width: 27px; 
+// 	height: 30px;
+// 	background-position:  -71px -10px;
+// 	margin-right: 10px;
+// }
+
+// .ico-num-3 {
+// 	width: 41px; 
+// 	height: 30px;
+// 	background-position:  -10px -10px;
+// 	margin-right: 10px;
+// }
+
+// .ico-num-4 {
+// 	width: 29px; 
+// 	height: 36px;
+// 	background-position:  -10px -60px;
+// 	margin-right: 10px;
+// }
+
+
+.num-2 {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+    width: 27px;
+    height: 30px;
+    border: none;
+	box-shadow: 0 0 0 0 rgba(101, 212, 166, 0.1);
+    border-radius: 50%;
+    background-image: url("../css/images/solution green/num-2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.num-3 {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+    width: 41px; 
+    height: 30px;
+    border: none;
+	box-shadow: 0 0 0 0 rgba(101, 212, 166, 0.1);
+    background-image: url("../css/images/solution green/num-3.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.num-4 {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+    width: 29px; 
+    height: 36px;
+    border: none;
+	box-shadow: 0 0 0 0 rgba(101, 212, 166, 0.1);
+    background-image: url("../css/images/solution green/num-4.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.num-2:hover,
+.num-3:hover,
+.num-4:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
+}
+@-webkit-keyframes pulse {
+    to {box-shadow: 0 0 0 45px rgba(101, 212, 166, 0);}
+}
+@-moz-keyframes pulse {
+    to {box-shadow: 0 0 0 45px rgba(101, 212, 166, 0);}
+}
+@-ms-keyframes pulse {
+    to {box-shadow: 0 0 0 45px rgba(101, 212, 166, 0);}
+}
+@keyframes pulse {
+    to {box-shadow: 0 0 0 45px rgba(101, 212, 166, 0);}
+}

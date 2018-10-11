@@ -1,0 +1,54 @@
+/* ------------------------------------------------------------ *\
+	Registration form
+\* ------------------------------------------------------------ */
+
+.registration_form {
+    border: 1px solid $white;
+    border-radius: 5px;
+    padding: 30px 20px;
+    // padding: 50px 40px;
+}
+
+.register_label1 {
+    font-family: $font-family;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    color: $white;
+    margin: 20px 0;
+}
+
+.register_label2 {
+    font-family: $font-family;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: $white;
+    margin: 25px 0;
+    & .green_label {
+        color: $green1;
+        cursor: pointer;
+    }
+}
+
+.btn_wrapper {
+   text-align: center;
+   padding: 50px 0 0;
+}
+
+.btn_wrapper.toggleForm {
+    padding:0;
+}
+
+@media #{$desktop} {
+    .registration_form {
+        padding: 50px 40px;
+        & form { 
+            & .spaceBetween {
+                padding-top: 30px;
+              
+            }
+        }
+    }
+    
+}
