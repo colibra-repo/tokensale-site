@@ -20,6 +20,7 @@ caption {
 table th {
     font-size: 22px;
     font-weight: 700;
+    font-family: $font-family;
     // line-height: 45px;
     text-align: left;
     padding: 10px 20px;
@@ -86,6 +87,7 @@ table td {
         & #chartwrapper {
             width: 100%;
             height: 100%;
+            margin-left: -18px;
             & #chartdiv1 {
                 width: 420px;
                 height: 420px;
@@ -105,6 +107,7 @@ table td {
     //chart
     .chart {
         & #chartwrapper {
+            margin-left: 0;
             & #chartdiv1 {
                 width: 520px;
                 height: 400px;

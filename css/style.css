@@ -1093,6 +1093,7 @@ h3 {
 #solution {
   background: #ffffff;
   padding: 0;
+  position: relative;
 }
 
 .section_ico {
@@ -1907,8 +1908,10 @@ label span {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  margin: auto;
   max-width: 800px;
-  width: 100%;
+  width: 85%;
   height: 100%;
 }
 
@@ -2020,14 +2023,13 @@ h2.number span {
 
 .cd-section-wrapper .cd-60-middle {
   width: 100%;
-  height: 460px;
   background: linear-gradient(to right, #0e7476 0%, #06ba70 100%);
 }
 
 .cd-section-wrapper .cd-60-middle .image_wrapper_middle img {
-  width: 218px;
+  width: 40%;
   margin: 0 auto;
-  padding-top: 12px;
+  padding: 20px 0;
 }
 
 .cd-section-wrapper .cd-60-middle .image_wrapper_middle img.image1 {
@@ -2042,18 +2044,15 @@ h2.number span {
 .cd-section-wrapper .cd-60-last {
   position: relative;
   width: 100%;
-  height: 460px;
   background: linear-gradient(to right, #0e7476 0%, #06ba70 100%);
-}
-
-.cd-section-wrapper .cd-60-last .image_wrapper {
-  padding-top: 10px;
 }
 
 .cd-section-wrapper .cd-60-last .image_wrapper .video-image {
   position: relative;
+  background-size: 70%;
+  background-position: center center;
   width: 218px;
-  height: 438px;
+  height: 341px;
   margin: 0 auto;
   display: block;
   background-image: url("../css/images/image-4.png");
@@ -2120,6 +2119,9 @@ h2.number span {
     width: 455px;
     margin: 0 auto;
   }
+  .cd-section-wrapper .cd-60-middle .image_wrapper_middle img {
+    width: 218px;
+  }
   .cd-section-wrapper .cd-60-middle .image_wrapper_middle img.image1 {
     display: inline-block;
     margin-right: 10px;
@@ -2129,6 +2131,23 @@ h2.number span {
   }
   #video-laptop-mp4 {
     padding-bottom: 88.5%;
+  }
+  #video-laptop-mp4 video {
+    width: 100%;
+  }
+  .cd-section-wrapper .cd-60-last {
+    padding: 20px 0;
+  }
+  .cd-section-wrapper .cd-60-last .image_wrapper .video-image {
+    position: relative;
+    background-size: 100%;
+    background-position: center center;
+    width: 218px;
+    height: 438px;
+    margin: 0 auto;
+    display: block;
+    background-image: url(../css/images/image-4.png);
+    background-repeat: no-repeat;
   }
 }
 
@@ -2339,6 +2358,8 @@ h2.number span {
   }
   .cd-section-wrapper .cd-60-last .image_wrapper .video-image {
     margin: 0 0 0 50%;
+    height: 438px;
+    background-size: 100%;
   }
   .cd-section-wrapper:after {
     clear: both;
@@ -2428,9 +2449,28 @@ h2.number span {
 /* ------------------------------------------------------------ *\
    Widget
 \* ------------------------------------------------------------ */
+.label {
+  position: absolute;
+  top: -6%;
+  left: 10%;
+  background: #0a9372;
+  display: inline-block;
+  min-width: 240px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.label p {
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: "Cairo", sans-serif;
+  letter-spacing: 1px;
+}
+
 .chat_icon {
   position: fixed;
-  bottom: 5%;
+  bottom: 6%;
   right: 3%;
   z-index: 999999;
 }
@@ -2510,6 +2550,7 @@ caption {
 table th {
   font-size: 22px;
   font-weight: 700;
+  font-family: "Cairo", sans-serif;
   text-align: left;
   padding: 10px 20px;
 }
@@ -2581,6 +2622,7 @@ table td {
   .chart #chartwrapper {
     width: 100%;
     height: 100%;
+    margin-left: -18px;
   }
   .chart #chartwrapper #chartdiv1 {
     width: 420px;
@@ -2597,6 +2639,9 @@ table td {
 }
 
 @media only screen and (min-width: 500px) {
+  .chart #chartwrapper {
+    margin-left: 0;
+  }
   .chart #chartwrapper #chartdiv1 {
     width: 520px;
     height: 400px;
