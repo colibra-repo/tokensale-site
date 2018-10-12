@@ -36,6 +36,10 @@
     padding-bottom: 40px;
     &.white {
         color: $white;
+        line-height: 38px;
+        & .main_break {
+            display: block;
+        }
     }
     &.solution {
         padding-bottom: 0;
@@ -43,7 +47,12 @@
         font-size: 30px;
     }
 }
-
+.section__subtitle.white.registration,
+.section__subtitle.roadmap,
+.section__subtitle.team {
+    font-size: 20px;
+    font-weight: 400;
+}
 //main section - display title before video 
 .section__title.video-title.mobile {
     display: block;
@@ -88,18 +97,26 @@
 }
 .main_wrapper {
     text-align: center;
-    padding: 0 20px;
+    // padding: 0 3px;
     & .main_text {
         color: $white;
         // font-size: 16px;
         font-size: 18px;
         line-height: 25px;
         font-weight: 400;
-        // margin: 40px 0;
-        margin: 0 0 40px;
-        @media (max-width: 768px) {
-            text-shadow:  0px 0px 5px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 1);
+        // margin: 0 0 40px;
+        width: 290px;
+        margin: 0 auto;
+        & .first_row {
+            display: block;
         }
+        // @media (max-width: 768px) {
+        //     text-shadow:  0px 0px 5px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 1);
+        // }
+    }
+    & .main_btns {
+        width: 290px;
+        margin: 0 auto;
     }
 }
 
@@ -142,10 +159,10 @@
 
 .right-col {
     @media (max-width: 768px) {
-        position: absolute;
-        z-index: 9;
-        top: 185px;
-        left: 0;
+        // position: absolute;
+        // z-index: 9;
+        // top: 185px;
+        // left: 0;
     }
 }
 
@@ -396,12 +413,27 @@
         display: block;
     }
 }
+@media screen and (min-width: 390px){
+    .section__title {
+        &.white {
+            & .main_break {
+                display: inline-block;
+            }
+        }
+    }
+}
 @media #{$tablet} {
     //Main
     .section_main {
         background-position: left center;
+        & .main_wrapper {
+            & .main_btns {
+                width: auto;
+                margin: 20px 0;
+            }
+        }
     }
-
+    
     .section__title.mobile-hidden  {display: block;}
     .section__subtitle.mobile-hidden {display: block;}
 
@@ -433,6 +465,13 @@
     }
 }
 @media #{$tablet1} {
+    .section__subtitle.white.registration,
+    .section__subtitle.roadmap,
+    .section__subtitle.team {
+        font-size: 30px;
+        font-weight: 700;
+    }
+   
     //Documents
     .section_documents {
         & .section_wrapper {
@@ -442,15 +481,31 @@
     //Main 
     .section_main {
         & .main_wrapper {
-            padding: 150px 0;
+            padding: 150px 0 0 60px;
             text-align: left;
             & .main_btns {
                 & .btn{
                     margin-bottom: 0;
                 }
             }
+            & .main_text {
+                width: 380px;
+                margin: 0;
+            }
         }
     }
+    .section__title.video-title.mobile {
+        display: none;
+    }
+    .section__title.video-title.desktop {
+        display: block;
+    }
+    .section_problem {
+        & .section_problem_text {
+            padding-top: 0;
+        }
+    }
+    
 }
 
 @media #{$tablet2} {

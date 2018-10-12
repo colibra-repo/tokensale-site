@@ -311,7 +311,7 @@ h3 {
 .header {
   position: relative;
   z-index: 99;
-  height: 60px;
+  height: 66px;
 }
 
 .header .header_wrapper .logo {
@@ -328,7 +328,7 @@ h3 {
 }
 
 .header_wrapper {
-  padding: 5px 0 15px;
+  padding: 15px 0;
   overflow: hidden;
 }
 
@@ -368,6 +368,10 @@ h3 {
   z-index: 11;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
   animation: slide-down 0.7s;
+}
+
+.header.header-fixed .header_wrapper {
+  padding: 15px 0;
 }
 
 .header.header-fixed .header_wrapper .logo {
@@ -772,12 +776,24 @@ h3 {
 
 .section__title.white {
   color: #ffffff;
+  line-height: 38px;
+}
+
+.section__title.white .main_break {
+  display: block;
 }
 
 .section__title.solution {
   padding-bottom: 0;
   text-align: center;
   font-size: 30px;
+}
+
+.section__subtitle.white.registration,
+.section__subtitle.roadmap,
+.section__subtitle.team {
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .section__title.video-title.mobile {
@@ -835,7 +851,6 @@ h3 {
 
 .main_wrapper {
   text-align: center;
-  padding: 0 20px;
 }
 
 .main_wrapper .main_text {
@@ -843,13 +858,17 @@ h3 {
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  margin: 0 0 40px;
+  width: 290px;
+  margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  .main_wrapper .main_text {
-    text-shadow: 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
-  }
+.main_wrapper .main_text .first_row {
+  display: block;
+}
+
+.main_wrapper .main_btns {
+  width: 290px;
+  margin: 0 auto;
 }
 
 .animation_wrapper {
@@ -889,15 +908,6 @@ h3 {
 .left-col {
   position: relative;
   z-index: 10;
-}
-
-@media (max-width: 768px) {
-  .right-col {
-    position: absolute;
-    z-index: 9;
-    top: 185px;
-    left: 0;
-  }
 }
 
 #animation-wrapper {
@@ -1145,9 +1155,19 @@ h3 {
   display: block;
 }
 
+@media screen and (min-width: 390px) {
+  .section__title.white .main_break {
+    display: inline-block;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .section_main {
     background-position: left center;
+  }
+  .section_main .main_wrapper .main_btns {
+    width: auto;
+    margin: 20px 0;
   }
   .section__title.mobile-hidden {
     display: block;
@@ -1174,12 +1194,31 @@ h3 {
 }
 
 @media only screen and (min-width: 1024px) {
+  .section__subtitle.white.registration,
+  .section__subtitle.roadmap,
+  .section__subtitle.team {
+    font-size: 30px;
+    font-weight: 700;
+  }
   .section_main .main_wrapper {
-    padding: 150px 0;
+    padding: 150px 0 0 60px;
     text-align: left;
   }
   .section_main .main_wrapper .main_btns .btn {
     margin-bottom: 0;
+  }
+  .section_main .main_wrapper .main_text {
+    width: 380px;
+    margin: 0;
+  }
+  .section__title.video-title.mobile {
+    display: none;
+  }
+  .section__title.video-title.desktop {
+    display: block;
+  }
+  .section_problem .section_problem_text {
+    padding-top: 0;
   }
 }
 
@@ -1436,7 +1475,7 @@ h3 {
 }
 
 .front {
-  box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 
@@ -1538,7 +1577,7 @@ h3 {
  Button
 \* ------------------------------------------------------------ */
 .btn {
-  background: linear-gradient(to right, #ff9800 0%, #ffc200 100%);
+  background: linear-gradient(to bottom, #faee49 0%, #faa71a 100%);
   display: inline-block;
   vertical-align: middle;
   padding: 0;
@@ -1551,8 +1590,9 @@ h3 {
   line-height: 57px;
   font-family: "Cairo", sans-serif;
   font-weight: 700;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #ffffff;
+  border: transparent;
   position: relative;
   cursor: pointer;
   moz-transition: all .4s ease-in-out;
@@ -1568,32 +1608,26 @@ h3 {
   background-position: 100% 0;
   moz-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
-  background-image: linear-gradient(to right, #ffc200, #ff9800);
-  opacity: 0.7;
-}
-
-.read_more {
-  background: linear-gradient(to right, #0f7076 0%, #06ba70 100%);
-}
-
-.read_more:hover {
-  color: #ffffff;
-  background-position: 100% 0;
-  moz-transition: all .1s ease-in-out;
-  transition: all .1s ease-in-out;
-  background-image: linear-gradient(to right, #06ba70, #0f7076);
+  background: linear-gradient(to bottom, #faa71a 0%, #faee49 100%);
 }
 
 .btn_main {
-  background: #ffffff;
-  color: #0a9372;
-  margin: 0 auto 20px;
+  border: transparent;
+  background: linear-gradient(to bottom, #faee49, #faa71a);
+  border-radius: 10px;
+  min-width: 190px;
+  color: #ffffff;
+  margin: 20px auto;
+  letter-spacing: 1px;
 }
 
-.btn_main:hover {
+.btn_main:hover, .btn_main:focus, .btn_main:active {
   color: #ffffff;
-  background: #06ba70;
-  box-shadow: 0 4px 15px 0 rgba(7, 80, 85, 0.75);
+  background: linear-gradient(to bottom, #faa71a, #faee49);
+  opacity: 1;
+  background-position: 100% 0;
+  moz-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
 }
 
 .btn_main.video_play {
@@ -1604,30 +1638,30 @@ h3 {
 
 .btn_main.video_play i {
   margin-right: 10px;
+  display: block;
 }
 
 .btn_main_fixed {
-  display: none;
   float: right;
   font-size: 13px;
   min-width: 80px;
   height: 40px;
   line-height: 40px;
-  background: #0a9372;
   color: #ffffff;
-  box-shadow: 0 4px 15px 0 rgba(7, 80, 85, 0.75);
-  margin-top: 5px;
+  background: linear-gradient(to bottom, #faee49, #faa71a);
 }
 
 .btn_main_fixed:hover {
-  opacity: 0.8;
-  background: #0a9372;
   color: #ffffff;
-  box-shadow: 0 4px 15px 0 rgba(7, 80, 85, 0.75);
+  background: linear-gradient(to bottom, #faa71a, #faee49);
 }
 
-.btn_main_fixed.visible {
-  display: inline-block;
+#onePagerHeader {
+  opacity: 0;
+}
+
+#onePagerHeader.visible {
+  opacity: 1;
 }
 
 .btn_register {
@@ -1636,10 +1670,14 @@ h3 {
   margin-top: 30px;
 }
 
-@media only screen and (min-width: 480px) {
-  .btn_main {
-    margin: 0 10px 20px;
-  }
+.main_btns-desktop {
+  display: none;
+}
+
+.main_btns-mobile {
+  display: block;
+  width: 190px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 620px) {
@@ -1661,9 +1699,22 @@ h3 {
   .btn_main {
     margin: 0 5px 0;
   }
+  .btn_main.video_play i {
+    display: inline-block;
+  }
 }
 
-@media desktop {
+@media only screen and (min-width: 1024px) {
+  .main_btns-desktop {
+    display: block;
+    margin: 20px 0;
+  }
+  .main_btns-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
   .btn_main {
     margin: 0 20px 0 0;
   }
@@ -2114,7 +2165,7 @@ h2.number span {
   padding: 0 20px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .cd-section-wrapper .cd-60-middle .image_wrapper_middle {
     width: 455px;
     margin: 0 auto;
@@ -2548,7 +2599,7 @@ caption {
 }
 
 table th {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   font-family: "Cairo", sans-serif;
   text-align: left;
@@ -2556,7 +2607,7 @@ table th {
 }
 
 table td {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   padding: 10px 20px;
 }
@@ -2598,26 +2649,6 @@ table td {
   opacity: 0 !important;
 }
 
-.chart .amcharts-pie-slice {
-  -ms-transform: scale(1);
-      transform: scale(1);
-  -ms-transform-origin: 50% 50%;
-      transform-origin: 50% 50%;
-  transition-duration: 0.3s;
-  transition: all .3s ease-out;
-  -webkit-transition: all .3s ease-out;
-  -moz-transition: all .3s ease-out;
-  -o-transition: all .3s ease-out;
-  cursor: pointer;
-  box-shadow: 0 0 30px 0 #000;
-}
-
-.chart .amcharts-pie-slice:hover {
-  -ms-transform: scale(1.1);
-      transform: scale(1.1);
-  filter: url(#shadow);
-}
-
 @media only screen and (min-width: 400px) {
   .chart #chartwrapper {
     width: 100%;
@@ -2655,6 +2686,12 @@ table td {
 @media only screen and (min-width: 768px) {
   .table {
     width: 500px;
+  }
+  table th {
+    font-size: 22px;
+  }
+  table td {
+    font-size: 18px;
   }
   .chart #chartwrapper #chartdiv1 {
     width: 620px;
@@ -2812,12 +2849,12 @@ table td {
 }
 
 .nav_trigger {
-  margin-top: 18px;
+  margin-top: 10px;
   position: relative;
   display: inline-block;
   z-index: 4;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 }
 
 .nav_trigger span {
@@ -2825,7 +2862,8 @@ table td {
   display: block;
   width: 100%;
   height: 2px;
-  background: #ffffff;
+  border-radius: 3px;
+  background: #faee49;
   transition: top .2s .25s, left .2s .25s, opacity .2s .25s, transform .2s 0s;
 }
 
@@ -2834,11 +2872,11 @@ table td {
 }
 
 .nav_trigger span:nth-child(2) {
-  top: 5px;
+  top: 4px;
 }
 
 .nav_trigger span:nth-child(3) {
-  top: 10px;
+  top: 8px;
 }
 
 .nav_trigger.active {
@@ -2908,6 +2946,7 @@ table td {
 }
 
 .section_roadmap .road-wave-mobile {
+  display: block;
   background: url("../css/images/map-wave.png");
   min-height: 300px;
   background-position: center center;
@@ -2919,9 +2958,6 @@ table td {
 }
 
 .section_roadmap .road-wave-mobile .map {
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
   line-height: 66px;
   width: 66px;
   height: 66px;
@@ -2940,18 +2976,12 @@ table td {
 }
 
 .section_roadmap .road-wave-mobile .circle1 {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
   position: absolute;
   left: 3.4%;
   top: 40%;
 }
 
 .section_roadmap .road-wave-mobile .circle2 {
-  -webkit-writing-mode: tb-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: tb-rl;
   -ms-transform: rotate(180deg);
       transform: rotate(180deg);
   position: absolute;
@@ -2960,18 +2990,12 @@ table td {
 }
 
 .section_roadmap .road-wave-mobile .circle3 {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
   position: absolute;
   left: 31%;
   top: 40%;
 }
 
 .section_roadmap .road-wave-mobile .circle4 {
-  -webkit-writing-mode: tb-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: tb-rl;
   -ms-transform: rotate(180deg);
       transform: rotate(180deg);
   position: absolute;
@@ -2980,18 +3004,12 @@ table td {
 }
 
 .section_roadmap .road-wave-mobile .circle5 {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
   position: absolute;
   left: 58.8%;
   top: 40%;
 }
 
 .section_roadmap .road-wave-mobile .circle6 {
-  -webkit-writing-mode: tb-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: tb-rl;
   -ms-transform: rotate(180deg);
       transform: rotate(180deg);
   position: absolute;
@@ -3000,9 +3018,6 @@ table td {
 }
 
 .section_roadmap .road-wave-mobile .circle7 {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
   position: absolute;
   left: 86.5%;
   top: 40%;
@@ -3021,9 +3036,6 @@ table td {
 }
 
 .section_roadmap .road-wave .map {
-  -webkit-writing-mode: horizontal-tb;
-      -ms-writing-mode: lr-tb;
-          writing-mode: horizontal-tb;
   line-height: 66px;
   width: 66px;
   height: 66px;
@@ -3042,18 +3054,12 @@ table td {
 }
 
 .section_roadmap .road-wave .circle1 {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
   position: absolute;
   left: 3.4%;
   top: 40%;
 }
 
 .section_roadmap .road-wave .circle2 {
-  -webkit-writing-mode: tb-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: tb-rl;
   -ms-transform: rotate(180deg);
       transform: rotate(180deg);
   position: absolute;
@@ -3062,18 +3068,12 @@ table td {
 }
 
 .section_roadmap .road-wave .circle3 {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
   position: absolute;
   left: 31%;
   top: 40%;
 }
 
 .section_roadmap .road-wave .circle4 {
-  -webkit-writing-mode: tb-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: tb-rl;
   -ms-transform: rotate(180deg);
       transform: rotate(180deg);
   position: absolute;
@@ -3082,18 +3082,12 @@ table td {
 }
 
 .section_roadmap .road-wave .circle5 {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
   position: absolute;
   left: 58.8%;
   top: 40%;
 }
 
 .section_roadmap .road-wave .circle6 {
-  -webkit-writing-mode: tb-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: tb-rl;
   -ms-transform: rotate(180deg);
       transform: rotate(180deg);
   position: absolute;
@@ -3102,46 +3096,45 @@ table td {
 }
 
 .section_roadmap .road-wave .circle7 {
-  -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
-          writing-mode: vertical-lr;
   position: absolute;
   left: 86.5%;
   top: 40%;
 }
 
 .section_roadmap .ellipse1 {
-  display: inline-block;
+  display: block;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   background: #05bb70;
-  margin: 7px 0;
+  margin: 7px auto;
 }
 
 .section_roadmap .ellipse2 {
-  display: inline-block;
+  display: block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: #09a372;
+  margin: auto;
 }
 
 .section_roadmap .ellipse3 {
-  display: inline-block;
+  display: block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: #0b9173;
-  margin: 7px 0;
+  margin: 7px auto;
 }
 
 .section_roadmap .ellipse4 {
-  display: inline-block;
+  display: block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: #0d7e75;
+  margin: auto;
 }
 
 .section_roadmap .circle_text1 {
@@ -3284,11 +3277,6 @@ table td {
     top: 3%;
   }
   .section_roadmap .road-wave .circle5 {
-    -webkit-writing-mode: vertical-lr;
-        -ms-writing-mode: tb-lr;
-            writing-mode: vertical-lr;
-    position: absolute;
-    left: 58.8%;
     top: 35%;
   }
   .section_roadmap .road-wave .circle6 {
