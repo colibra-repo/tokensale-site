@@ -1,4 +1,4 @@
-function isScrolledIntoView(elem){
+function isFullyIntoView(elem){
     var $elem = $(elem);
     var $window = $(window);
 
@@ -9,6 +9,19 @@ function isScrolledIntoView(elem){
     var elemBottom = elemTop + $elem.height();
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
+
+function isNotIntoView(elem){
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewTop) || (elemTop >= docViewBottom));
 }
 
 $(document).ready(function() {
@@ -29,13 +42,13 @@ $(document).ready(function() {
     $(window).scroll(function() {
         stickyNav();
         if ($(window).width() < 1024) {
-            if(!isScrolledIntoView('#onePagerMobile')) {
+            if(isNotIntoView('#onePagerMobile')) {
                 $('#onePagerHeader').addClass('visible');
             } else {
                 $('#onePagerHeader').removeClass('visible');
             }
         } else {
-            if(!isScrolledIntoView('#onePagerDesktop')) {
+            if(!isFullyIntoView('#onePagerDesktop')) {
                 $('#onePagerHeader').addClass('visible');
             } else {
                 $('#onePagerHeader').removeClass('visible');

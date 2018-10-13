@@ -87,6 +87,7 @@
     }
 }
 .btn_main_fixed {
+    display: none;
     float: right;
     font-size: 13px;
     min-width: 80px;
@@ -98,15 +99,18 @@
         color:$white;
         background: linear-gradient(to bottom, #faa71a, #faee49);
     }
-    
-    
-}
-#onePagerHeader {
-   opacity: 0;
-    &.visible {
-        opacity: 1;
+    &.visible{
+        display: block;
     }
+    
+    
 }
+// #onePagerHeader {
+//    opacity: 0;
+//     &.visible {
+//         opacity: 1;
+//     }
+// }
 .btn_register {
     display: block;
     min-width: 208px;
