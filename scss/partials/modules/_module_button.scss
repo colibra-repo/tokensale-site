@@ -82,9 +82,19 @@
         text-transform: none;
         & i {
             margin-right: 10px;
-            display: block;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+            box-shadow: 0 4px 15px 0 rgba(7, 80, 85, 0.75);
+            background-position: 100% 0;
+            moz-transition: all .1s ease-in-out;
+            -o-transition: all .1s ease-in-out;
+            -webkit-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
         }
     }
+    
 }
 .btn_main_fixed {
     display: none;
@@ -99,18 +109,18 @@
         color:$white;
         background: linear-gradient(to bottom, #faa71a, #faee49);
     }
-    &.visible{
-        display: block;
-    }
+    
     
     
 }
-// #onePagerHeader {
-//    opacity: 0;
-//     &.visible {
-//         opacity: 1;
-//     }
-// }
+.downloadPdf {
+    float: right;
+    display: none;
+    &.visible{
+        display: block;
+    }
+}
+
 .btn_register {
     display: block;
     min-width: 208px;
@@ -143,18 +153,13 @@
     }
     .btn_main {
         margin: 0 5px 0;
-        &.video_play {
-            & i {
-                display: inline-block;
-            }
-        }
     }
 }
 @media #{$tablet1} {
    
     .main_btns-desktop {
         display: block;
-        margin: 20px 0;
+        margin: 60px 0 40px;
     }
     .main_btns-mobile {
         display: none;

@@ -1,7 +1,9 @@
 /* ------------------------------------------------------------ *\
    Section navigation
 \* ------------------------------------------------------------ */
-
+#solution {
+    overflow: hidden!important;
+}
 #video-laptop-mp4 {
     position: relative;
     padding-top: 25px;
@@ -612,8 +614,12 @@ h2.number {
     .cd-section-wrapper-main {
         & .cd-40-left{
             & .cd-40-wrapper {
+                // width: 70%;
                 & p {
                     width: 70%;
+                    text-align: left;
+                    margin-left: 0;
+                    padding-left: 30px;
                 }
             } 
         }

@@ -56,7 +56,8 @@ $(document).ready(function() {
         }
         
     });
-    
+    // $('.section_body.home').css('height', $(window).height());
+
     //menu desktop
     $('.nav_trigger').click(function (e) {
         $(this).toggleClass('active');
@@ -221,7 +222,7 @@ $(document).ready(function() {
         }
     });
 
-    init3d();
+    init3d(false);
     
 });
 
@@ -248,22 +249,28 @@ function scrollToEl(id) {
     }
 }
 
-function init3d() {
+var object3d;
+function init3d(isInited) {
     var scene = new THREE.Scene,
         camera = new THREE.PerspectiveCamera(45, 1, 0.1, 1e3),
         renderer = new THREE.WebGLRenderer({
         alpha: true
     }),
-    animationWrapper = document.getElementById('animation-wrapper');
-    animationLoader = document.getElementById('animation-loader'); 
+    animationWrapper = document.getElementById('animation-wrapper'),
+    animationLoader = document.getElementById('animation-loader'),
+    $document = $(document),
+    toRight = false,
+    $window = $(window),
+    $animationWrapper = $('#animation-wrapper');
+
     renderer.setSize(animationWrapper.offsetWidth, animationWrapper.offsetHeight); 
-    animationWrapper.appendChild(renderer.domElement), camera.position.z = 100;
-
-
+    animationWrapper.appendChild(renderer.domElement);
+    camera.position.z = 100;
+    
     var controls = new THREE.OrbitControls(camera, renderer.domElement);
     controls.autoRotate = true; 
     controls.autoRotateSpeed = 0.5; 
-    controls.enabled = true;
+    controls.enabled = $document.width() > 768;
     controls.enableKeys = false;
     controls.enableZoom = false; 
     controls.enableDamping = true; 
@@ -272,55 +279,62 @@ function init3d() {
     controls.minAzimuthAngle = - Infinity; 
     controls.maxAzimuthAngle = Infinity;
 
-    var ambiLight = new THREE.AmbientLight(0xfff2cc);
+    var ambiLight = new THREE.AmbientLight(0xf8f8f8);
     scene.add(ambiLight); 
     
-    var dirLight = new THREE.DirectionalLight(0xfff2cc, 0.5); 
+    var dirLight = new THREE.DirectionalLight(0xf8f8f8, 0.5); 
     dirLight.position.set(-1, 1, 1); 
     scene.add(dirLight);    
 
-    var backLight = new THREE.PointLight(0xfff2cc, 1, 100);
+    var backLight = new THREE.PointLight(0xf8f8f8, 1, 100);
     backLight.position.set(-1, 0.5, 1);
     scene.add(backLight);
 
     var material = new THREE.MeshPhongMaterial();
     material.map = new THREE.ImageUtils.loadTexture('css/3dmodel/color.png'); 
-    material.color = new THREE.Color(0xfff2cc); 
+    material.color = new THREE.Color(0xf8f8f8); 
     material.opacity = 1; 
     material.transparent = true; 
     material.side = THREE.DoubleSide;
     
     var objLoader = new THREE.OBJLoader;
     objLoader.setPath('css/3dmodel/'); 
-    
-    objLoader.load('themis.obj', function(obj) {
-        obj.position.y -= 112, 
-        obj.castShadow = true, 
-        obj.traverse(function(obj) {
-            if (obj.isMesh) obj.material = material;            
-        }); 
-        
-        obj.scale.x = obj.scale.y = obj.scale.z = 0.165; 
-        scene.add(obj)
-    }, function(req) {
-        if (Math.round(100 * req.loaded / req.total) === 100) {
-            animationLoader.className = "hidden";
-            animationWrapper.className = "visible";
-        }        
-    });
-    
-    var animate = function() {
-        requestAnimationFrame(animate); 
-        controls.update(); 
-        renderer.render(scene, camera);
-    };
 
-    animate();
+    $window.off('orientationchange').on('orientationchange', function() {
+        $animationWrapper.addClass('hidden')
+        setTimeout(() => {
+            $('<div id="animation-wrapper"></div>').insertAfter('#animation-wrapper');
+            $animationWrapper.remove();
+            init3d(true);            
+        }, 1);
+    });
+    if (!isInited) {
+        objLoader.load('themis.obj', function(obj) {
+            object3d = obj;
+            object3d.position.y -= 109, 
+            object3d.castShadow = true, 
+            object3d.traverse(function(obj) {
+                if (obj.isMesh) {
+                    obj.material = material;
+                    object3d.material = material;
+                }      
+            }); 
+            
+            object3d.scale.x = object3d.scale.y = object3d.scale.z = 0.061; 
+            scene.add(object3d)
+        }, function(req) {
+            if (Math.round(100 * req.loaded / req.total) === 100) {
+                animationLoader.className = "hidden";
+                animationWrapper.className = "visible";
+            }        
+        });
+    } else {
+        scene.add(object3d)
+        animationLoader.className = "hidden";
+        animationWrapper.className = "visible";
+    }
 
     //rotation change with mouse
-    var $document = $(document),
-        toRight = false;
-
     $document.on('mousemove', function(e) {
         toRight = e.clientX > $document.width() / 2;
         changeDirection();
@@ -341,5 +355,13 @@ function init3d() {
             controls.autoRotateSpeed = - 0.15;
         }
     }
+
+    var animate = function() {
+        requestAnimationFrame(animate); 
+        renderer.render(scene, camera);
+        controls.update(); 
+    };
+
+    animate();
 }
 

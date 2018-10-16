@@ -78,7 +78,7 @@
         width: 100%;
         height: 2px;
         border-radius: 3px;
-        background: #faee49;
+        background: $white;
         transition: top .2s .25s, left .2s .25s, opacity .2s .25s, -webkit-transform .2s 0s;
         transition: top .2s .25s, left .2s .25s, opacity .2s .25s, transform .2s 0s;
         transition: top .2s .25s, left .2s .25s, opacity .2s .25s, transform .2s 0s, -webkit-transform .2s 0s;
@@ -139,6 +139,7 @@
             & li {
                 // padding: 0 20px;
                 padding: 0 15px;
+                display: inline-block;
             } 
         }
     }

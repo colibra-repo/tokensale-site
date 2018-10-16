@@ -31,6 +31,9 @@ table td {
     // line-height: 45px;
     padding: 10px 20px;
 }
+tbody {
+    padding-bottom: 10px;
+}
 //chart
 .chart {
     & .chart_title {
@@ -38,24 +41,32 @@ table td {
         padding: 40px 0 0;
     } 
     & #chartwrapper {
+        overflow:hidden!important;
         position: relative;
-        width: 400px;
+        width: 300px;
         height: 300px;
+        margin: 0 auto;
         & #chartdiv1 {
-            width: 420px;
-            height: 420px;
+            width: 410px;
+            height: 410px;
             position: absolute;
             top: -80px;
-            left: -47px;
+            left: -41px;
             font-size: 13px;
+            & .amcharts-main-div {
+                overflow:hidden!important;
+            }
         }
         & #chartdiv2 {
-            width: 420px;
-            height: 420px;
+            width: 410px;
+            height: 410px;
             position: absolute;
             top: -80px;
-            left: -47px;
+            left: -54px;
             font-size: 13px;
+            & .amcharts-main-div {
+                overflow:hidden!important;
+            }
         }
     }
     
@@ -85,6 +96,7 @@ table td {
 //chart
     .chart {
         & #chartwrapper {
+            overflow:auto;
             width: 100%;
             height: 100%;
             margin-left: -18px;

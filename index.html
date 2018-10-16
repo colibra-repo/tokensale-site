@@ -5,7 +5,8 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+<!-- 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<title>CoLibra</title>
 
 	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico"/>
@@ -26,6 +27,7 @@
 	<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 	<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
 	<script src="https://www.amcharts.com/lib/3/plugins/responsive/responsive.min.js"></script>
+	
 </head>
 <body>
 <div class="main">	
@@ -71,7 +73,7 @@
 							</ul> -->
 						</ul><!-- /.menu -->
 					</nav>
-					<a href="css/images/one-pager-colibra.pdf" target="_blank" id="onePagerHeader" class="btn btn_main_fixed">summary</a>
+					<a href="css/images/one-pager-colibra.pdf" target="_blank" id="onePagerHeader" class="downloadPdf"><img src="css/images/pdf-download.png"></a>
 					
 					<div class="social_icons-header">
 						<!-- <div class="lang_bar">
@@ -112,7 +114,7 @@
 				</div>
 			</div>
 		</header>
-		<div class="section_body">
+		<div class="section_body home">
 			<div class="shell">
 				<div class="cols">
 					<div class="col col_2 left-col">
@@ -157,7 +159,7 @@
 								<div class="pulse-button"></div>
 							</div>
 						</a> -->
-						<img src="css/images/image-1.png">
+						<img>
 					</div>
 					<div class="col col_2">
 						<h2 class="section__title video-title desktop">Insurance needs our help</h2>
@@ -278,7 +280,7 @@
 					</div>
 					<div class="cd-60 animated fadeInLeft">
 						<div id="video-laptop-mp4" class="animated fadeInLeft slowest"> 
-							<video id="laptopVideo" width="640" height="300" autoplay muted loop playsinline>
+							<video id="laptopVideo" width="640" height="300" preload="true" muted loop playsinline>
 								<source src="css/images/task-manager-video.mp4" type="video/mp4">
 							</video> 
 						</div>
@@ -524,7 +526,7 @@
 								</figure>
 							</div>
 							<div class="container_body">
-								<p class="container_body_title">White<span>Pager</span></p>
+								<p class="container_body_title">White<span>Paper</span></p>
 							</div>
 							<div class="container_foot">
 								<img src="css/images/download-icon.png">
@@ -966,7 +968,7 @@
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Alexander-Ivanov.jpg">
+											<img src="css/images/Alexander-Ivanov.png">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -1524,28 +1526,29 @@
 	</section>
 	<section class="chat_icon">
 		<a href="https://t.me/wearecolibra" target="_blank" class="telegram_chat" target="_blank">
-			<img src="css/images/green-1.png">
+			<img src="css/images/telegram-big.png">
 		</a>
 	</section>
 	<footer class="footer">
 		<div class="shell">
 			<div class="social_icons">
 				<ul class="list_icons">
-					<li><a class="medium" href="" target="_blank"><img src=""></a></li>
+					<li><a class="medium" href="https://medium...@wearecolibra" target="_blank"><img src="css/images/medium-gray.png"></a></li>
 					<!-- <li><a class="telegram" href="https://t.me/wearecolibra" target="_blank"><img src="css/images/gray-1.png"></a></li> -->
 					<li><a class="facebook" href="https://www.facebook.com/WeAreColibra/" target="_blank"><img src="css/images/gray-4.png"></a></li>
 					<li><a class="twitter" href="https://twitter.com/wearecolibra" target="_blank"><img src="css/images/gray-3.png"></a></li>
 					<li><a class="youTube" href="https://www.youtube.com/channel/UCDAZCmrMYbKnf9miFDFLFhQ" target="_blank"><img src="css/images/gray-8.png"></a></li>
+					<li><a class="linkin" href="https://www.linkedin.com/company/wearecolibra/" target="_blank"><img src="css/images/linkedin-gray.png"></a></li>
 					<li><a class="reddit" href="https://www.reddit.com/user/wearecolibra" target="_blank"><img src="css/images/gray-2.png"></a></li>
-					<li><a class="instagram" href="#" target="blank"><img src=""></a></li>
-					<li><a class="github" href="" target="blank"><img src=""></a></li>
+					<li><a class="instagram" href="https://www.instagram.com/wearecolibra/" target="blank"><img src="css/images/instagram-gray.png"></a></li>
+					<li><a class="github" href="https://github.com/orgs/colibra-repo/dashboard" target="blank"><img src="css/images/github-gray.png"></a></li>
 					<!-- <li><a href="#"><img src="css/images/ico-5.png"></a></li>
 					<li><a href="#"><img src="css/images/ico-6.png"></a></li>
 					<li><a href="#"><img src="css/images/ico-7.png"></a></li> -->
 				</ul>
 			</div>
 			<div class="social-links">
-				<a href="" target="_blank" class="policy">Privacy Policy </a>
+				<a href="" target="_blank" class="policy">Privacy Policy</a>
 				<a href="" target="_blank" class="terms">Terms & Conditions</a>
 			</div>
 		</div>
@@ -1567,10 +1570,13 @@
 	MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/colibra","postsPerLine":4,"limit":4,"picture":"small","fields":["description","claps","publishAt"],"ratio":"landscape"}})
 </script>
 
-
-   
 <script>
-	
+	var video = document.getElementById("laptopVideo");
+	video.addEventListener("canplay", function() {
+		setTimeout(function() {
+			video.play();
+		}, 4000);
+	});
 	var chart1 = AmCharts.makeChart("chartdiv1", {
 		"type": "pie",
 		"startDuration": 0,
@@ -1578,8 +1584,8 @@
 		"addClassNames": true,
 		"innerRadius": "50%",
 		"autoMargins": false,
-		"maxLabelWidth": 100,
-		"fontSize":15,
+		"maxLabelWidth": 90,
+		"fontSize":13,
 		"fontFamily":"Cairo",
 		"color":"#333",
 		"defs": {
@@ -1602,7 +1608,7 @@
 			"in": "SourceGraphic",
 			"in2": "blurOut",
 			"mode": "normal"
-			}
+			},
 		}]
 		},
 		"dataProvider": [{
@@ -1629,23 +1635,25 @@
 		"valueField": "litres",
 		"titleField": "country",
 		"colorField": "color",
-		"listeners": [{
-			"event": "clickSlice",
-			"method": function(e) {
-				if (($(window).outerWidth() < 1000)) {
-					e.dataItem.pulled = false;
-					e.chart.validateData();
-				} 
-				
-			}
-		  }],
-		"showBalloon": false 
+		"listeners": [
+			{
+				"event": "clickSlice",
+				"method": function(e) {
+					if (($(window).outerWidth() < 1000)) {
+						e.dataItem.pulled = false;
+						e.chart.validateData();
+					}
+				}
+			},
+			// {
+			// 	"event": "rollOverSlice",
+			// 	"method": function(e) {
+			// 		e.dataItem.visibleInLegend = false;
+			// 		e.chart.validateData();
+			// 	}
+			// }
+		]
 	});
-	
-	// function handleRollOver(e){
-	// 	var wedge = e.dataItem.wedge.node;
-	// 	wedge.parentNode.appendChild(wedge);
-	// }
 
 	var chart2 = AmCharts.makeChart("chartdiv2", {
 		"type": "pie",
@@ -1654,8 +1662,8 @@
 		"addClassNames": true,
 		"innerRadius": "50%",
 		"autoMargins": false,
-		"maxLabelWidth": 100,
-		"fontSize":15,
+		"maxLabelWidth": 90,
+		"fontSize":13,
 		"fontFamily":"Cairo",
 		"color":"#333",
 		"defs": {
@@ -1705,27 +1713,32 @@
 		"valueField": "litres",
 		"titleField": "country",
 		"colorField": "color",
-		"listeners": [{
-			"event": "clickSlice",
-			"method": function(e) {
-				if (($(window).outerWidth() < 1000)) {
-					e.dataItem.pulled = false;
-					e.chart.validateData();
+		"listeners": [
+			{
+				"event": "clickSlice",
+				"method": function(e) {
+					if (($(window).outerWidth() < 1000)) {
+						e.dataItem.pulled = false;
+						e.chart.validateData();
+					}
 				}
-			}
-		  }],
-		"showBalloon": false
+			},
+			// {
+			// 	"event": "rollOverSlice",
+			// 	"method": function(e) {
+
+			// 	}
+			// }
+		]
 	});
-	
-	// function handleRollOver(e){
-	// 	var wedge = e.dataItem.wedge.node;
-	// 	wedge.parentNode.appendChild(wedge);
-	// }
+	chart1.accessible = false;
+	chart1.balloon.enabled = false;
+	chart1.accessibleLabel = '';
 
-	
-</script>
-	
-
+	chart2.accessible = false;
+	chart2.balloon.enabled = false;
+	chart2.accessibleLabel = '';
+</script>	
 </body>
 </html>
  
