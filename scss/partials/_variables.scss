@@ -1,0 +1,41 @@
+/* ------------------------------------------------------------ *\
+    Variables
+\* ------------------------------------------------------------ */
+
+/*  Colors  */
+$white: #ffffff;
+$black: #000000;
+$dark:#333333;
+$green: #0a9372;
+$green1:#57fec0;
+$green2:#54bc79;
+$green3:#eff9f5;
+$gray:#efefef;
+$gray1:#e9e9e9;
+$darkgray:#7e7f7f;
+$darkgray1:#6c6d6d;
+$yellow:#ffc200;
+
+
+/*  Base body  */
+$color: $white;
+
+/*  Font  */
+$font-family: 'Cairo', sans-serif;
+
+/*  Links  */
+$color-link: inherit;
+$color-link-hover:inherit;
+$color-link-focus:inherit;
+
+/*  Shell  */
+$shell:1352px;
+$shell-padding: 0 15px;
+
+$mobile: "only screen and (min-width : 480px)";
+$tablet: "only screen and (min-width : 768px)";
+$tablet1: "only screen and (min-width : 1024px)";
+$tablet2: "only screen and (min-width : 1200px)";
+$desktop: "only screen and (min-width : 1366px)";
+// $desktop: "only screen and (min-width : 1352px)";
+// $desktop1: "only screen and (min-width : 1600px)";

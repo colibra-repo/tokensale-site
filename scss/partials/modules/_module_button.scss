@@ -61,7 +61,7 @@
     border-radius: 10px;
     min-width: 190px;
     color:$white;
-    margin: 20px auto;
+    // margin: 20px auto;
     letter-spacing: 1px;
     
     &:hover,
@@ -108,10 +108,7 @@
     &:hover {
         color:$white;
         background: linear-gradient(to bottom, #faa71a, #faee49);
-    }
-    
-    
-    
+    } 
 }
 .downloadPdf {
     float: right;
@@ -135,7 +132,12 @@
     width: 190px;
     margin: 0 auto;
 }
-
+// @media screen and (min-width: 480px){
+//     .btn_main {
+//         margin: 20px auto;
+//     }
+        
+// }
 @media screen and (min-width:620px){
     .btn_main_fixed {
         font-size: 14px;

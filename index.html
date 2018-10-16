@@ -29,6 +29,15 @@
 	<script src="https://www.amcharts.com/lib/3/plugins/responsive/responsive.min.js"></script>
 	
 </head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127551918-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127551918-1');
+</script>
 <body>
 <div class="main">	
 	<section class="section_main" id="home">
@@ -133,9 +142,7 @@
 					<div class="col col_2 right-col">
 						<div class="animation_wrapper">
 							<div class="animation-container">
-								<div id="animation-loader">
-									<div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-								</div>
+								<div id="animation-loader"></div>
 								<div id="animation-wrapper"></div>
 							</div>
 						</div>
@@ -280,7 +287,7 @@
 					</div>
 					<div class="cd-60 animated fadeInLeft">
 						<div id="video-laptop-mp4" class="animated fadeInLeft slowest"> 
-							<video id="laptopVideo" width="640" height="300" preload="true" muted loop playsinline>
+							<video id="laptopVideo" width="640" height="300" playsinline muted loop>
 								<source src="css/images/task-manager-video.mp4" type="video/mp4">
 							</video> 
 						</div>
@@ -1575,7 +1582,7 @@
 	video.addEventListener("canplay", function() {
 		setTimeout(function() {
 			video.play();
-		}, 4000);
+		},3500);
 	});
 	var chart1 = AmCharts.makeChart("chartdiv1", {
 		"type": "pie",

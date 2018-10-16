@@ -171,8 +171,6 @@ $(document).ready(function() {
             trigger: 'hover'
         });
     }
-    
-
     // Whitelist section
     //open register form
     $('.btn.toggleForm').click(function(){
@@ -268,7 +266,7 @@ function init3d(isInited) {
     camera.position.z = 100;
     
     var controls = new THREE.OrbitControls(camera, renderer.domElement);
-    controls.autoRotate = true; 
+    controls.autoRotate = false; 
     controls.autoRotateSpeed = 0.5; 
     controls.enabled = $document.width() > 768;
     controls.enableKeys = false;
@@ -321,18 +319,23 @@ function init3d(isInited) {
             }); 
             
             object3d.scale.x = object3d.scale.y = object3d.scale.z = 0.061; 
-            scene.add(object3d)
+            scene.add(object3d);
         }, function(req) {
             if (Math.round(100 * req.loaded / req.total) === 100) {
-                animationLoader.className = "hidden";
+                animationLoader.className = "hidden-loader";
                 animationWrapper.className = "visible";
             }        
         });
     } else {
-        scene.add(object3d)
-        animationLoader.className = "hidden";
+        scene.add(object3d);
+        animationLoader.className = "hidden-loader";
         animationWrapper.className = "visible";
     }
+
+    setTimeout(() => {
+        controls.autoRotate = true; 
+        
+    }, 500);
 
     //rotation change with mouse
     $document.on('mousemove', function(e) {
