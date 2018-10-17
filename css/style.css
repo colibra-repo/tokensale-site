@@ -1611,6 +1611,8 @@ h3 {
   min-width: 190px;
   color: #ffffff;
   letter-spacing: 1px;
+  height: 50px;
+  line-height: 50px;
 }
 
 .btn_main:hover, .btn_main:focus, .btn_main:active {
@@ -1639,25 +1641,10 @@ h3 {
   transition: all .1s ease-in-out;
 }
 
-.btn_main_fixed {
-  display: none;
-  float: right;
-  font-size: 13px;
-  min-width: 80px;
-  height: 40px;
-  line-height: 40px;
-  color: #ffffff;
-  background: linear-gradient(to bottom, #faee49, #faa71a);
-}
-
-.btn_main_fixed:hover {
-  color: #ffffff;
-  background: linear-gradient(to bottom, #faa71a, #faee49);
-}
-
 .downloadPdf {
   float: right;
   display: none;
+  cursor: pointer;
 }
 
 .downloadPdf.visible {
@@ -1705,6 +1692,10 @@ h3 {
   .main_btns-desktop {
     display: block;
     margin: 60px 0 40px;
+  }
+  .main_btns-desktop .btn_main {
+    height: 57px;
+    line-height: 57px;
   }
   .main_btns-mobile {
     display: none;

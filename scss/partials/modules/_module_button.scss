@@ -63,6 +63,8 @@
     color:$white;
     // margin: 20px auto;
     letter-spacing: 1px;
+    height: 50px;
+    line-height: 50px;
     
     &:hover,
     &:focus,
@@ -96,23 +98,24 @@
     }
     
 }
-.btn_main_fixed {
-    display: none;
-    float: right;
-    font-size: 13px;
-    min-width: 80px;
-    height: 40px;
-    line-height: 40px;
-    color:$white;
-    background: linear-gradient(to bottom, #faee49, #faa71a);
-    &:hover {
-        color:$white;
-        background: linear-gradient(to bottom, #faa71a, #faee49);
-    } 
-}
+// .btn_main_fixed {
+//     display: none;
+//     float: right;
+//     font-size: 13px;
+//     min-width: 80px;
+//     height: 40px;
+//     line-height: 40px;
+//     color:$white;
+//     background: linear-gradient(to bottom, #faee49, #faa71a);
+//     &:hover {
+//         color:$white;
+//         background: linear-gradient(to bottom, #faa71a, #faee49);
+//     } 
+// }
 .downloadPdf {
     float: right;
     display: none;
+    cursor: pointer;
     &.visible{
         display: block;
     }
@@ -162,6 +165,10 @@
     .main_btns-desktop {
         display: block;
         margin: 60px 0 40px;
+        .btn_main {
+            height: 57px;
+            line-height: 57px;
+        }
     }
     .main_btns-mobile {
         display: none;
