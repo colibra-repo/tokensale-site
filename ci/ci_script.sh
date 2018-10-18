@@ -3,22 +3,12 @@
 # author: Boris Strandjev
 
 # properties of the deployment
-environment=$1
 amazon_user="ec2-user"
 remote_work_dir="/var/www/tokensale"
 local_assets_directory="site-contents"
 remote_backup_dir="tokensale_backup"
-
-
-case $environment in
-    production)
-        amazon_host="18.185.118.232"
-        private_key_path="/ssl/colibra_demo.pem"
-        ;;
-    *)
-        echo "The first parameter must be the environment. Only 'production' is supported for the moment"
-        exit
-esac
+amazon_host="18.185.118.232"
+private_key_path="/ssl/colibra_demo.pem"
 
 execute_remotely() {
     instruction=$1
