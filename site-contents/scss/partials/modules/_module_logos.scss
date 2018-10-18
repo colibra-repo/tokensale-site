@@ -1,0 +1,125 @@
+/* ------------------------------------------------------------ *\
+ Logos
+\* ------------------------------------------------------------ */
+
+.logo_wrapper {
+    padding: 0 20px;
+    & .logos {
+        display: inline-block;
+        text-align: center;
+        & li {
+            display: inline-block;
+            width: 50%;
+            padding: 0 5px;
+            float: left;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            margin: 10px 0;
+            &:hover {
+                -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+            }
+            &:nth-child(1){
+                & img {
+                    width: 90px;
+                }
+            }
+            &:nth-child(2){
+                & img {
+                    width: 90px;
+                }
+            }
+            &:nth-child(3){
+                & img {
+                    width: 150px;
+                }
+            }
+            &:nth-child(4){
+                & img {
+                    width: 150px;
+                }
+            }
+            &:nth-child(5){
+                & img {
+                    width: 150px;
+                }
+            }
+            &:nth-child(6){
+                & img {
+                    width: 70px;
+                }
+            }
+        }
+    }
+    & .logos_partners {
+        text-align: center;
+       & li {
+           width: 160px;
+           margin: 20px auto;
+        }
+    }
+}
+
+@media #{$tablet} {
+    //team
+    .logo_wrapper {
+        & .logos {
+            & li {
+                width: 108px;
+            }
+        }
+    }
+    //partners
+    .logo_wrapper {
+        & .logos_partners {
+            & li {
+                display: inline-block;
+                padding:0 5px;
+            }
+        }
+    }
+    
+}
+
+@media #{$tablet1} {
+    //team
+    .logo_wrapper {
+        width: 640px;
+        margin: 0 auto;
+        padding:0;
+        & .logos {
+            margin-top: -30px;
+            margin-bottom: 30px;
+            & li {
+                width: 100px;
+            }
+        }
+        &.partners {
+            width: 100%;
+            margin: 0 auto;
+            & .logos_partners {
+                text-align: center;
+                & li {
+                    width: 200px;
+                    padding:0 10px;
+                }
+            }
+        }
+    } 
+}
+
+@media #{$desktop} {
+    .logo_wrapper {
+        width: 1140px;
+        margin: 0 auto;
+        text-align: center;
+        & .logos {
+            & li {
+                width: auto;
+                margin:0;
+                padding: 0 15px;
+            }   
+        }
+    } 
+}
+

@@ -1,0 +1,87 @@
+/* ------------------------------------------------------------ *\
+   Slider
+\* ------------------------------------------------------------ */
+.slider_divider {
+    text-align: center;
+    padding-top: 30px;
+}
+.slider {
+    margin: 20px auto 0;
+    width: 100%;
+}
+.slider_content {
+    width: 95%;
+    margin: 0 auto;
+}
+.slide_head{
+    width: 85%;
+    margin: 0 auto;
+    & h2.slide_title {
+        color: $darkgray;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        padding: 20px 0;
+        line-height: 20px;
+        font-style: italic;
+    }
+}
+.slide_body {
+    width: 85%;
+    margin: 30px auto;
+    padding: 0 10px;
+    & p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $darkgray;
+    text-align: center;
+    font-style: italic;
+    display: inline-block;
+    }
+}
+
+.swiper-button-next {
+    background-image: none;
+   
+}
+.swiper-button-prev {
+    background-image: none;
+}
+.swiper-button-next {
+    background-image: url("../css/images/next.png");
+    background-size: 17px 28px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    right: -5px;
+}
+.swiper-button-prev {
+    background-image: url("../css/images/previous.png");
+    background-size: 17px 28px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    left: -5px;
+}
+
+@media #{$tablet} {
+    .slider_divider {
+        padding-top: 100px;
+    }
+    .slider {
+        margin: 50px auto 0;
+    }
+    .slide_head{
+        & h2.slide_title {
+            font-size: 22px;
+            line-height: 30px;  
+        }
+    }
+    .slide_body {
+        width: 65%;
+        & p{
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+    
+}

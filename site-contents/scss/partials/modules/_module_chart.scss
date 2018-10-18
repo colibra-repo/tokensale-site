@@ -1,0 +1,167 @@
+/* ------------------------------------------------------------ *\
+   Chart
+\* ------------------------------------------------------------ */
+//table
+.table {
+    // width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    background: $white;
+    border-radius: 8px;
+}
+
+caption {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px 0;
+    text-align: center;
+}
+table th {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $font-family;
+    // line-height: 45px;
+    text-align: left;
+    padding: 10px 20px;
+}
+table td {
+    font-size: 14px;
+    font-weight: 400;
+    // line-height: 45px;
+    padding: 10px 20px;
+}
+tbody {
+    padding-bottom: 10px;
+}
+//chart
+.chart {
+    & .chart_title {
+        text-align: center;
+        padding: 40px 0 0;
+    } 
+    & #chartwrapper {
+        overflow:hidden!important;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        & #chartdiv1 {
+            width: 410px;
+            height: 410px;
+            position: absolute;
+            top: -80px;
+            left: -41px;
+            font-size: 13px;
+            & .amcharts-main-div {
+                overflow:hidden!important;
+            }
+        }
+        & #chartdiv2 {
+            width: 410px;
+            height: 410px;
+            position: absolute;
+            top: -80px;
+            left: -54px;
+            font-size: 13px;
+            & .amcharts-main-div {
+                overflow:hidden!important;
+            }
+        }
+    }
+    
+    & #chartdiv1 a {
+        opacity: 0!important;
+    }
+    & #chartdiv2 a {
+        opacity: 0!important;
+    }
+    // & .amcharts-pie-slice {
+    //     transform: scale(1);
+    //     transform-origin: 50% 50%;
+    //     transition-duration: 0.3s;
+    //     transition: all .3s ease-out;
+    //     -webkit-transition: all .3s ease-out;
+    //     -moz-transition: all .3s ease-out;
+    //     -o-transition: all .3s ease-out;
+    //     cursor: pointer;
+    //     box-shadow: 0 0 30px 0 #000;
+    //     &:hover {
+    //         transform: scale(1.1);
+    //         filter: url(#shadow);
+    //     }
+    // }
+}
+@media only screen and (min-width:400px) {
+//chart
+    .chart {
+        & #chartwrapper {
+            overflow:auto;
+            width: 100%;
+            height: 100%;
+            margin-left: -18px;
+            & #chartdiv1 {
+                width: 420px;
+                height: 420px;
+                position: static;
+                margin: 0 auto;
+            }
+            & #chartdiv2 {
+                width: 420px;
+                height: 420px;
+                position: static;
+                margin: 0 auto;
+            }
+        }
+    }   
+}
+@media only screen and (min-width:500px) {
+    //chart
+    .chart {
+        & #chartwrapper {
+            margin-left: 0;
+            & #chartdiv1 {
+                width: 520px;
+                height: 400px;
+            }
+            & #chartdiv2 {
+                width: 520px;
+                height: 400px;
+            }
+        }
+    }   
+}
+@media #{$tablet} {
+    .table {
+        width: 500px;
+    }
+    table th {
+        font-size: 22px;
+    }
+    table td {
+        font-size: 18px;
+    }
+    //chart
+    .chart {
+        & #chartwrapper {
+            & #chartdiv1 {
+                width: 620px;
+                // width: 760px;
+                height: 400px;
+            }
+            & #chartdiv2 {
+                width: 620px;
+                // width: 760px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media #{$tablet2} {
+    .chart {
+        & .chart_title {
+            padding: 0;
+        } 
+    }
+}

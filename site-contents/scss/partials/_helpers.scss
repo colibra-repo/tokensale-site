@@ -1,0 +1,36 @@
+/* ------------------------------------------------------------ *\
+    Helpers
+\* ------------------------------------------------------------ */
+
+[class^="col"] {
+	width: 100%;
+	float: none;
+}
+
+.cols {
+	margin: 0;
+}
+
+
+@media #{$tablet1} {
+	
+	.clearfix { 
+		content: '';
+		display: block;
+		line-height: 0;
+		clear: both;
+	}
+
+	.cols {
+		margin: 0 -15px;
+		
+		&:after{ 
+			@extend .clearfix;
+		}
+	}
+
+	.col { float: left; padding: 0 15px; }
+	.col_2 { width: 50%; }
+	.col_3 {width: 33.3%;}
+}
+

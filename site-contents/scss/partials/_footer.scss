@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------ *\
+	Footer
+\* ------------------------------------------------------------ */
+.footer {
+    background: $white; 
+}
+
+.social_icons {
+    width: 300px;
+    display: block;
+    padding: 30px 0 0;
+    margin: 0 auto;
+    text-align: center;
+    & ul {
+        & li {
+            display: inline-block;
+            padding: 0 3px;
+        }
+    }
+}
+.social-links {
+    font-family: $font-family;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 0 30px;
+    cursor: pointer;
+    & a {
+        margin: 0 10px;
+        &:hover {
+            color: $green2;
+        }
+    }
+}
