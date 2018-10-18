@@ -80,8 +80,8 @@
     border-radius: 10px;
     font-family: $font-family;
     color: $dark;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 15px;
+    line-height: 18px;
     position: relative;
     & .back_head {
         text-align: center;
@@ -89,10 +89,10 @@
     & p {
         padding-top: 5px;
     }
-    &.small {
-        font-size: 15px;
-        line-height: 18px;
-    }
+    // &.small {
+    //     font-size: 15px;
+    //     line-height: 18px;
+    // }
     &:before {
         content: "";
         position: absolute;

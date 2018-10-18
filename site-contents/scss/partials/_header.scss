@@ -20,9 +20,10 @@
     height: 66px;
 }
 .header_wrapper {
-    padding: 15px 0;
+    // padding: 15px 0;
     // padding-top: 20px;
     overflow: hidden;
+    height: 66px;
 }
 .logo,
 .logo-fixed {
@@ -62,7 +63,7 @@
     animation:slide-down 0.7s;
     & .header_wrapper {
         // padding-bottom: 20px;
-        padding: 15px 0;
+        // padding: 15px 0;
         & .logo {
             display: none;
         }

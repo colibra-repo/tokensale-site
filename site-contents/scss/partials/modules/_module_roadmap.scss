@@ -8,7 +8,7 @@
         overflow-x: scroll;
         overflow-y: hidden;
         height: 420px;
-        padding-top: 45px;
+        padding-top: 65px;
     }
     & .road-wave-mobile {
         display: block;
@@ -21,7 +21,6 @@
         width: 640px;
         margin: 0 auto;
         & .map {
-            // writing-mode: horizontal-tb;
             line-height: 66px;
             width: 66px;
             height: 66px;
@@ -32,52 +31,44 @@
             font-size: 15px;
             font-weight: 700;
             text-align: center;
-            // transform: rotate(270deg);
             &.up {
                 transform: rotate(-180deg);
             } 
         }
         & .circle1 {
-            // writing-mode: vertical-rl;
             position: absolute;
             left: 3.4%;
             top: 40%;
         }
         & .circle2 {
-            // writing-mode: tb-rl;
             transform: rotate(180deg);
             position: absolute;
             top: 6%;
             left: 17.4%;
         }
         & .circle3 {
-            // writing-mode: vertical-lr;
             position: absolute;
             left: 31%;
             top: 40%;
         }
         & .circle4 {
-            // writing-mode: tb-rl;
             transform: rotate(180deg);
             position: absolute;
             left: 45%;
             top: 6%;
         }
         & .circle5 {
-            // writing-mode: vertical-lr;
             position: absolute;
             left: 58.8%;
             top: 40%;
         }
         & .circle6 {
-            // writing-mode: tb-rl;
             transform: rotate(180deg);
             position: absolute;
             left: 72.8%;
             top: 6%;
         }
         & .circle7 {
-            // writing-mode: vertical-lr;
             position: absolute;
             left: 86.5%;
             top: 40%;
@@ -94,7 +85,6 @@
         width: 640px;
         margin: 0 auto;
         & .map {
-            // writing-mode: horizontal-tb;
             line-height: 66px;
             width: 66px;
             height: 66px;
@@ -105,52 +95,44 @@
             font-size: 15px;
             font-weight: 700;
             text-align: center;
-            // transform: rotate(270deg);
             &.up {
                 transform: rotate(-180deg);
             } 
         }
         & .circle1 {
-            // writing-mode: vertical-rl;
             position: absolute;
             left: 3.4%;
             top: 40%;
         }
         & .circle2 {
-            // writing-mode: tb-rl;
             transform: rotate(180deg);
             position: absolute;
             top: 6%;
             left: 17.4%;
         }
         & .circle3 {
-            // writing-mode: vertical-lr;
             position: absolute;
             left: 31%;
             top: 40%;
         }
         & .circle4 {
-            // writing-mode: tb-rl;
             transform: rotate(180deg);
             position: absolute;
             left: 45%;
             top: 6%;
         }
         & .circle5 {
-            // writing-mode: vertical-lr;
             position: absolute;
             left: 58.8%;
             top: 40%;
         }
         & .circle6 {
-            // writing-mode: tb-rl;
             transform: rotate(180deg);
             position: absolute;
             left: 72.8%;
             top: 6%;
         }
         & .circle7 {
-            // writing-mode: vertical-lr;
             position: absolute;
             left: 86.5%;
             top: 40%;
@@ -235,7 +217,7 @@
         transform: rotate(270deg);
         display: inline-block;
         position: absolute;
-        bottom: -59px;
+        bottom: -72px;
         right: 32%;
         font-size: 18px;
         color: $black;
@@ -246,7 +228,7 @@
         display: inline-block;
         position: absolute;
         top: 170px;
-        left: -102px;
+        left: -15px;
         font-size: 18px;
         color: $black;
     }
@@ -255,7 +237,7 @@
         transform: rotate(270deg);
         display: inline-block;
         position: absolute;
-        bottom: -90px;
+        bottom: -72px;
         right: 39%;
         font-size: 18px;
         color: $black;
@@ -321,7 +303,7 @@
             }
             & .circle_text6 {
                 top: 200px;
-                left: -79%;
+                left: 5px;
             }
         } 
     }
@@ -361,18 +343,9 @@
                 top: 33%;
             }
             & .circle_text2 {
-                top: 220px;
                 left: 9%;
             }
-            & .circle_text4 {
-                top:220px;
-            }
-            & .circle_text6 {
-                top: 220px;
-                left: -47%;
-            }
         }
-        
     }
 }
 @media #{$desktop} {
@@ -406,7 +379,15 @@
             & .circle7 {
                 top: 30%;
             }
-            
+            & .circle_text2 {
+                top: 210px;
+            }
+            & .circle_text4 {
+                top:210px;
+            }
+            & .circle_text6 {
+                top: 210px;
+            }  
         }
     }
 }

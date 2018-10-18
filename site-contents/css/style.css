@@ -347,8 +347,8 @@ h3 {
 }
 
 .header_wrapper {
-  padding: 15px 0;
   overflow: hidden;
+  height: 66px;
 }
 
 .logo,
@@ -387,10 +387,6 @@ h3 {
   z-index: 11;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08);
   animation: slide-down 0.7s;
-}
-
-.header.header-fixed .header_wrapper {
-  padding: 15px 0;
 }
 
 .header.header-fixed .header_wrapper .logo {
@@ -756,6 +752,10 @@ h3 {
 /* ------------------------------------------------------------ *\
    Sections
 \* ------------------------------------------------------------ */
+.section_body.home.active {
+  padding-top: 145px;
+}
+
 .section_small {
   padding: 50px 0;
 }
@@ -858,10 +858,6 @@ h3 {
   background-position: center center;
 }
 
-.section_main .section_body {
-  padding: 10px 0;
-}
-
 @media (max-width: 768px) {
   .section_main {
     position: relative;
@@ -877,7 +873,6 @@ h3 {
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
-  width: 290px;
   margin: 0 auto;
 }
 
@@ -1104,17 +1099,8 @@ h3 {
 }
 
 @media screen and (min-width: 390px) {
-  .section__title {
-    padding-bottom: 40px;
-  }
-  .section__title.white {
-    padding-bottom: 60px;
-  }
   .section__title.white .main_break {
     display: inline-block;
-  }
-  .section_main .section_body {
-    padding: 50px 0;
   }
 }
 
@@ -1151,6 +1137,12 @@ h3 {
 }
 
 @media only screen and (min-width: 1024px) {
+  .section__title.white {
+    padding-bottom: 60px;
+  }
+  .section_body.home.active {
+    padding-top: 66px;
+  }
   .section__subtitle.white.registration,
   .section__subtitle.roadmap,
   .section__subtitle.team {
@@ -1507,8 +1499,8 @@ h3 {
   border-radius: 10px;
   font-family: "Cairo", sans-serif;
   color: #333333;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 15px;
+  line-height: 18px;
   position: relative;
 }
 
@@ -1518,11 +1510,6 @@ h3 {
 
 .back p {
   padding-top: 5px;
-}
-
-.back.small {
-  font-size: 15px;
-  line-height: 18px;
 }
 
 .back:before {
@@ -1645,10 +1632,15 @@ h3 {
   float: right;
   display: none;
   cursor: pointer;
+  margin-top: 13px;
+}
+
+.downloadPdf img {
+  width: 30px;
 }
 
 .downloadPdf.visible {
-  display: block;
+  display: inline-block;
 }
 
 .btn_register {
@@ -2859,7 +2851,7 @@ tbody {
 }
 
 .nav_trigger {
-  margin-top: 10px;
+  margin-top: 23px;
   position: relative;
   display: inline-block;
   z-index: 4;
@@ -2953,7 +2945,7 @@ tbody {
   overflow-x: scroll;
   overflow-y: hidden;
   height: 420px;
-  padding-top: 45px;
+  padding-top: 65px;
 }
 
 .section_roadmap .road-wave-mobile {
@@ -3213,7 +3205,7 @@ tbody {
       transform: rotate(270deg);
   display: inline-block;
   position: absolute;
-  bottom: -59px;
+  bottom: -72px;
   right: 32%;
   font-size: 18px;
   color: #000000;
@@ -3228,7 +3220,7 @@ tbody {
   display: inline-block;
   position: absolute;
   top: 170px;
-  left: -102px;
+  left: -15px;
   font-size: 18px;
   color: #000000;
 }
@@ -3241,7 +3233,7 @@ tbody {
       transform: rotate(270deg);
   display: inline-block;
   position: absolute;
-  bottom: -90px;
+  bottom: -72px;
   right: 39%;
   font-size: 18px;
   color: #000000;
@@ -3306,7 +3298,7 @@ tbody {
   }
   .section_roadmap .road-wave .circle_text6 {
     top: 200px;
-    left: -79%;
+    left: 5px;
   }
 }
 
@@ -3343,15 +3335,7 @@ tbody {
     top: 33%;
   }
   .section_roadmap .road-wave .circle_text2 {
-    top: 220px;
     left: 9%;
-  }
-  .section_roadmap .road-wave .circle_text4 {
-    top: 220px;
-  }
-  .section_roadmap .road-wave .circle_text6 {
-    top: 220px;
-    left: -47%;
   }
 }
 
@@ -3385,6 +3369,15 @@ tbody {
   }
   .section_roadmap .road-wave .circle7 {
     top: 30%;
+  }
+  .section_roadmap .road-wave .circle_text2 {
+    top: 210px;
+  }
+  .section_roadmap .road-wave .circle_text4 {
+    top: 210px;
+  }
+  .section_roadmap .road-wave .circle_text6 {
+    top: 210px;
   }
 }
 

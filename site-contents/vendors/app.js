@@ -32,8 +32,10 @@ $(document).ready(function() {
         var scrollTop = $(window).scrollTop();
         if (scrollTop > stickyHeaderTop) { 
             $('.header').addClass('header-fixed');
+            $('.home').addClass('active');
         } else {
             $('.header').removeClass('header-fixed'); 
+            $('.home').removeClass('active');
         }
     };
 
@@ -56,7 +58,6 @@ $(document).ready(function() {
         }
         
     });
-    // $('.section_body.home').css('height', $(window).height());
 
     //menu desktop
     $('.nav_trigger').click(function (e) {
@@ -110,7 +111,7 @@ $(document).ready(function() {
         slidesPerGroup: 1,
         spaceBetween: 0,
         autoplay:3500,
-        speed: 300,
+        speed: 500,
         loop: true,
     });
 

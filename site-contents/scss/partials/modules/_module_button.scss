@@ -98,29 +98,19 @@
     }
     
 }
-// .btn_main_fixed {
-//     display: none;
-//     float: right;
-//     font-size: 13px;
-//     min-width: 80px;
-//     height: 40px;
-//     line-height: 40px;
-//     color:$white;
-//     background: linear-gradient(to bottom, #faee49, #faa71a);
-//     &:hover {
-//         color:$white;
-//         background: linear-gradient(to bottom, #faa71a, #faee49);
-//     } 
-// }
 .downloadPdf {
     float: right;
     display: none;
     cursor: pointer;
+    margin-top: 13px;
+    & img {
+        width: 30px;
+    }
     &.visible{
-        display: block;
+        display: inline-block;
+       
     }
 }
-
 .btn_register {
     display: block;
     min-width: 208px;
@@ -135,12 +125,6 @@
     width: 190px;
     margin: 0 auto;
 }
-// @media screen and (min-width: 480px){
-//     .btn_main {
-//         margin: 20px auto;
-//     }
-        
-// }
 @media screen and (min-width:620px){
     .btn_main_fixed {
         font-size: 14px;
