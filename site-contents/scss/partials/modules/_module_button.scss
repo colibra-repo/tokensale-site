@@ -98,18 +98,29 @@
     }
     
 }
+
 .downloadPdf {
     float: right;
     display: none;
     cursor: pointer;
     margin-top: 13px;
-    & img {
+    & img{
         width: 30px;
+        display: inline;
     }
+    // &.desktopVisible{
+    //     display: none;
+    //     min-width: 140px;
+    //     height: 40px;
+    //     line-height: 40px;
+    // }
     &.visible{
         display: inline-block;
        
     }
+}
+.downloadButton {
+    display: none;
 }
 .btn_register {
     display: block;
@@ -156,6 +167,35 @@
     }
     .main_btns-mobile {
         display: none;
+    }
+    .downloadButton {
+        float: right;
+        display: none;
+        cursor: pointer;
+        margin-top: 8px;
+        &.desktopVisible {
+            text-transform: capitalize;
+            min-width: 140px;
+            height: 40px;
+            line-height: 40px;
+            background: linear-gradient(to bottom, #0f7076 0%, #06ba70 100%);
+            &:hover {
+                color: $white;
+                background-position: 100% 0;
+                moz-transition: all .1s ease-in-out;
+                -o-transition: all .1s ease-in-out;
+                -webkit-transition: all .1s ease-in-out;
+                transition: all .1s ease-in-out;
+                background-image: linear-gradient(to top, #06ba70, #0f7076);
+                // box-shadow: 0 4px 15px 0 rgba(7, 80, 85, 0.75);
+            }
+            &.visible{
+                display: inline-block;
+            }
+        }
+        .downloadPdf img{
+            display: none;  
+        }
     }
 }
 @media #{$desktop} {

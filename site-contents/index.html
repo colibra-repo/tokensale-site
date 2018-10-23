@@ -19,15 +19,19 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/style.css"/>
-	
 	<!-- Resources -->
-	<script async src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-	<script async src="https://www.amcharts.com/lib/3/pie.js"></script>
-	<script async src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
 	<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-	<script async src="https://www.amcharts.com/lib/3/themes/light.js"></script>
-	<script async src="https://www.amcharts.com/lib/3/plugins/responsive/responsive.min.js"></script>
-	
+	<!-- Hotjar Tracking Code -->
+	<script>
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:1060291,hjsv:6};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127551918-1"></script>
@@ -82,8 +86,10 @@
 							</ul> -->
 						</ul><!-- /.menu -->
 					</nav>
-					<a onClick="scrollToEl('documents')" id="onePagerHeader" class="downloadPdf"><img src="css/images/pdf-download.png"></a>
-					
+					<a onClick="scrollToEl('documents')" id="onePagerHeaderMobile" class="downloadPdf mobileVisible">
+						<img src="css/images/pdf-download.png">
+					</a>
+					<a onClick="scrollToEl('documents')" id="onePagerHeaderDesktop" class="downloadButton btn desktopVisible">documents</a>
 					<div class="social_icons-header">
 						<!-- <div class="lang_bar">
 							<a class="selected" href="">en</a>
@@ -1572,6 +1578,12 @@
 <script src="vendors/threejs/OrbitControls.min.js"></script>
 <script src="vendors/threejs/OBJLoader.min.js"></script>
 <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+<script src="https://amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://amcharts.com/lib/3/pie.js"></script>
+<script src="https://amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<script src="https://amcharts.com/lib/3/themes/light.js"></script>
+<script src="https://amcharts.com/lib/3/plugins/responsive/responsive.min.js"></script>
+	
 <script src="vendors/app.js"></script>
 <script>
 	MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/colibra","postsPerLine":4,"limit":4,"picture":"small","fields":["description","claps","publishAt"],"ratio":"landscape"}})
@@ -1582,7 +1594,7 @@
 	video.addEventListener("canplay", function() {
 		setTimeout(function() {
 			video.play();
-		},3500);
+		},3000);
 	});
 	var chart1 = AmCharts.makeChart("chartdiv1", {
 		"type": "pie",

@@ -2,9 +2,10 @@
    Sections
 \* ------------------------------------------------------------ */
 .section_body.home{
-    &.active {
-        padding-top: 145px;
-    }
+    padding-top: 100px;
+    // &.active {
+        
+    // }
 }
 .section_small {
     padding: 50px 0;
@@ -412,11 +413,11 @@
     .section__title.white {
         padding-bottom: 60px;
     }
-    .section_body.home{
-        &.active {
-            padding-top: 66px;
-        }
-    }
+    // .section_body.home{
+    //     &.active {
+    //         padding-top: 95px;
+    //     }
+    // }
     .section__subtitle.white.registration,
     .section__subtitle.roadmap,
     .section__subtitle.team {
@@ -461,6 +462,9 @@
         text-align: left;
         padding-left: 30px;
     }
+    .section_body.home {
+        padding-top: 0;
+    }
 }
 
 @media #{$tablet2} {
@@ -481,7 +485,7 @@
     .section_main {
         & .section_body {
             // padding: 100px 0;
-            padding: 0;
+            padding-top: 100px;
         }
     }
     
