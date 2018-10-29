@@ -2,6 +2,13 @@
  Logos
 \* ------------------------------------------------------------ */
 
+.problem_image {
+    text-align: center;
+    & .problemFull {
+        height: 300px;
+    }
+}
+
 .logo_wrapper {
     padding: 0 20px;
     & .logos {
@@ -56,6 +63,9 @@
        & li {
            width: 160px;
            margin: 20px auto;
+           &.kleros {
+            width: 220px;
+        }
         }
     }
 }
@@ -66,11 +76,15 @@
         & .logos {
             & li {
                 width: 108px;
+                &.kleros {
+                    width: 150px;
+                }
             }
         }
     }
     //partners
     .logo_wrapper {
+       
         & .logos_partners {
             & li {
                 display: inline-block;
@@ -87,11 +101,15 @@
         width: 640px;
         margin: 0 auto;
         padding:0;
+       
         & .logos {
             margin-top: -30px;
             margin-bottom: 30px;
             & li {
                 width: 100px;
+                &.kleros {
+                    width: 150px;
+                }
             }
         }
         &.partners {
@@ -99,10 +117,14 @@
             margin: 0 auto;
             & .logos_partners {
                 text-align: center;
+                margin-right: -80px;
                 & li {
                     width: 200px;
                     padding:0 10px;
-                }
+                    &.kleros {
+                        width: 250px;
+                    }
+                } 
             }
         }
     } 
