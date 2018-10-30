@@ -3,9 +3,25 @@
 \* ------------------------------------------------------------ */
 
 .problem_image {
+    position: relative;
     text-align: center;
+    width: 240px;
+    margin: 0 auto;
     & .problemFull {
         height: 300px;
+        
+    }
+    & .problemFull1 {
+        height: 150px;
+        position: absolute;
+        top: 40px;
+
+    }
+    & .problemFull2 {
+        height: 100px;
+        position: absolute;
+        bottom: 20px;
+        right: 33px;
     }
 }
 
@@ -71,6 +87,7 @@
 }
 
 @media #{$tablet} {
+    
     //team
     .logo_wrapper {
         & .logos {
@@ -96,6 +113,14 @@
 }
 
 @media #{$tablet1} {
+    .problem_image {
+        & .problemFull {
+            margin-right: -140px;
+        }
+        & .problemFull2 {
+            right: -38px;
+        }
+    }
     //team
     .logo_wrapper {
         width: 640px;
