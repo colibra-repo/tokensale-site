@@ -24,6 +24,13 @@
         right: 33px;
     }
 }
+.democraticInsurance {
+    margin: 0 auto;
+    width: 250px;
+    & .insuranceImg {
+        height: 300px;
+    }
+}
 
 .logo_wrapper {
     padding: 0 20px;
@@ -113,12 +120,27 @@
 }
 
 @media #{$tablet1} {
+    
     .problem_image {
+        width: 300px;
         & .problemFull {
             margin-right: -140px;
+            height: 400px;
         }
         & .problemFull2 {
             right: -38px;
+            height: 150px;
+        }
+        & .problemFull1 {
+            height: 200px;
+            top: 55px;
+        }
+    }
+    .democraticInsurance {
+        margin: 0 auto;
+        width: 350px;
+        & .insuranceImg {
+            height: 400px;
         }
     }
     //team
