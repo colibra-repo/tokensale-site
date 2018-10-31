@@ -26,12 +26,44 @@
 }
 .democraticInsurance {
     margin: 0 auto;
-    width: 250px;
+    position: relative;
+    height: 420px;
+    
     & .insuranceImg {
-        height: 300px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 0;
+    }
+    & .insuranceBounce {
+        position: absolute;
+        top: -25px;
+        -ms-transform: translatey(0px);
+        transform: translatey(0px);
+        z-index: 1;
+        right: 0;
+        left: 0;
+        margin: auto;
+        transform: translatey(0px);
+        animation: float 6s ease-in-out infinite;
+        width: 84%;
     }
 }
-
+@keyframes float {
+	0% {
+		// box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		// box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		// box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
 .logo_wrapper {
     padding: 0 20px;
     & .logos {
@@ -94,7 +126,22 @@
 }
 
 @media #{$tablet} {
-    
+    .democraticInsurance {
+        height: 500px;
+        & .insuranceImg {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 300px;
+            bottom: 0;
+        }
+        & .insuranceBounce {
+            top: -50px;
+            width: auto;
+            height: 432px;
+        }
+    }
     //team
     .logo_wrapper {
         & .logos {
@@ -108,7 +155,6 @@
     }
     //partners
     .logo_wrapper {
-       
         & .logos_partners {
             & li {
                 display: inline-block;
@@ -116,33 +162,27 @@
             }
         }
     }
-    
 }
 
 @media #{$tablet1} {
     
     .problem_image {
-        width: 300px;
+        // width: auto;
+        width: 100%;
         & .problemFull {
-            margin-right: -140px;
+            margin-right: -25px;
             height: 400px;
         }
         & .problemFull2 {
-            right: -38px;
+            right: 177px;
             height: 150px;
         }
         & .problemFull1 {
-            height: 200px;
-            top: 55px;
+            height: 197px;
+            top: 60px;
         }
     }
-    .democraticInsurance {
-        margin: 0 auto;
-        width: 350px;
-        & .insuranceImg {
-            height: 400px;
-        }
-    }
+    
     //team
     .logo_wrapper {
         width: 640px;

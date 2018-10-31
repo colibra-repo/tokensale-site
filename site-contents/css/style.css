@@ -1304,7 +1304,7 @@ h3 {
   .section_documents .section_wrapper {
     margin: 0 auto;
     overflow: hidden;
-    width: 710px;
+    width: 450px;
   }
 }
 
@@ -1507,11 +1507,42 @@ h3 {
 
 .democraticInsurance {
   margin: 0 auto;
-  width: 250px;
+  position: relative;
+  height: 420px;
 }
 
 .democraticInsurance .insuranceImg {
-  height: 300px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+}
+
+.democraticInsurance .insuranceBounce {
+  position: absolute;
+  top: -25px;
+  -ms-transform: translatey(0px);
+  transform: translatey(0px);
+  z-index: 1;
+  right: 0;
+  left: 0;
+  margin: auto;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  width: 84%;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 
 .logo_wrapper {
@@ -1574,6 +1605,22 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) {
+  .democraticInsurance {
+    height: 500px;
+  }
+  .democraticInsurance .insuranceImg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 300px;
+    bottom: 0;
+  }
+  .democraticInsurance .insuranceBounce {
+    top: -50px;
+    width: auto;
+    height: 432px;
+  }
   .logo_wrapper .logos li {
     width: 108px;
   }
@@ -1588,26 +1635,19 @@ h3 {
 
 @media only screen and (min-width: 1024px) {
   .problem_image {
-    width: 300px;
+    width: 100%;
   }
   .problem_image .problemFull {
-    margin-right: -140px;
+    margin-right: -25px;
     height: 400px;
   }
   .problem_image .problemFull2 {
-    right: -38px;
+    right: 177px;
     height: 150px;
   }
   .problem_image .problemFull1 {
-    height: 200px;
-    top: 55px;
-  }
-  .democraticInsurance {
-    margin: 0 auto;
-    width: 350px;
-  }
-  .democraticInsurance .insuranceImg {
-    height: 400px;
+    height: 197px;
+    top: 60px;
   }
   .logo_wrapper {
     width: 640px;
@@ -2468,11 +2508,10 @@ h2.number span {
 
 @media only screen and (min-width: 1024px) {
   #solution {
-    margin-top: 100px;
     margin-bottom: 70px;
   }
   #section1 {
-    padding: 30px 0 0;
+    padding: 80px 0 0;
     margin-bottom: 40px;
   }
   .cd_section_body h3.cd_title {
