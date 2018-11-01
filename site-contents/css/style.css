@@ -1250,6 +1250,15 @@ h3 {
   margin-top: 35px;
 }
 
+.medium-widget-article__image img {
+  max-width: 150px !important;
+}
+
+.medium-widget-article__row {
+  -ms-flex-direction: column !important;
+      flex-direction: column !important;
+}
+
 .section_team {
   background: #efefef;
 }
@@ -1306,9 +1315,17 @@ h3 {
     overflow: hidden;
     width: 450px;
   }
+  .medium-widget-article__row {
+    -ms-flex-direction: row !important;
+        flex-direction: row !important;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
+  #medium-widget {
+    width: 980px;
+    margin: 0 auto;
+  }
   .section__title.white {
     padding-bottom: 60px;
   }
@@ -1481,15 +1498,20 @@ h3 {
 /* ------------------------------------------------------------ *\
  Logos
 \* ------------------------------------------------------------ */
-.problem_image {
-  position: relative;
-  text-align: center;
-  width: 240px;
+.problemWrapper {
+  width: 80%;
   margin: 0 auto;
 }
 
-.problem_image .problemFull {
+.problem_image {
+  background: url(../css/images/Insurance01-03.svg);
+  width: 250px;
   height: 300px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
 }
 
 .problem_image .problemFull1 {
@@ -1605,6 +1627,10 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) {
+  .problemWrapper {
+    width: 35%;
+    margin: 0 auto;
+  }
   .democraticInsurance {
     height: 500px;
   }
@@ -1634,20 +1660,23 @@ h3 {
 }
 
 @media only screen and (min-width: 1024px) {
+  .problemWrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
   .problem_image {
     width: 100%;
-  }
-  .problem_image .problemFull {
-    margin-right: -25px;
-    height: 400px;
+    height: 450px;
   }
   .problem_image .problemFull2 {
-    right: 177px;
+    bottom: 36px;
+    right: 45px;
     height: 150px;
   }
   .problem_image .problemFull1 {
     height: 197px;
-    top: 60px;
+    top: 81px;
+    left: 28px;
   }
   .logo_wrapper {
     width: 640px;
@@ -1678,6 +1707,19 @@ h3 {
   }
   .logo_wrapper.partners .logos_partners li.kleros {
     width: 250px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .problem_image .problemFull2 {
+    bottom: 36px;
+    right: 115px;
+    height: 150px;
+  }
+  .problem_image .problemFull1 {
+    height: 197px;
+    top: 81px;
+    left: 90px;
   }
 }
 
@@ -2388,12 +2430,12 @@ h2.number span {
 }
 
 .cd-section-wrapper .cd-60-middle .image_wrapper_middle img.image1 {
-  display: block;
-  margin: 0 auto;
+  display: none;
 }
 
 .cd-section-wrapper .cd-60-middle .image_wrapper_middle img.image2 {
-  display: none;
+  display: block;
+  margin: 0 auto;
 }
 
 .cd-section-wrapper .cd-60-last {
@@ -2410,7 +2452,7 @@ h2.number span {
   height: 341px;
   margin: 0 auto;
   display: block;
-  background-image: url("../css/images/image-4.png");
+  background-image: url("../css/images/IPhoneX-Mariya-pulse_button.png");
   background-repeat: no-repeat;
 }
 
@@ -2469,6 +2511,12 @@ h2.number span {
   padding: 0 20px;
 }
 
+@media only screen and (min-width: 768px) {
+  .cd-section-wrapper .cd-60-middle .image_wrapper_middle img {
+    width: 19%;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .cd-section-wrapper .cd-60-middle .image_wrapper_middle {
     width: 455px;
@@ -2501,7 +2549,7 @@ h2.number span {
     height: 438px;
     margin: 0 auto;
     display: block;
-    background-image: url(../css/images/image-4.png);
+    background-image: url("../css/images/IPhoneX-Mariya-pulse_button.png");
     background-repeat: no-repeat;
   }
 }

@@ -1,14 +1,28 @@
 /* ------------------------------------------------------------ *\
  Logos
 \* ------------------------------------------------------------ */
-
-.problem_image {
-    position: relative;
-    text-align: center;
-    width: 240px;
+.problemWrapper {
+    width: 80%;
     margin: 0 auto;
+}
+.problem_image {
+    background: url(../css/images/Insurance01-03.svg);
+    // width: 300px;
+    // height: 400px;
+    width: 250px;
+    height: 300px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    // text-align: center;
+    // width: 240px;
+    // margin: 0 auto;
     & .problemFull {
-        height: 300px;
+        // height: 300px;
+        // width: 90%;
+      
         
     }
     & .problemFull1 {
@@ -126,6 +140,10 @@
 }
 
 @media #{$tablet} {
+    .problemWrapper {
+        width: 35%;
+        margin: 0 auto;
+    }
     .democraticInsurance {
         height: 500px;
         & .insuranceImg {
@@ -165,21 +183,29 @@
 }
 
 @media #{$tablet1} {
-    
+    .problemWrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
     .problem_image {
-        // width: auto;
         width: 100%;
-        & .problemFull {
-            margin-right: -25px;
-            height: 400px;
-        }
+        height: 450px;
+        // width: auto;
+        // width: 100%;
+        // & .problemFull {
+        //     margin-right: -25px;
+        //     // height: 400px;
+        //     width: 70%;
+        // }
         & .problemFull2 {
-            right: 177px;
+            bottom:36px;
+            right: 45px;
             height: 150px;
         }
         & .problemFull1 {
             height: 197px;
-            top: 60px;
+            top: 81px;
+            left: 28px;
         }
     }
     
@@ -216,7 +242,38 @@
         }
     } 
 }
-
+@media #{$tablet2} {
+    .problem_image {
+       
+        // width: auto;
+        // width: 100%;
+        // & .problemFull {
+        //     margin-right: -25px;
+        //     // height: 400px;
+        //     width: 70%;
+        // }
+        & .problemFull2 {
+            bottom:36px;
+            right: 115px;
+            height: 150px;
+        }
+        & .problemFull1 {
+            height: 197px;
+            top: 81px;
+            left: 90px;
+        }
+    }
+    // .problem_image {
+    //     width: 95%;
+    //     & .problemFull {
+    //         // width:50%;
+    //         width: 300px;
+    //     }
+    //     & .problemFull2 {
+    //         right: 170px;
+    //     }
+    // }
+}
 @media #{$desktop} {
     .logo_wrapper {
         width: 1140px;

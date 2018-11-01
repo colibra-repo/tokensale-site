@@ -342,7 +342,13 @@
         margin-top: 35px;
     }
 }
-
+//Blog 
+.medium-widget-article__image img {
+    max-width: 150px !important;
+}
+.medium-widget-article__row {
+    flex-direction: column !important;
+}
 //Team
 .section_team {
     background: $gray;
@@ -413,8 +419,16 @@
             width: 450px;
         }
     }
+    //Blog
+    .medium-widget-article__row {
+        flex-direction: row !important;
+    }
 }
 @media #{$tablet1} {
+    #medium-widget{
+        width: 980px;
+        margin: 0 auto;
+    }
     .section__title.white {
         padding-bottom: 60px;
     }

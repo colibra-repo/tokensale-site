@@ -148,11 +148,11 @@ h2.number {
                 padding: 20px 0;
 
                 &.image1 {
-                    display: block;
-                    margin: 0 auto;
+                    display: none;
                 }
                 &.image2 {
-                    display: none;
+                    display: block;
+                    margin: 0 auto;
                 }
             }  
         }
@@ -171,7 +171,7 @@ h2.number {
                 height: 341px;
                 margin: 0 auto;
                 display: block;
-                background-image: url("../css/images/image-4.png");
+                background-image: url("../css/images/IPhoneX-Mariya-pulse_button.png");
                 background-repeat: no-repeat;
                 & .pulse-button{
                     position: absolute;
@@ -230,6 +230,18 @@ h2.number {
 #section1 {
     padding: 0 20px;
 }
+@media #{$tablet} {
+    .cd-section-wrapper {
+        & .cd-60-middle {
+            & .image_wrapper_middle {
+                & img {
+                    width: 19%;
+                }  
+            }
+        }
+    }
+}
+    
 @media #{$tablet1}{
     .cd-section-wrapper {
         & .cd-60-middle {
@@ -266,7 +278,7 @@ h2.number {
                 height: 438px;
                 margin: 0 auto;
                 display: block;
-                background-image: url(../css/images/image-4.png);
+                background-image: url("../css/images/IPhoneX-Mariya-pulse_button.png");
                 background-repeat: no-repeat;
             }
         } 
