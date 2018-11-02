@@ -1589,8 +1589,8 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		</div>
 		<div class="section_foot">
 			<div class="shell">
-				<div id="contactForm" class="registration_form">
-					<form method="POST">
+				<!-- <div id="contactForm" class="registration_form"> -->
+					<form id="contactForm" class="registration_form" method="POST" action="sendmail.php">
 						<div class="cols">
 							<div class="col col_3">
 								<div class="form__row">
@@ -1679,10 +1679,10 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 						</div> -->
 						<div class="btn_form">
-							<a class="btn btn_register" href="#" type="submit">Register</a>
+							<input class="btn btn_register" value="Register" type="submit">
 						</div>
 					</form>
-				</div>
+				<!-- </div> -->
 			</div>
 		</div>
 		<div class="widget animatedParent">
