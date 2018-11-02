@@ -68,6 +68,10 @@ button {
 /* ------------------------------------------------------------ *\
 	Base
 \* ------------------------------------------------------------ */
+html {
+  overflow-x: hidden;
+}
+
 body {
   min-width: 320px;
   color: #333333;
@@ -75,7 +79,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   overflow-x: hidden !important;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 a {
@@ -1499,13 +1504,13 @@ h3 {
  Logos
 \* ------------------------------------------------------------ */
 .problemWrapper {
-  width: 80%;
+  width: 240px;
   margin: 0 auto;
 }
 
 .problem_image {
   background: url(../css/images/Insurance01-03.svg);
-  width: 250px;
+  width: 240px;
   height: 300px;
   display: inline-block;
   background-size: contain;
@@ -1518,6 +1523,7 @@ h3 {
   height: 150px;
   position: absolute;
   top: 40px;
+  left: 0;
 }
 
 .problem_image .problemFull2 {
@@ -1527,10 +1533,16 @@ h3 {
   right: 33px;
 }
 
+.democratic_inner {
+  width: 240px;
+  margin: 0 auto;
+}
+
 .democraticInsurance {
   margin: 0 auto;
   position: relative;
-  height: 420px;
+  height: 360px;
+  width: 100%;
 }
 
 .democraticInsurance .insuranceImg {
@@ -1543,7 +1555,7 @@ h3 {
 
 .democraticInsurance .insuranceBounce {
   position: absolute;
-  top: -25px;
+  top: 47px;
   -ms-transform: translatey(0px);
   transform: translatey(0px);
   z-index: 1;
@@ -1552,7 +1564,7 @@ h3 {
   margin: auto;
   transform: translatey(0px);
   animation: float 6s ease-in-out infinite;
-  width: 84%;
+  width: 93%;
 }
 
 @keyframes float {
@@ -1631,21 +1643,16 @@ h3 {
     width: 35%;
     margin: 0 auto;
   }
+  .democratic_inner {
+    width: 500px;
+    margin: 0 auto;
+  }
   .democraticInsurance {
     height: 500px;
-  }
-  .democraticInsurance .insuranceImg {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 300px;
-    bottom: 0;
+    width: 400px;
   }
   .democraticInsurance .insuranceBounce {
-    top: -50px;
-    width: auto;
-    height: 432px;
+    width: 75%;
   }
   .logo_wrapper .logos li {
     width: 108px;
@@ -3310,7 +3317,6 @@ tbody {
 .section_roadmap .scrolling-wrapper {
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
-  overflow-y: hidden;
   height: 420px;
   padding-top: 65px;
 }
