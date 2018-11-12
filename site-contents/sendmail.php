@@ -1,6 +1,6 @@
 <?php
 
-    $to = "ivan@colibra.io"; // this is your Email address
+    $to = "marketing@colibra.io"; // this is your Email address
     $from = $_POST['email']; // this is the sender's Email address
     $first_name = $_POST['firstName'];
     $last_name = $_POST['lastName'];
