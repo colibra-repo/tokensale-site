@@ -50,6 +50,8 @@ do_deployment() {
    copy_dir_to_remote_directory $local_assets_directory '.'
    execute_remotely "sudo chown -R apache ${remote_work_dir}"
    execute_remotely "sudo chgrp -R apache ${remote_work_dir}"
+   execute_remotely "sudo ln -s /var/www/wordpress /var/www/tokensale/blog"
+   execute_remotely "sudo chown -h apache:apache /var/www/tokensale/blog"
    echo "Deployment successful. Previous version backed up"
 }
 
