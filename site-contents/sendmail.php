@@ -1,47 +1,20 @@
 <?php
 
-/* 
-$_POST variables
-	- email
-	- firstName
-	- lastName
-	- country
-	- amount
-	- question
+    $to = "marketing@colibra.io"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['firstName'];
+    $last_name = $_POST['lastName'];
+    $country = $_POST['country'];
+    $amount = $_POST['amount'];
+    $question = $_POST['question'];
+    $subject = "Colibra contact form";
+    $message = "Name: " . $first_name . " " . $last_name . ".\xA Email:" . $from . ".\xA Country: " . $country . ".\xA Amount: " . $amount . ".\xA Question: "  . $question;
 
-	usage: $_POST['variable'];
-*/
+    $headers = "From:" . $from;
+    mail($to,$subject,$message,$headers);
 
-$to      = $_POST['email']; 
-$subject = 'the subject';
-$message = 'hello';
-$headers = 'From: webmaster@example.com' . "\r\n" .
-    'Reply-To: webmaster@example.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
 
-mail($to, $subject, $message, $headers);
-
-/* 
-
-Changes required in sendmail.ini
-
-Mail Server Configuration - change with your server details
-
-smtp_server=smtp.gmail.com
-smtp_port=587
-error_logfile=error.log
-debug_logfile=debug.log
-auth_username=your-gmail-id@gmail.com
-auth_password=your-gmail-password
-force_sender=your-gmail-id@gmail.com
-
-Changes required in php.ini
-
-SMTP=smtp.gmail.com
-smtp_port=587
-sendmail_from = your-gmail-id@gmail.com
-sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
-;sendmail_path = "C:\xampp\mailtodisk\mailtodisk.exe"
-
-*/
 ?>
+
