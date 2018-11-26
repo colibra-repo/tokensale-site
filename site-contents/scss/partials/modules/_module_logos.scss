@@ -10,7 +10,7 @@
     // width: 300px;
     // height: 400px;
     width: 240px;
-    
+
     height: 300px;
     display: inline-block;
     background-size: contain;
@@ -23,8 +23,8 @@
     & .problemFull {
         // height: 300px;
         // width: 90%;
-      
-        
+
+
     }
     & .problemFull1 {
         height: 150px;
@@ -49,7 +49,7 @@
     position: relative;
     height: 360px;
     width: 100%;
-    
+
     & .insuranceImg {
         position: absolute;
         left: 0;
@@ -221,13 +221,13 @@
             left: 28px;
         }
     }
-    
+
     //team
     .logo_wrapper {
         width: 640px;
         margin: 0 auto;
         padding:0;
-       
+
         & .logos {
             margin-top: -30px;
             margin-bottom: 30px;
@@ -243,21 +243,21 @@
             margin: 0 auto;
             & .logos_partners {
                 text-align: center;
-                margin-right: -80px;
+                // margin-right: -80px;
                 & li {
                     width: 200px;
                     padding:0 10px;
                     &.kleros {
                         width: 250px;
                     }
-                } 
+                }
             }
         }
-    } 
+    }
 }
 @media #{$tablet2} {
     .problem_image {
-       
+
         // width: auto;
         // width: 100%;
         // & .problemFull {
@@ -297,8 +297,7 @@
                 width: auto;
                 margin:0;
                 padding: 0 15px;
-            }   
+            }
         }
-    } 
+    }
 }
-

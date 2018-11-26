@@ -1630,7 +1630,8 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		<div class="section_foot">
 			<div class="shell">
 				<!-- <div id="contactForm" class="registration_form"> -->
-					<form id="contactForm" class="registration_form" method="POST" action="sendmail.php">
+					<!-- <form id="contactForm" class="registration_form" method="POST" action="sendmail.php"> -->
+					<form id="contactForm" class="registration_form">
 						<div class="cols">
 							<div class="col col_3">
 								<div class="form__row">
@@ -1719,7 +1720,8 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 						</div> -->
 						<div class="btn_form">
-							<input class="btn btn_register" value="Register" type="submit">
+							<!-- <input class="btn btn_register" value="Register" type="submit"> -->
+							<button class="btn btn_register" onClick="postMail();" type="button">Register</button>
 						</div>
 					</form>
 				<!-- </div> -->
@@ -1942,6 +1944,17 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 </script>
 
 <script>
+	$(document).ready(function(){
+		if (window.location.href.indexOf("#join") > -1) {
+			$('.section__subtitle.white.registration').text('Mail Sent. Thank you , we will contact you shortly');
+			$([document.documentElement, document.body]).animate({
+				scrollTop: $("#join").offset().top
+			}, 100);
+			
+		} else {
+			$('.section__subtitle.white.registration').text('Registrations for our limited private sale is served on a “first come first served” basis.');
+		}
+	});
 	(function($){
 		   $(window).on("load",function(){
 			   $(".cd-popup-wrapper-body").mCustomScrollbar();
@@ -1970,6 +1983,35 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
         event.preventDefault();
         $('.cd-popup.privacy-policy').addClass('is-visible');
     });
+
+    function postMail() {
+
+    	var data 		= {};
+    	data.email 		= $('#email').val();
+    	data.firstName 	= $('#firstName').val();
+    	data.lastName 	= $('#lastName').val();
+    	data.country 	= $('#country').val();
+    	data.amount 	= $('#amount').val();
+    	data.question 	= $('#question').val();
+
+        $.ajaxSetup( { headers: { 'Content-type': "application/json" } } );
+        $.ajax({
+            method: "POST",
+            url: "/colibra_full_vertion/sendmail.php",
+            // dataType: "json",
+            data: data,
+            success: function () {
+            	$('.section__subtitle.white.registration').text('Mail Sent. Thank you , we will contact you shortly');
+            	$('.section_foot').removeClass('visible');
+            	$('.btn.toggleForm').css('display', 'inline-block');
+            	document.location = document.location.href+"#join";
+            },
+            error: function (response) {
+            	alert('error');
+            	document.location = document.location.href+"#join";
+            },
+        });
+    }
 
 
 	var video = document.getElementById("laptopVideo");
