@@ -1,6 +1,10 @@
 /* ------------------------------------------------------------ *\
    Sections
 \* ------------------------------------------------------------ */
+#medium-widget{
+    width: 90%;
+    margin: 0 auto;
+}
 .section_body.home{
     padding-top: 100px;
     // &.active {
@@ -420,15 +424,12 @@
         }
     }
     //Blog
-    .medium-widget-article__row {
-        flex-direction: row !important;
-    }
+    // .medium-widget-article__row {
+    //     flex-direction: row !important;
+    // }
 }
 @media #{$tablet1} {
-    #medium-widget{
-        width: 980px;
-        margin: 0 auto;
-    }
+    
     .section__title.white {
         padding-bottom: 60px;
     }
@@ -487,6 +488,13 @@
 }
 
 @media #{$tablet2} {
+    #medium-widget{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .medium-widget-article__row {
+        flex-direction: row !important;
+    }
     .section_small {
         padding: 80px 0;
         &.section_solution {
