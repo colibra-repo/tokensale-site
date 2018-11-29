@@ -1167,7 +1167,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="foot_part">
 										<p>Telerik (Progress)</p>
-										<a class="linkedIn" href="https://www.linkedin.com/in/george-stoyanov-3b6ba357/" target="_blank">
+										<a class="linkedIn" href="https://www.linkedin.com/in/vassil-terziev-24242/?originalSubdomain=bg" target="_blank">
 											<figure>
 												<img src="css/images/linkIn-icon.png">
 											</figure>
@@ -1179,7 +1179,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<p>Vassil is a co-Founder and co-CEO of Telerik. He played an instrumental role in growing the company from a small Bulgarian startup to a leading global enterprise software vendor with 9 offices in 7 countries and more than 130,000 customers, including over 450 of the Fortune 500 companies. Following Telerik’s acquisition by Progress Software (NASDAQ: PRGS) in December 2014, Vassil now serves as Chief Innovation Officer of the parent company where he is responsible for identifying growth strategies and new market opportunities, as well as promoting internal innovation.</p>
 									<div class="back_head">
-										<a class="linkedIn" href="https://www.linkedin.com/in/george-stoyanov-3b6ba357/" target="_blank">
+										<a class="linkedIn" href="https://www.linkedin.com/in/vassil-terziev-24242/?originalSubdomain=bg" target="_blank">
 											<figure>
 												<img src="css/images/linkIn-icon.png">
 											</figure>
