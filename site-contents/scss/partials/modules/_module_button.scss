@@ -16,7 +16,7 @@
     font-family: $font-family;
     font-weight: 700;
     // border-radius: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     // height: 50px;
     // line-height: 50px;
     color: $white;
@@ -78,6 +78,9 @@
         -webkit-transition: all .1s ease-in-out;
         transition: all .1s ease-in-out;
     }
+    & i {
+        margin-right: 10px;
+    }
     &.video_play {
         color:$white;
         background: transparent;
@@ -98,7 +101,12 @@
     }
     
 }
-
+.toggleForm {
+    width: 100%;
+    background: linear-gradient(to right, #faa71a, #faee49);
+    height: 55px;
+    line-height: 55px;
+}
 .downloadPdf {
     float: right;
     display: none;
@@ -129,12 +137,16 @@
     
 }
 .main_btns-desktop {
-    display: none;
+    display: block;
 }
 .main_btns-mobile {
     display: block;
     width: 190px;
     margin: 0 auto;
+}
+.pricing {
+    min-width: 100%;
+    max-width: 100%;
 }
 @media screen and (min-width:620px){
     .btn_main_fixed {
@@ -197,6 +209,10 @@
             display: none;  
         }
     }
+    .toggleForm {
+        width: 240px !important;
+    }
+       
 }
 @media #{$desktop} {
     

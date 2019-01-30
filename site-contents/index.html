@@ -5,8 +5,6 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--
-    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<title>Colibra</title>
 
 	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico"/>
@@ -17,8 +15,10 @@
 	<link rel="stylesheet" href="css/animations.css"/>
 	<link rel="stylesheet" href="css/swiper.min.css"/>
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/slick.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+	<link rel="stylesheet" href="css/jquery-ui-slider-pips.css"/>
 	<link rel="stylesheet" href="vendors/jquery-custom-content-scroller.js/jquery.mCustomScrollbar.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<!-- Resources -->
@@ -45,6 +45,10 @@
 	<!-- End Facebook Pixel Code -->
 	<!-- Google Search Console -->
 	<meta name="google-site-verification" content="FyO7oCPfOOXBnbHfeRS6z0-DnCY3qDgdhOiavhynJTw" />
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NBX3GB8');</script>
+	<!-- End Google Tag Manager -->
 </head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128390805-1"></script>
@@ -74,11 +78,13 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 })(document, window, "yandex_metrika_callbacks2");
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/50921336" style="position:absolute; left:- 9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBX3GB8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="main">
 	<section class="section_main" id="home">
-		<header class="header">
+		<header class="header mobile">
 			<div class="shell">
 				<div class="header_wrapper">
 					<a href="#" class="nav_trigger">
@@ -89,6 +95,9 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 					<a class="logo" href="index.html">
 						<img src="css/images/white-logo.png">
 					</a>
+					<a class="logo-mobile" href="index.html">
+						<img src="css/images/green-logo.png">
+					</a>
 					<a class="logo-fixed" href="index.html">
 						<img src="css/images/green-logo.png">
 					</a>
@@ -97,99 +106,25 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							<li><a onClick="scrollToEl('home')" >Home</a></li>
 							<li><a onClick="scrollToEl('problem')" >Problem</a></li>
 							<li><a onClick="scrollToEl('solution')" >Solution</a></li>
-							<li><a onClick="scrollToEl('ico')" >ICO</a></li>
-							<li><a onClick="scrollToEl('documents')" >Documents</a></li>
+							<li><a onClick="scrollToEl('ico')" >Product</a></li>
+							<li><a onClick="scrollToEl('documents')" >Pricing</a></li>
 							<li><a onClick="scrollToEl('roadmap')" >Roadmap</a></li>
 							<li><a onClick="scrollToEl('blog')" >Blog</a></li>
 							<li><a onClick="scrollToEl('team')" >Team</a></li>
 							<li><a onClick="scrollToEl('partners')" >Partners</a></li>
 							<li><a onClick="scrollToEl('join')" >Join</a></li>
-							<ul class="list_icons_header_mobile">
-								<!-- <li><a href=""><img src="css/images/white-1.png"></a></li> -->
-								<!-- <li><a href=""><img src="css/images/white-2.png"></a></li>
-								<li><a href=""><img src="css/images/white-3.png"></a></li>
-								<li><a href=""><img src="css/images/white-4.png"></a></li>
-								<li><a href=""><img src="css/images/white-5.png"></a></li>
-								<li><a href=""><img src="css/images/white-6.png"></a></li>
-								<li><a href=""><img src="css/images/white-7.png"></a></li>
-								<li><a href=""><img src="css/images/white-8.png"></a></li> -->
-							</ul>
-							<!-- <ul class="lang_list_mobile">
-								<li><a href="">en</a></li><span>|</span>
-								<li><a href="">bg</a></li>
-							</ul> -->
-						</ul><!-- /.menu -->
+						</ul>
 					</nav>
-					<a onClick="scrollToEl('documents')" id="onePagerHeaderMobile" class="downloadPdf mobileVisible">
-						<img src="css/images/pdf-download.png">
-					</a>
-					<a onClick="scrollToEl('documents')" id="onePagerHeaderDesktop" class="downloadButton btn desktopVisible">documents</a>
-					<div class="social_icons-header">
-						<!-- <div class="lang_bar">
-							<a class="selected" href="">en</a>
-							<ul class="lang_list">
-								<li><a href="">bg</a></li>
-								<li><a href="">fr</a></li>
-							</ul>
-
-							<div class="lang_btn">
-								<img src="css/images/white-0.png">
-							</div>
-							<div class="lang_btn-fixed">
-								<img src="css/images/gray-0.png">
-							</div>
-						</div> -->
-						<ul class="list_icons_header">
-							<!-- <li class="social-1"><a href=""></a></li> -->
-							<!-- <li class="social-2"><a href=""></a></li>
-							<li class="social-3"><a href=""></a></li>
-							<li class="social-4"><a href=""></a></li>
-							<li class="social-5"><a href=""></a></li>
-							<li class="social-6"><a href=""></a></li>
-							<li class="social-7"><a href=""></a></li>
-							<li class="social-8"><a href=""></a></li> -->
-						</ul>
-						<ul class="list_icons_header-fixed">
-							<!-- <li class="social-1"><a href=""></a></li> -->
-							<!-- <li class="social-2"><a href=""></a></li>
-							<li class="social-3"><a href=""></a></li>
-							<li class="social-4"><a href=""></a></li>
-							<li class="social-5"><a href=""></a></li>
-							<li class="social-6"><a href=""></a></li>
-							<li class="social-7"><a href=""></a></li>
-							<li class="social-8"><a href=""></a></li> -->
-						</ul>
-					</div>
 				</div>
 			</div>
 		</header>
 		<div class="section_body home">
 			<div class="shell">
-				<div class="cols">
-					<div class="col col_2 left-col">
-						<div class="main_wrapper">
-							<h1 class="section__title white">Insurance Made <span class="main_break"> Easy &amp; Fair</span> </h1>
-							<p class="main_text">
-								<span class="first_row">Get insured and file a claim in a minute.</span>
-								<span>Fairness is guaranteed by democratic claim handling on the blockchain.</span>
-							</p>
-							<div class="main_btns-desktop">
-								<a href="css/images/one-pager-colibra.pdf" target="_blank" id="onePagerDesktop" class="btn btn_main">Summary</a>
-								<a data-fancybox-type="iframe" href="https://www.youtube.com/embed/_kA0PDStmYU?autoplay=0&showinfo=0&controls=1" frameborder="0" width="960" height="569" allowfullscreen class="video1 fancybox btn btn_main video_play"><i class="far fa-play-circle"></i>Watch the video</a>
-							</div>
-						</div>
-					</div>
-					<div class="col col_2 right-col">
-						<div class="animation_wrapper">
-							<div class="animation-container">
-								<div id="animation-loader"></div>
-								<div id="animation-wrapper"></div>
-							</div>
-						</div>
-						<div class="main_btns-mobile">
-							<a href="css/images/one-pager-colibra.pdf" target="_blank" id="onePagerMobile" class="btn btn_main">Summary</a>
-							<a data-fancybox-type="iframe" href="https://www.youtube.com/embed/_kA0PDStmYU?autoplay=0&showinfo=0&controls=1" frameborder="0" width="960" height="569" allowfullscreen class="video1 fancybox btn btn_main video_play"><i class="far fa-play-circle"></i>Watch the video</a>
-						</div>
+				<div class="head_section">
+					<h1 class="head__title">Making Insurance<span class="main_break">Trustworthy Again</span></h1>
+					<p class="head_text"> Colibra is building the first client centric insurance company<span class="main_break"> by democratising the claim handling process. </span></p>
+					<div class="main_btns-desktop">
+						<a data-fancybox-type="iframe" href="https://www.youtube.com/embed/_kA0PDStmYU?autoplay=0&showinfo=0&controls=1" frameborder="0" width="960" height="569" allowfullscreen class="video1 fancybox btn btn_main"><i class="far fa-play-circle"></i>Watch video</a>
 					</div>
 				</div>
 			</div>
@@ -198,87 +133,42 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 	<section class="section_med section_problem" id="problem">
 		<div class="section_body">
 			<div class="shell">
-				<div class="cols">
-					<div class="col col_2 ">
-						<h2 class="section__title video-title mobile">Insurance needs our help</h2>
-						<div class="problemWrapper">
-							<figure class="problem_image animatedParent">
-								<img class="problemFull1 animated bounceInUp slowest" src="css/images/image_up.png">
-								<img class="problemFull">
-								<img class="problemFull2 animated bounceInDown slowest" src="css/images/image_down.png">
-							</figure>
-						</div>
-						<!-- <div class="cols">
-							<div class="col col_2">
-								<img class="image_up" src="css/images/image_up.png">
-							</div>
-							<div class="col col_2">
-								<img class="image_right" src="css/images/image2.png">
-							</div>
-						</div>
-						<div class="cols">
-							<div class="col col_2">
-								<img class="image_left" src="css/images/image3.png">
-							</div>
-							<div class="col col_2">
-								<img class="image_down" src="css/images/image1_down.png">
-							</div>
-						</div> -->
-						<!-- <a class="video_box_wrapper video1 fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/_kA0PDStmYU" frameborder="0"; allow="autoplay;">
-							<div class="video_box">
-								<div class="pulse-button"></div>
-							</div>
-						</a> -->
-
-					</div>
-					<div class="col col_2">
-						<h2 class="section__title video-title desktop">Insurance needs our help</h2>
-						<p class="section_problem_text">Over the years, insurance companies have become increasingly centralized, complex and profit-driven. Transparency about their solvency and claim handling is practically missing. Conflict of interest is ubiquitous, which means it's profitable for insurers to delay and reject their clients' claims. This makes fewer and fewer people use insurance to mitigate the risks to their health, business and property.</p>
-						<div class="slider">
-							<div class="swiper-container">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="slider_content">
-											<a href="http://image-src.bcg.com/Images/evolution_revolution_how_insurers_stay_relevant_digital_world_tcm9-165956.pdf" target="_blank">
-												<!-- <div class="slide_head">
-													<h2 class="slide_title">title1</h2>
-												</div> -->
-												<div class="slide_body">
-													<p>The insurance industry is on the brink of technology-driven change. The centralized claims handling process lacks transparency and fairness. The Morgan Stanley/BCG,Read Analysis</p>
-												</div>
-											</a>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<a href="http://www-935.ibm.com/services/us/gbs/bus/pdf/gbe03008-usen-02-insurancet3.pdf" target="_blank">
-											<!-- <div class="slide_head">
-												<h2 class="slide_title">title2</h2>
-											</div> -->
+				<div class="section_problem_content">
+					<h2 class="section__title video-title">Insurance needs our help</h2>
+					<p class="section_problem_text">Over the years, insurance companies have become increasingly centralized, complex and profit-driven. Transparency about their solvency and claim handling is practically missing. Conflict of interest is ubiquitous, which means it's profitable for insurers to delay and reject their clients' claims. This makes fewer and fewer people use insurance to mitigate the risks to their health, business and property.</p>
+					<div class="slider">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="slider_content">
+										<a href="http://image-src.bcg.com/Images/evolution_revolution_how_insurers_stay_relevant_digital_world_tcm9-165956.pdf" target="_blank">
 											<div class="slide_body">
-												<p>IBM validated that at least 58% show distrust in insurance industry. Issues at focus are Personal Experience and Transparancy of Price and Terms&Conditions. IBM Global Services Institute, Read Analysis</p>
-											</div>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a href="https://www.pwc.co.uk/assets/pdf/fsrr-consumer-survey-final.pdf" target="_blank">
-											<!-- <div class="slide_head">
-												<h2 class="slide_title">title3</h2>
-											</div> -->
-											<div class="slide_body">
-												<p>A survey done by PwC in the UK found that there is 73% distrust in insurance providers. PWC United Kingdom,View Survey Results</p>
+												<p>The insurance industry is on the brink of technology-driven change. The centralized claims handling process lacks transparency and fairness. The Morgan Stanley/BCG,Read Analysis</p>
 											</div>
 										</a>
 									</div>
 								</div>
-								<div class="swiper-button-next"></div>
-								<div class="swiper-button-prev"></div>
+								<div class="swiper-slide">
+									<a href="http://www-935.ibm.com/services/us/gbs/bus/pdf/gbe03008-usen-02-insurancet3.pdf" target="_blank">
+										<div class="slide_body">
+											<p>IBM validated that at least 58% show distrust in insurance industry. Issues at focus are Personal Experience and Transparancy of Price and Terms&Conditions. IBM Global Services Institute, Read Analysis</p>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="https://www.pwc.co.uk/assets/pdf/fsrr-consumer-survey-final.pdf" target="_blank">
+
+										<div class="slide_body">
+											<p>A survey done by PwC in the UK found that there is 73% distrust in insurance providers. PWC United Kingdom,View Survey Results</p>
+										</div>
+									</a>
+								</div>
 							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
 						</div>
 					</div>
 				</div>
-				<!-- <div class="slider_divider">
-					<img src="css/images/divider.png">
-				</div> -->
 			</div>
 		</div>
 		<div class="widget animatedParent">
@@ -289,9 +179,6 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		</div>
 	</section>
 	<section class="section_solution" id="solution">
-		<!-- <div class="label">
-			<p>Introducing ...</p>
-		</div> -->
 		<div class="section_body">
 			<nav id="cd-vertical-nav">
 				<ul>
@@ -346,9 +233,6 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<p>Colibra can’t reject or delay claim payments like traditional insurers because the claim handling process is outsourced to independent jurors on the blockchain.</p>
 								<p class="pt10">See how our democratic claim handling platform works:</p>
 							</div>
-							<!-- <div class="cd-40-btn">
-								<a href="https://app.colibra.io/" target="blank" class="btn">see demo</a>
-							</div> -->
 						</div>
 					</div>
 					<div class="cd-60 animated fadeInLeft">
@@ -378,15 +262,10 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 					</div>
 				</div>
 			</section>
-			<section id="section4" class="cd-section">
+			<!--<section id="section4" class="cd-section">
 				<div class="cd-section-wrapper animatedParent animateOnce">
 					<div class="cd-40 animated fadeInRight">
 						<div class="cd-40-wrapper last">
-							<!-- <div class="circle">
-								<div class="pulsing_circle">
-									<h2 class="number">4<span>th</span></h2>
-								</div>
-							</div> -->
 							<div class="cd-40-content">
 								<h3 class="cd-40-title"><span class="num-4"></span>Effortless Experience</h3>
 								<p>Personalize and activate your insurance in just a few clicks, as simple as chatting with a friend. Anytime. Anywhere. Filing a claim is just as easy. </p>
@@ -403,7 +282,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 						</a>
 					</div>
 				</div>
-			</section>
+			</section>-->
 			<div class="widget animatedParent animateOnce">
 				<span class="blinking-line animated bounceIn"></span>
 				<div class="rotate">
@@ -412,237 +291,163 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 			</div>
 		</div>
 	</section>
-	<section class="section_small section_ico" id="ico">
-		<div class="section_head">
-			<div class="shell">
-				<h2 class="section__title mobile-hidden">ICO</h2>
-				<h3 class="section__subtitle mobile-hidden">To reinvent insurance we’re doing a token generation event</h3>
-			</div>
-		</div>
-		<div class="section_body">
-			<div class="shell">
-				<div class="cols">
-					<div class="col col_2">
-						<div class="table">
-							<table>
-								<caption>ICO Details</caption>
-								<tr>
-									<th>Token name</th>
-									<th>COLIBRA</th>
-								</tr>
-								<!-- <tr>
-									<td>Use</td>
-									<td>Contribution, Payment, Access</td>
-								</tr>  -->
-								<tr>
-									<td>Total Supply</td>
-									<td>
-										500,000,000 tokens
-									</td>
-								</tr>
-								<tr>
-									<td>Tokens for Sale</td>
-									<td>
-										225,000,000 (45%)
-									</td>
-								</tr>
-								<tr>
-									<td>Private Sale Price</td>
-									<td>1 COLIBRA = $0.10</td>
-								</tr>
-								<tr>
-									<td>Pubic Sale Price</td>
-									<td>1 COLIBRA = $0.12 - $0.14 </td>
-								</tr>
-								<tr>
-									<td>Platform</td>
-									<td>
-										Ethereum (ERC20)
-									</td>
-								</tr>
-								<tr>
-									<td>Token Economy</td>
-									<td>Deflationary (Burn)</td>
-								</tr>
-								<tr>
-									<td>Type</td>
-									<td>ERC20</td>
-								</tr>
-								<tr>
-									<td>Currencies accepted</td>
-									<td>
-										BTC, ETH, LTC, Fiat
-									</td>
-								</tr>
-								<tr>
-									<td>Minimum investment</td>
-									<td>$100</td>
-								</tr>
-								<tr>
-									<td>Soft Cap</td>
-									<td>$5,000,000</td>
-								</tr>
-								<tr>
-									<td>Hard Cap</td>
-									<td>
-										$25,000,000
-									</td>
-								</tr>
-								<tr>
-									<td>Jurisdiction (legal)</td>
-									<td>
-										Malta, EU
-									</td>
-								</tr>
-								<tr>
-									<td>KYC</td>
-									<td>
-										Yes
-									</td>
-								</tr>
-								<tr>
-									<td>Restricted Areas (Public Sale)</td>
-									<td>
-										USA
-									</td>
-								</tr>
-								<tr>
-									<td>Team Tokens Vesting</td>
-									<td>
-										5Y / 6M cliff / linear
-									</td>
-								</tr>
-								<tr>
-									<td>Public Address</td>
-									<td>
-										TBA
-									</td>
-								</tr>
-								<tr>
-									<td>Public Sale Start Date</td>
-									<td>
-										TBA
-									</td>
-								</tr>
-							</table>
+	<section class="section_flight" id="ico">
+		<div class="shell mobile">
+			<div class="cols">
+				<div class="col col_2 left">
+					<h2 class="flight__title mobile">Product</h2>
+					<h2 class="flight__title desktop">Instantly Paid When Flight’s Delayed</h2>
+					<h3 class="flight_subtitle">Get a fixed and instant compensation of up to €200 if your flight gets delayed by 30 minutes or more at ZERO upfront cost*.  </h3>
+					<div class="bg">
+						<div class="flight_img_center mobile">
+							<!-- <img src="css/images/Smartphone-Section.png"> -->
+						</div>
+
+						<p class="flight_detiles title">Here’s how it works:</p>
+						<p class="flight_detiles">
+							Scan your boarding pass in our app
+							Choose a flight delay time which is greater than 30 minutes (e.g. 1 Hour)
+							If your flight gets delayed with 1 hour and 1 minute you receive an instant reward of €75
+						</p>
+						<div class="fligt-mobile">
+							<p class="flight_detiles down title left">Where’s the catch for the free money:</p>
+							<p class="flight_detiles down">
+								This service is based on Flight Compensation Regulation (EC) 261/2004 and it means that you swap your rights to receive a compensation under this directive in exchange for a fixed and instant payout that has higher probability of occuring.
+							</p>
+							<p class="flight_detiles down title left">*Conditions apply</p>
+							<!-- <ul class="flight_bullets">
+								<li>Bullet - 01</li>
+								<li>Bullet - 02</li>
+								<li>Bullet - 03</li>
+								<li>Bullet - 04</li>
+							</ul> -->
 						</div>
 					</div>
-					<div class="col col_2">
-						<div class="chart">
-							<h3 class="chart_title">Token Allocation</h3>
-							<div id="chartwrapper">
-								<div id="chartdiv1"></div>
+				</div>
+				<div class="col col_2">
+					<div class="flight_img_center">
+						<img src="css/images/Smartphone-Section.png">
+					</div>
+				</div>
+			</div>
+			<div class="cols">
+				<div class="col col_2">
+					<div class="slider_wrapper_mobile">
+						<div id="vertical-slider"></div>
+						<div class="slider-question">
+							<div class="slider-question-wrapper" >
+								<div class="slider-left">
+									<p class="min">120<span class="green-label">min</span></p>
+									<span class="min-label">Delay</span>
+								</div>
+								<div class="slider-right">
+									<p class="currency"><span class="euro-label">&euro;</span>65</p>
+									<span class="min-label">Compensation</span>
+								</div>
 							</div>
 						</div>
-						<div class="chart">
-							<h3 class="chart_title">Budget Allocation</h3>
-							<div id="chartwrapper">
-								<div id="chartdiv2"></div>
+					</div>
+					<div class="slider_wrapper">
+						<div id="slider"></div>
+						<div class="slider-question">
+							<div class="slider-question-wrapper" >
+								<div class="slider-left">
+									<p class="min">120<span class="green-label">min</span></p>
+									<span class="min-label">Delay</span>
+								</div>
+								<div class="slider-right">
+									<p class="currency"><span class="euro-label">&euro;</span>65</p>
+									<span class="min-label">Compensation</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="col col_2">
+					<div class="fligt-desktop">
+						<p class="flight_detiles down title left">Where’s the catch for the free money:</p>
+						<p class="flight_detiles down">
+							This service is based on Flight Compensation Regulation (EC) 261/2004 and it means that you swap your rights to receive a compensation under this directive in exchange for a fixed and instant payout that has higher probability of occuring.
+						</p>
+						<p class="flight_detiles down title left">*Conditions apply</p>
+						<!-- <ul class="flight_bullets">
+							<li>Bullet - 01</li>
+							<li>Bullet - 02</li>
+							<li>Bullet - 03</li>
+							<li>Bullet - 04</li>
+						</ul> -->
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="widget animatedParent">
+		<div class="widget animatedParent animateOnce">
 			<span class="blinking-line animated bounceIn"></span>
-			<div class="rotate">
-				<p>ICO Details</p>
+			<div class="rotate white">
+				<p>Flight Delay Compensation</p>
 			</div>
 		</div>
 	</section>
-	<section class="section_med section_documents" id="documents">
-		<div class="section_head">
+	<section class="section_pricing" id="documents">
+		<div class="section_pricing_background">
 			<div class="shell">
-				<h2 class="section__title">Documents</h2>
-				<h3 class="section__subtitle mobile-hidden">Read the project details</h3>
-			</div>
-		</div>
-		<div class="section_body" >
-			<div class="shell">
-				<div class="section_wrapper">
-					<div class="container_wrapper">
-						<a href="css/images/one-pager-colibra.pdf" target="_blank" class="container">
-							<div class="container_title">
-								<figure>
-									<img src="css/images/green-logo.png">
-								</figure>
-							</div>
-							<div class="container_body">
-								<p class="container_body_title">One<span>Pager</span></p>
-							</div>
-							<div class="container_foot">
-								<img src="css/images/download-icon.png">
-							</div>
-						</a>
-					</div>
-					<!-- <div class="container_wrapper">
-						<a href="" target="_blank" class="container">
-							<div class="container_title">
-								<figure>
-									<img src="css/images/green-logo.png">
-								</figure>
-							</div>
-							<div class="container_body">
-								<p class="container_body_title">Technical<span>Pager</span></p>
-							</div>
-							<div class="container_foot">
-								<img src="css/images/download-icon.png">
-							</div>
-						</a>
-					</div> -->
-					<div class="container_wrapper">
-						<a href="css/images/whitepaper-colibra.pdf" target="_blank" class="container middle">
-							<div class="container_title">
-								<figure>
-									<img src="css/images/white-logo.png">
-								</figure>
-							</div>
-							<div class="container_body">
-								<p class="container_body_title">White<span>Paper</span></p>
-							</div>
-							<div class="container_foot">
-								<img src="css/images/download-icon.png">
-							</div>
-						</a>
-					</div>
-					<!-- <div class="container_wrapper">
-						<div href="" target="_blank" class="container">
-							<div class="container_title">
-								<figure>
-									<img src="css/images/green-logo.png">
-								</figure>
-							</div>
-							<div class="container_body">
-								<p class="container_body_title">Token<span>Economy</span></p>
-							</div>
-							<div class="container_foot">
-								<img src="css/images/download-icon.png">
-							</div>
+				<h2 class="pricing__title">Pricing</h2>
+				<!-- <p class="pricing__text pt20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ncididunt ut labore et dolore magna aliqua. Ut enim ad minim</p> -->
+				<div class="pricing_wrapper">
+					<div class="pricing_box">
+						<div class="box_head">
+							<h3 class="pricing_box_title">FREEPAY</h3>
+							<figure class="box_img">
+								<img src="css/images/icon-star.png">
+							</figure>
 						</div>
-					</div> -->
-					<!-- <div class="container_wrapper">
-						<div  class="container">
-							<div class="container_title">
-								<figure>
-									<img src="css/images/green-logo.png">
-								</figure>
-							</div>
-							<div class="container_body">
-								<p class="container_body_title">Business<span>Plan</span></p>
-							</div>
-							<div class="container_foot">
-								<a href="" target="_blank" class="download_btn"><img src="css/images/download-icon.png"></a>
-							</div>
+						<div class="box_body">
+							<ul class="box_list">
+								<li><i class="fas fa-check"></i>Scan Boarding Pass</li>
+								<li><i class="fas fa-check"></i>Choose delay time (45+ minutes)</li>
+								<li><i class="fas fa-check"></i>Get Instant pay when flight is delayed</li>
+								<li><i class="fas fa-check"></i>Invite friends and increase payout</li>
+								<!-- <li><i class="fas fa-times"></i>sed do eiusmod</li>
+								<li><i class="fas fa-times"></i>ed do eiusmod</li>
+								<li><i class="fas fa-times"></i>tempor incididunt</li> -->
+							</ul>
+						</div>
+						<div class="box_foot">
+							<p class="box_price"><span class="dollar_sign">&euro;</span>0<span class="price_cuurency">*</span></p>
+							<p class="small_text">*Zero Upfront Cost</p>
+							<a class="btn pricing">Start Now</a>
+						</div>
+						<p class="pricing_foot_text">*This service is based on Flight Compensation Regulation (EC) 261/2004 and it means that you swap your rights to receive a compensation under this directive in exchange for a fixed and instant payout that has higher probability of occuring.</p>
+					</div>
+
+					<!-- <div class="pricing_box green_box">
+						<div class="box_head">
+							<h3 class="pricing_box_title green">Pro</h3>
+							<figure class="box_img">
+								<img src="css/images/icon-crown.png">
+							</figure>
+						</div>
+						<div class="box_body">
+							<ul class="box_list">
+								<li><i class="fas fa-check"></i>Lorem ipsum dolor</li>
+								<li><i class="fas fa-check"></i>sit amet, consectetur</li>
+								<li><i class="fas fa-check"></i>adipiscing elit,</li>
+								<li><i class="fas fa-check"></i>sed do eiusmod</li>
+								<li><i class="fas fa-check"></i>ed do eiusmod</li>
+								<li><i class="fas fa-check"></i>tempor incididunt</li>
+							</ul>
+						</div>
+						<div class="box_foot">
+							<p class="box_price">99<span class="price_cuurency">&euro; / mo</span></p>
+							<a class="btn pricing">Get started</a>
 						</div>
 					</div> -->
 				</div>
 			</div>
 		</div>
-		<div class="widget animatedParent">
+		<div class="widget animatedParent animateOnce">
 			<span class="blinking-line animated bounceIn"></span>
-			<div class="rotate">
-				<p>Documents</p>
+			<div class="rotate white">
+				<p>Pricing</p>
 			</div>
 		</div>
 	</section>
@@ -650,134 +455,85 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		<div class="section_head">
 			<div class="shell">
 				<h2 class="section__title">Roadmap</h2>
-				<h3 class="section__subtitle roadmap">This is our action plan for reinventing the insurance industry</h3>
+				<h3 class="section__subtitle roadmap pt20">This is our action plan for reinventing the insurance industry:</h3>
 			</div>
 		</div>
 		<div class="section_body">
 			<div class="shell">
-				<div class="scrolling-wrapper">
-					<div class="road-wave">
-						<div class="circle1 animatedParent animateOnce" data-sequence="500">
-							<span class="map animated fadeIn" data-id="1">Q4 2017</span>
-							<span class="ellipse1 animated fadeIn" data-id="2"></span>
-							<span class="ellipse2 animated fadeIn" data-id="3"></span>
-							<span class="ellipse3 animated fadeIn" data-id="4"></span>
-							<span class="ellipse4 animated fadeIn" data-id="5"></span>
-							<span class="circle_text1 animated fadeIn" data-id="6">Business Research</span>
-						</div>
-						<div class="circle2 animatedParent animateOnce" data-sequence="500">
-							<span class="map up animated fadeIn" data-id="1">Q2 2018</span>
-							<span class="ellipse1 animated fadeIn" data-id="2"></span>
-							<span class="ellipse2 animated fadeIn" data-id="3"></span>
-							<span class="ellipse3 animated fadeIn" data-id="4"></span>
-							<span class="ellipse4 animated fadeIn" data-id="5"></span>
-							<span class="circle_text2 animated fadeIn" data-id="6">Team &amp; Advisors</span>
-						</div>
-						<div class="circle3 animatedParent animateOnce" data-sequence="500">
-							<span class="map animated fadeIn" data-id="1">Q4 2018</span>
-							<span class="ellipse1 animated fadeIn" data-id="2"></span>
-							<span class="ellipse2 animated fadeIn" data-id="3"></span>
-							<span class="ellipse3 animated fadeIn" data-id="4"></span>
-							<span class="ellipse4 animated fadeIn" data-id="5"></span>
-							<span class="circle_text3 animated fadeIn" data-id="6">MVP</span>
-						</div>
-						<div class="circle4 animatedParent animateOnce" data-sequence="500">
-							<span class="map up animated fadeIn" data-id="1">Q4 2018</span>
-							<span class="ellipse1 animated fadeIn" data-id="2"></span>
-							<span class="ellipse2 animated fadeIn" data-id="3"></span>
-							<span class="ellipse3 animated fadeIn" data-id="4"></span>
-							<span class="ellipse4 animated fadeIn" data-id="5"></span>
-							<span class="circle_text4 animated fadeIn" data-id="6">Private Sale</span>
-						</div>
-
-						<div class="circle5 animatedParent animateOnce" data-sequence="500">
-							<span class="map animated fadeIn" data-id="1">Q1 2019</span>
-							<span class="ellipse1 animated fadeIn" data-id="2"></span>
-							<span class="ellipse2 animated fadeIn" data-id="3"></span>
-							<span class="ellipse3 animated fadeIn" data-id="4"></span>
-							<span class="ellipse4 animated fadeIn" data-id="5"></span>
-							<span class="circle_text5 animated fadeIn" data-id="6">Public Sale</span>
-						</div>
-						<div class="circle6 animatedParent animateOnce" data-sequence="500">
-							<span class="map up animated fadeIn" data-id="1">Q1 2020</span>
-							<span class="ellipse1 animated fadeIn" data-id="2"></span>
-							<span class="ellipse2 animated fadeIn" data-id="3"></span>
-							<span class="ellipse3 animated fadeIn" data-id="4"></span>
-							<span class="ellipse4 animated fadeIn" data-id="5"></span>
-							<span class="circle_text6 animated fadeIn" data-id="6">Colibra 1.0</span>
-						</div>
-						<div class="circle7 animatedParent animateOnce" data-sequence="500">
-							<span class="map animated fadeIn" data-id="1">Q2 2021</span>
-							<span class="ellipse1 animated fadeIn" data-id="2"></span>
-							<span class="ellipse2 animated fadeIn" data-id="3"></span>
-							<span class="ellipse3 animated fadeIn" data-id="4"></span>
-							<span class="ellipse4 animated fadeIn" data-id="5"></span>
-							<span class="circle_text7 animated fadeIn" data-id="6">Colibra 2.0</span>
-						</div>
+				<div class="road-wave">
+					<div class="circle1 animatedParent animateOnce" data-sequence="300" style="direction:rtl";>
+						<span class="map animated fadeIn" data-id="1">Q4 2018</span>
+						<span class="ellipse1 animated fadeIn" data-id="2"></span>
+						<span class="ellipse2 animated fadeIn" data-id="3"></span>
+						<span class="ellipse3 animated fadeIn" data-id="4"></span>
+						<span class="ellipse4 animated fadeIn" data-id="5"></span>
+						<span class="circle_text1 animated fadeIn" data-id="6">
+							<p class="circleTitle">MVP</p>
+							<p>Completed a functional prototype of the decentralized claim handling platform. This prototype will be used to rigorously test and fine tune our idea.</p>
+						</span>
 					</div>
-					<div class="road-wave-mobile">
-						<div class="circle1">
-							<span class="map">Q4 2017</span>
-							<span class="ellipse1"></span>
-							<span class="ellipse2"></span>
-							<span class="ellipse3"></span>
-							<span class="ellipse4"></span>
-							<span class="circle_text1">Business Research</span>
-						</div>
-						<div class="circle2">
-							<span class="map up">Q2 2018</span>
-							<span class="ellipse1"></span>
-							<span class="ellipse2"></span>
-							<span class="ellipse3"></span>
-							<span class="ellipse4"></span>
-							<span class="circle_text2">Team &amp; Advisors</span>
-						</div>
-						<div class="circle3">
-							<span class="map">Q4 2018</span>
-							<span class="ellipse1"></span>
-							<span class="ellipse2"></span>
-							<span class="ellipse3"></span>
-							<span class="ellipse4"></span>
-							<span class="circle_text3">MVP</span>
-						</div>
-						<div class="circle4">
-							<span class="map up">Q4 2018</span>
-							<span class="ellipse1"></span>
-							<span class="ellipse2"></span>
-							<span class="ellipse3"></span>
-							<span class="ellipse4"></span>
-							<span class="circle_text4">Private Sale</span>
-						</div>
-
-						<div class="circle5">
-							<span class="map">Q1 2019</span>
-							<span class="ellipse1"></span>
-							<span class="ellipse2"></span>
-							<span class="ellipse3"></span>
-							<span class="ellipse4"></span>
-							<span class="circle_text5">Public Sale</span>
-						</div>
-						<div class="circle6">
-							<span class="map up">Q1 2020</span>
-							<span class="ellipse1"></span>
-							<span class="ellipse2"></span>
-							<span class="ellipse3"></span>
-							<span class="ellipse4"></span>
-							<span class="circle_text6">Colibra 1.0</span>
-						</div>
-						<div class="circle7">
-							<span class="map">Q2 2021</span>
-							<span class="ellipse1"></span>
-							<span class="ellipse2"></span>
-							<span class="ellipse3"></span>
-							<span class="ellipse4"></span>
-							<span class="circle_text7">Colibra 2.0</span>
-						</div>
+					<div class="circle2 animatedParent animateOnce " data-sequence="300" >
+						<span class="map up animated fadeIn"  data-id="1">Q1 2019</span>
+						<span class="ellipse1 animated fadeIn"  data-id="2"></span>
+						<span class="ellipse2 animated fadeIn"  data-id="3"></span>
+						<span class="ellipse3 animated fadeIn" data-id="4"></span>
+						<span class="ellipse4 animated fadeIn" data-id="5"></span>
+						<span class="circle_text2 animated fadeIn" data-id="6">
+							<p class="circleTitle">Colibra 1.0 - Flight Reimbursement Tool</p>
+							<p>First service - Instant Flight Delay Compensation on flights delayed more than 45 min. at $0 upfront cost. User base to be used to upsell w/ travel insurance.</p>
+						</span>
+					</div>
+					<div class="circle3 animatedParent animateOnce" data-sequence="300" style="direction:rtl";>
+						<span class="map animated fadeIn" data-id="1">Q1 2020</span>
+						<span class="ellipse1 animated fadeIn" data-id="2"></span>
+						<span class="ellipse2 animated fadeIn" data-id="3"></span>
+						<span class="ellipse3 animated fadeIn" data-id="4"></span>
+						<span class="ellipse4 animated fadeIn" data-id="5"></span>
+						<span class="circle_text3 animated fadeIn" data-id="6">
+							<p class="circleTitle">Crowdfunding</p>
+							<p>Part of our funding will be raised via a crowdfunding event. This will help jumpstart the claim handling platform with voters & clients.</p>
+						</span>
+					</div>
+					<div class="circle4 animatedParent animateOnce" data-sequence="300">
+						<span class="map up animated fadeIn" data-id="1">Q4 2020</span>
+						<span class="ellipse1 animated fadeIn" data-id="2"></span>
+						<span class="ellipse2 animated fadeIn" data-id="3"></span>
+						<span class="ellipse3 animated fadeIn" data-id="4"></span>
+						<span class="ellipse4 animated fadeIn" data-id="5"></span>
+						<span class="circle_text4 animated fadeIn" data-id="6">
+							<p class="circleTitle">Colibra 2.0</p>
+							<p>Insurance license. Full Travel insurance service with decentralized & democratic claim handling. Dynamic policy pricing pricing and automatic payments.</p>
+						</span>
 					</div>
 				</div>
-				<div class="direction-mobile-visible animatedParent">
-					<div class="right-direction animated bounceIn">
-						<span class="arrow-right"></span>
+				<div class="road-wave-mobile">
+					<div class="circle1 animatedParent animateOnce" data-sequence="300" style="direction:rtl";>
+						<span class="map animated fadeIn" data-id="1">Q4 2018</span>
+						<span class="circle_text1 animated fadeIn" data-id="2">
+							<p class="circleTitle">MVP</p>
+							<p>Completed a functional prototype of the decentralized claim handling platform. This prototype will be used to rigorously test and fine tune our idea.</p>
+						</span>
+					</div>
+					<div class="circle2 animatedParent animateOnce " data-sequence="300" >
+						<span class="map up animated fadeIn"  data-id="1">Q1 2019</span>
+						<span class="circle_text2 animated fadeIn" data-id="3">
+							<p class="circleTitle">Colibra 1.0 - Flight Reimbursement Tool</p>
+							<p>First service - Instant Flight Delay Compensation on flights delayed more than 45 min. at $0 upfront cost. User base to be used to upsell w/ travel insurance.</p>
+						</span>
+					</div>
+					<div class="circle3 animatedParent animateOnce" data-sequence="300" style="direction:rtl";>
+						<span class="map animated fadeIn" data-id="1">Q1 2020</span>
+						<span class="circle_text3 animated fadeIn" data-id="2">
+							<p class="circleTitle">Crowdfunding</p>
+							<p>Part of our funding will be raised via a crowdfunding event. This will help jumpstart the claim handling platform with voters & clients.</p>
+						</span>
+					</div>
+					<div class="circle4 animatedParent animateOnce" data-sequence="300">
+						<span class="map up animated fadeIn" data-id="1">Q4 2020</span>
+						<span class="circle_text4 animated fadeIn" data-id="2">
+							<p class="circleTitle">Colibra 2.0</p>
+							<p>Insurance license. Full Travel insurance service with decentralized & democratic claim handling. Dynamic policy pricing pricing and automatic payments.</p>
+						</span>
 					</div>
 				</div>
 			</div>
@@ -894,41 +650,6 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								</div>
 							</div>
 						</div>
-						<!-- <div class="card_grid">
-							<div class="front">
-								<div class="card-wrapper">
-									<div class="head_part">
-										<figure>
-											<img src="css/images/Teuta-Oruci.png">
-										</figure>
-									</div>
-									<div class="middle_part">
-										<h2 class="card_title">Teuta Oruci</h2>
-										<h3 class="subtitle">Chief Financial Officer</h3>
-									</div>
-									<div class="foot_part">
-										<p>Barclays, Credit Suisse, Willis Towers, Vanguard</p>
-										<a class="linkedIn" href="https://www.linkedin.com/in/teuta-oruci-bakalli/" target="_blank">
-											<figure>
-												<img src="css/images/linkIn-icon.png">
-											</figure>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="back">
-								<div class="card-wrapper">
-									<p>Teuta is a CFO/Executive Director with 19 years in regulated financial markets, specialized in investment banking, insurance and asset management. Former director at Willis Towers, one of the largest insurance brokerage companies in the UK, she is bringing invaluable insurance expertise on the team.</p>
-									<div class="back_head">
-										<a class="linkedIn" href="https://www.linkedin.com/in/teuta-oruci-bakalli/" target="_blank">
-											<figure>
-												<img src="css/images/linkIn-icon.png">
-											</figure>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div> -->
 						<div class="card_grid">
 							<div class="front">
 									<div class="card-wrapper">
@@ -999,41 +720,6 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								</div>
 							</div>
 						</div>
-						<!-- <div class="card_grid">
-							<div class="front">
-								<div class="card-wrapper">
-									<div class="head_part">
-										<figure>
-											<img src="css/images/Borislav-Petrov.png">
-										</figure>
-									</div>
-									<div class="middle_part">
-										<h2 class="card_title">Borislav Petrov</h2>
-										<h3 class="subtitle">UI/UX Lead</h3>
-									</div>
-									<div class="foot_part">
-										<p>BLINK</p>
-										<a class="linkedIn" href="https://www.linkedin.com/in/borislavpetrovdesigner/" target="_blank">
-											<figure>
-												<img src="css/images/linkIn-icon.png">
-											</figure>
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="back">
-								<div class="card-wrapper">
-									<p>Working at the intersection of product design and brand identity, Borislav had the privilege of influencing products used and loved by millions. He worked as lead product designer & art director at companies like Safecharge and Mobisystems. Borislav is the founder of BLINK, a digital agency, specialized in product design, art and creative direction.</p>
-									<div class="back_head">
-										<a class="linkedIn" href="https://www.linkedin.com/in/borislavpetrovdesigner/" target="_blank">
-											<figure>
-												<img src="css/images/linkIn-icon.png">
-											</figure>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div> -->
 						<div class="card_grid">
 							<div class="front">
 								<div class="card-wrapper">
@@ -1589,7 +1275,6 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		<div class="section_head">
 			<div class="shell">
 				<h2 class="section__title">Partners</h2>
-				<!-- <h3 class="section__subtitle">See who already supported us</h3> -->
 			</div>
 		</div>
 		<div class="section_body">
@@ -1599,9 +1284,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 						<li class=""><a href="https://limechain.tech/" target="_blank"><img src="css/images/Lime-logo.png"></a></li>
 						<li class="kleros"><a href="https://kleros.io/" target="_blank"><img src="css/images/kleros-logo.png"></a></li>
 						<li class=""><a href="https://kleros.io/" target="_blank"><img src="css/images/eleven_logo.png"></a></li>
-						<!-- <li><img src="css/images/viber-logo.png"></li> -->
-						<!-- <li><img src="css/images/civic-logo.png"></li> -->
-						<!-- <li><img src="css/images/tg-logo.png"></li> -->
+						<li class=""><a href="https://kleros.io/" target="_blank"><img src="css/images/truebit.png"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -1616,119 +1299,49 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 	<section class="section_med section_join" id="join">
 		<div class="section_head">
 			<div class="shell">
-				<h2 class="section__title white">Join our Journey</h2>
-				<h3 class="section__subtitle white registration"> Registrations for our limited private sale is served on a “first come first served” basis.</h3>
+				<h2 class="section__title white join">Subscribe to Our Newsletter</h2>
+				<h3 class="section__subtitle white registration">Just one step to follow us in order to receive the latest news & offers first.</h3>
 			</div>
 		</div>
 		<div class="section_body">
 			<div class="shell">
-				<div class="btn_wrapper toggleForm">
-					<a class="btn toggleForm">Register</a>
-				</div>
-			</div>
-		</div>
-		<div class="section_foot">
-			<div class="shell">
-				<!-- <div id="contactForm" class="registration_form"> -->
-					<form id="contactForm" class="registration_form" method="POST" action="sendmail.php">
-						<div class="cols">
-							<div class="col col_3">
-								<div class="form__row">
-									<div class="form-group">
-										<div class="form-group-inner">
-											<label>First Name<span>*</span></label>
-											<div class="form__control">
-												<input id="firstName" name="firstName" type="text" class="form-control field"/>
+				<form id="subscribeForm" method="POST" action="sendmail.php">
+					<div class="subscribe_wrapper">
+						<div class="subscribe_center">
+							<div class="col">
+								<div class="col col_2">
+									<div class="form__row">
+										<div class="form-group">
+											<div class="form-group-inner">
+												<div class="form__control">
+													<input id="email" name="email" type="text" class="form-control field" placeholder="Enter Email "/>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="col col_3">
-								<div class="form__row">
-									<div class="form-group">
-										<div class="form-group-inner">
-										<label>Last Name<span>*</span></label>
-											<div class="form__control">
-												<input id="lastName" name="lastName" type="text" class="form-control field"/>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col col_3">
-								<div class="form__row">
-									<div class="form-group">
-										<div class="form-group-inner">
-											<label>E-mail<span>*</span></label>
-											<div class="form__control">
-												<input id="email" name="email" type="text" class="form-control field"/>
+								<div class="col col_2">
+									<div class="form__row">
+										<div class="form-group">
+											<div class="form-group-inner">
+												<div class="form__control">
+													<input type="submit" value="Subscribe" class="btn toggleForm">
+
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="cols spaceBetween">
-							<div class="col col_3">
-								<div class="form__row">
-									<div class="form-group">
-										<div class="form-group-inner">
-											<label>Taxable Country</label>
-											<div class="form__control">
-												<input id="country" name="country" type="text" class="form-control field"/>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col col_3">
-								<div class="form__row">
-									<div class="form-group">
-										<div class="form-group-inner">
-											<label>Purchase Amount (ETH)</label>
-											<div class="form__control">
-												<input id="amount" name="amount" type="text" class="form-control field"/>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col col_3">
-								<div class="form__row">
-									<div class="form-group">
-										<div class="form-group-inner">
-											<label class="capitalized_label">How did you hear about us?</label>
-											<div class="form__control">
-												<input id="question" name="question" type="text" class="form-control field"/>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- <p class="register_label1">Token sale is NOT available for U.S. and Chinese persons. *</p> -->
-						<p class="register_label2"><span>*</span>Mandatory fields</p>
-						<p class="register_label2">Please read our token sale <a href="" class="green_label">Terms & Conditions</span></a>
-						<!-- <div class="terms__acceptance">
-							<div class="form-group">
-								<div class="form-group-inner">
-									<input type="checkbox" name="checkboxData" id="checkboxData">
-									<label class="capitalized_label" for="checkboxData" name="checkboxData">I am <span>NOT</span> a citizen of the United States or China.</label>
-								</div>
-							</div>
-						</div> -->
-						<div class="btn_form">
-							<input class="btn btn_register" value="Register" type="submit">
-						</div>
-					</form>
-				<!-- </div> -->
+					</div>
+				</form>
 			</div>
 		</div>
 		<div class="widget animatedParent">
 			<span class="blinking-line animated bounceIn"></span>
 			<div class="rotate white">
-				<p>Whitelist</p>
+				<p>Subscribe</p>
 			</div>
 		</div>
 	</section>
@@ -1742,23 +1355,20 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 			<div class="social_icons">
 				<ul class="list_icons">
 					<li><a class="medium" href="https://medium.com/colibra" target="_blank"><img src="css/images/medium-gray.png"></a></li>
-					<!-- <li><a class="telegram" href="https://t.me/wearecolibra" target="_blank"><img src="css/images/gray-1.png"></a></li> -->
 					<li><a class="facebook" href="https://www.facebook.com/WeAreColibra/" target="_blank"><img src="css/images/gray-4.png"></a></li>
 					<li><a class="twitter" href="https://twitter.com/wearecolibra" target="_blank"><img src="css/images/gray-3.png"></a></li>
 					<li><a class="youTube" href="https://www.youtube.com/channel/UCDAZCmrMYbKnf9miFDFLFhQ" target="_blank"><img src="css/images/gray-8.png"></a></li>
 					<li><a class="linkin" href="https://www.linkedin.com/company/wearecolibra/" target="_blank"><img src="css/images/linkedin-gray.png"></a></li>
 					<li><a class="reddit" href="https://www.reddit.com/user/wearecolibra" target="_blank"><img src="css/images/gray-2.png"></a></li>
-					<li><a class="instagram" href="https://www.instagram.com/wearecolibra/" target="blank"><img src="css/images/instagram-gray.png"></a></li>
+					<!-- <li><a class="instagram" href="https://www.instagram.com/wearecolibra/" target="blank"><img src="css/images/instagram-gray.png"></a></li> -->
 					<li><a class="github" href="https://github.com/orgs/colibra-repo/dashboard" target="blank"><img src="css/images/github-gray.png"></a></li>
-					<li><a class="steemit" href="https://steemit.com/@wearecolibra/" target="blank"><img src="css/images/steemit.png"></a></li>
-					<!-- <li><a href="#"><img src="css/images/ico-5.png"></a></li>
-					<li><a href="#"><img src="css/images/ico-6.png"></a></li>
-					<li><a href="#"><img src="css/images/ico-7.png"></a></li> -->
+					<!-- <li><a class="steemit" href="https://steemit.com/@wearecolibra/" target="blank"><img src="css/images/steemit.png"></a></li> -->
 				</ul>
 			</div>
 			<div class="social-links">
 				<a class="privacy">Privacy Policy</a>
 				<a class="cookies">Cookie Policy</a>
+				<a class="colySign" target="_blank" href="https://perspectiveweb.eu/en">Created by <img src="css/images/perspective-logo.png">
 			</div>
 		</div>
 	</footer>
@@ -1923,6 +1533,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 <script src="vendors/css3-animate-it.js"></script>
 <script src="vendors/swiper.min.js"></script>
+<script src="vendors/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
 <script src="vendors/bootstrap/bootstrap.min.js"></script>
 <script src="vendors/formValidation/formValidator.js"></script>
@@ -1930,12 +1541,11 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 <script src="vendors/threejs/OrbitControls.min.js"></script>
 <script src="vendors/threejs/OBJLoader.min.js"></script>
 <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-<script src="https://amcharts.com/lib/3/amcharts.js"></script>
-<script src="https://amcharts.com/lib/3/pie.js"></script>
-<script src="https://amcharts.com/lib/3/plugins/export/export.min.js"></script>
-<script src="https://amcharts.com/lib/3/themes/light.js"></script>
-<script src="https://amcharts.com/lib/3/plugins/responsive/responsive.min.js"></script>
 <script src="vendors/jquery-custom-content-scroller.js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<script src="vendors/jquery-ui-slider-pips.js"></script>
+<sript src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></sript>
+
 <script src="vendors/app.js"></script>
 <script>
 	MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/colibra","postsPerLine":4,"limit":4,"picture":"small","fields":["description","claps","publishAt"],"ratio":"landscape"}})
@@ -1978,167 +1588,28 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 			video.play();
 		},3000);
 	});
-	var chart1 = AmCharts.makeChart("chartdiv1", {
-		"type": "pie",
-		"startDuration": 0,
-		"theme": "light",
-		"addClassNames": true,
-		"innerRadius": "50%",
-		"autoMargins": false,
-		"maxLabelWidth": 90,
-		"fontSize":13,
-		"fontFamily":"Cairo",
-		"color":"#333",
-		"defs": {
-		"filter": [{
-			"id": "shadow",
-			"width": "200%",
-			"height": "200%",
-			"feOffset": {
-			"result": "offOut",
-			"in": "SourceAlpha",
-			"dx": 0,
-			"dy": 0
-			},
-			"feGaussianBlur": {
-			"result": "blurOut",
-			"in": "offOut",
-			"stdDeviation": 5
-			},
-			"feBlend": {
-			"in": "SourceGraphic",
-			"in2": "blurOut",
-			"mode": "normal"
-			},
-		}]
-		},
-		"dataProvider": [{
-		"country": "Team & Advisors",
-		"litres": 20,
-		"color":"#56b963"
-		}, {
-		"country": "Network Growth",
-		"litres": 14,
-		"color":"#d6e147"
-		}, {
-		"country": "Colibra Reserve",
-		"litres": 20,
-		"color":"#faee49"
-		}, {
-		"country": "Bounty Program",
-		"litres": 1,
-		"color":"#ffcb08"
-		}, {
-		"country": "Token Sale",
-		"litres": 45,
-		"color":"#faa71a"
-		}],
-		"valueField": "litres",
-		"titleField": "country",
-		"colorField": "color",
-		"listeners": [
-			{
-				"event": "clickSlice",
-				"method": function(e) {
-					if (($(window).outerWidth() < 1000)) {
-						e.dataItem.pulled = false;
-						e.chart.validateData();
-					}
-				}
-			},
-			// {
-			// 	"event": "rollOverSlice",
-			// 	"method": function(e) {
-			// 		e.dataItem.visibleInLegend = false;
-			// 		e.chart.validateData();
-			// 	}
-			// }
-		]
+
+</script>
+<div class="fb-customerchat"
+page_id="1064943330348557"
+minimized="true">
+</div>
+<script>
+	window.fbAsyncInit = function() {
+	FB.init({
+		appId            : '912333495590130',
+		autoLogAppEvents : true,
+		xfbml            : true,
+		version          : 'v2.11'
 	});
-
-	var chart2 = AmCharts.makeChart("chartdiv2", {
-		"type": "pie",
-		"startDuration": 0,
-		"theme": "light",
-		"addClassNames": true,
-		"innerRadius": "50%",
-		"autoMargins": false,
-		"maxLabelWidth": 90,
-		"fontSize":13,
-		"fontFamily":"Cairo",
-		"color":"#333",
-		"defs": {
-		"filter": [{
-			"id": "shadow",
-			"width": "200%",
-			"height": "200%",
-			"feOffset": {
-			"result": "offOut",
-			"in": "SourceAlpha",
-			"dx": 0,
-			"dy": 0
-			},
-			"feGaussianBlur": {
-			"result": "blurOut",
-			"in": "offOut",
-			"stdDeviation": 5
-			},
-			"feBlend": {
-			"in": "SourceGraphic",
-			"in2": "blurOut",
-			"mode": "normal"
-			}
-		}]
-		},
-		"dataProvider": [{
-		"country": "Insurance Reserves",
-		"litres": 30,
-		"color":"#41a4db"
-		}, {
-		"country": "Product Development",
-		"litres":35,
-		"color":"#23bfd6"
-		}, {
-		"country": "Marketing & Business Development",
-		"litres": 25,
-		"color":"#13a69b"
-		}, {
-		"country": "Legal & Licences",
-		"litres": 5,
-		"color":"#56b963"
-		}, {
-		"country": "Exchange Listings",
-		"litres": 5,
-		"color":"#9bcb5b"
-		}],
-		"valueField": "litres",
-		"titleField": "country",
-		"colorField": "color",
-		"listeners": [
-			{
-				"event": "clickSlice",
-				"method": function(e) {
-					if (($(window).outerWidth() < 1000)) {
-						e.dataItem.pulled = false;
-						e.chart.validateData();
-					}
-				}
-			},
-			// {
-			// 	"event": "rollOverSlice",
-			// 	"method": function(e) {
-
-			// 	}
-			// }
-		]
-	});
-	chart1.accessible = false;
-	chart1.balloon.enabled = false;
-	chart1.accessibleLabel = '';
-
-	chart2.accessible = false;
-	chart2.balloon.enabled = false;
-	chart2.accessibleLabel = '';
+	};
+	(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
 </script>
 </body>
 </html>

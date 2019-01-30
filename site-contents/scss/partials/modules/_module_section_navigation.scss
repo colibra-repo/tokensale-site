@@ -89,7 +89,7 @@ h2.number {
     position: relative;
     // padding: 100px 0;
     // background: $white;
-    
+
 }
 
 // section -1
@@ -111,10 +111,22 @@ h2.number {
     }
 }
 
-//section -2 
+//section -2
+#section2,
+#section3{
+    p{
+        text-align: center;
+    }
+    .cd-60-middle,
+     .cd-60{
+         background: url(../css/images/green-bg.png) top center no-repeat;
+         background-size: cover;
+         padding-top: 70px;
+    }
+}
 
 .cd-section-wrapper {
-   
+
     & .cd-60 {
         position: relative;
         width: 100%;
@@ -126,12 +138,12 @@ h2.number {
             right: 0;
             top: 0;
             bottom: 0;
-            margin: auto; 
+            margin: auto;
             }
-        }  
+        }
     }
     & .cd-40 {
-        width: 100%; 
+        width: 100%;
     }
     & .cd-40-middle {
         width: 100%;
@@ -154,7 +166,7 @@ h2.number {
                     display: block;
                     margin: 0 auto;
                 }
-            }  
+            }
         }
     }
     & .cd-60-last {
@@ -179,7 +191,7 @@ h2.number {
                     right: 0;
                     top: 0;
                     bottom: 0;
-                    margin: auto; 
+                    margin: auto;
                     cursor: pointer;
                 }
             }
@@ -209,8 +221,8 @@ h2.number {
             padding-top: 25px;
             text-align: center;
         }
-    } 
-   
+    }
+
 }
 .cd-section-wrapper-main {
     & .cd-40-left,
@@ -231,17 +243,27 @@ h2.number {
     padding: 0 20px;
 }
 @media #{$tablet} {
+    
     .cd-section-wrapper {
         & .cd-60-middle {
             & .image_wrapper_middle {
                 & img {
                     width: 19%;
-                }  
+                }
             }
         }
     }
+    #section2,
+    #section3{
+        
+        .cd-60-middle,
+        .cd-60{
+            background: linear-gradient(to right, #0e7476 0%, #06ba70 100%);
+            
+        }
+    }
 }
-    
+
 @media #{$tablet1}{
     .cd-section-wrapper {
         & .cd-60-middle {
@@ -259,7 +281,7 @@ h2.number {
                     }
                 }
             }
-        } 
+        }
     }
     #video-laptop-mp4 {
         padding-bottom: 88.5%;
@@ -281,9 +303,9 @@ h2.number {
                 background-image: url("../css/images/IPhoneX-Mariya-pulse_button.png");
                 background-repeat: no-repeat;
             }
-        } 
+        }
     }
-} 
+}
 
 @media #{$tablet1} {
     #solution{
@@ -293,7 +315,7 @@ h2.number {
     #section1 {
         padding: 80px 0 0;
         margin-bottom: 40px;
-        
+
     }
     // section -1
     .cd_section_body {
@@ -348,7 +370,7 @@ h2.number {
         -o-transform: scale(0.7);
         transform: scale(0.7);
     }
-    
+
     #cd-vertical-nav a.is-selected .cd-dot {
         background-color: $green;
         position: relative;
@@ -393,15 +415,15 @@ h2.number {
     }
     .dot-nav--item {
         position: relative;
-        &:before, 
-        &:after { 
-            content: ""; 
+        &:before,
+        &:after {
+            content: "";
         }
         &:before {
         position: absolute;
-        top: -1px; 
-        bottom: -1px; 
-        left: -1px; 
+        top: -1px;
+        bottom: -1px;
+        left: -1px;
         right: -1px;
         transform: scale(0);
         opacity: 0;
@@ -412,16 +434,16 @@ h2.number {
         &:after {
         position: absolute;
         display: block;
-        width: 3px; 
+        width: 3px;
         height:55px;
         margin: -8px auto;
         background-color: $green2;
         right: 13px;
         }
-        &:last-child:after { 
-            display:none; 
+        &:last-child:after {
+            display:none;
         }
-        &:hover { 
+        &:hover {
             cursor: pointer;
         }
     }
@@ -447,8 +469,8 @@ h2.number {
                 & img {
                     // width: 100%;
                     width: 600px;
-                } 
-            }  
+                }
+            }
         }
         & .cd-40 {
             width: 50%;
@@ -471,14 +493,14 @@ h2.number {
                     padding: 140px 0 0 120px;
                 }
             }
-            
-        } 
-        
+
+        }
+
         &:after {
             clear: both;
             display: block;
             content: '';
-        } 
+        }
     }
     .cd-section-wrapper {
         & .cd-40-middle {
@@ -539,7 +561,7 @@ h2.number {
             clear: both;
             display: block;
             content: '';
-        } 
+        }
     }
 
     .cd-section-wrapper-main {
@@ -557,27 +579,27 @@ h2.number {
                     padding: 50px 0 30px;
                 }
             }
-            
+
         }
         & .cd-60-right {
             width: 47%;
             float: right;
             padding-left: 50px;
             padding-right: 20px;
-          
+
         }
         &:after {
             clear: both;
             display: block;
             content: '';
-        } 
+        }
     }
 }
 @media #{$tablet2}{
     #video-laptop-mp4 {
         padding-bottom:79%;
     }
-} 
+}
 @media #{$desktop} {
     .cd-section-wrapper {
         & .cd-60 {
@@ -586,11 +608,11 @@ h2.number {
                 & img {
                     left: 15%;
                     // left: 20%;
-                } 
-            }  
+                }
+            }
         }
         & .cd-40-middle {
-            height: 600px;  
+            height: 600px;
         }
         & .cd-60-middle {
             height: 600px;
@@ -608,11 +630,11 @@ h2.number {
             }
         }
     }
-    
+
     #video-laptop-mp4 {
         padding-bottom:82.5%;
     }
-    
+
 }
 
 @media screen and (min-width:1400px){
@@ -636,8 +658,7 @@ h2.number {
                     margin-left: 0;
                     padding-left: 30px;
                 }
-            } 
+            }
         }
     }
 }
-  

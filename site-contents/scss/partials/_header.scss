@@ -3,13 +3,16 @@
 \* ------------------------------------------------------------ */
 
 .header {
-    position: fixed!important;
-    // background: $white;
+    position: fixed !important;
     width: 100%;
     left: 0;
     right: 0;
     z-index: 11;
-    // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),0 2px 4px 0 rgba(0,0,0,0.08);
+    top:0;
+    &.mobile {
+        background: $white;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),0 2px 4px 0 rgba(0,0,0,0.08);
+    }
     & .header_wrapper {
         & .logo {
             display: inline-block;
@@ -93,13 +96,14 @@
             width: 18px;
             height: 18px;
             & span {
-                background: $darkgray1;
+                // background: $darkgray1;
+                background: $green;
             }
-            &.active{
-                & span {
-                    background: $white;
-                }
-            }
+            // &.active{
+            //     & span {
+            //         background: $white;
+            //     }
+            // }
         }
         & .lang_bar {
             color: $darkgray1;
@@ -234,16 +238,16 @@
     }
 }
 
-@media #{$tablet1} {
+@media #{$tablet2} {
     .header.header-fixed {
-        position: fixed;
-        background: $white;
+        position: fixed !important;
+        background: $white!important;
         width: 100%;
         left: 0;
         right: 0;
         z-index: 11;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),0 2px 4px 0 rgba(0,0,0,0.08);
-       
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.12),0 2px 4px 0 rgba(0,0,0,0.08) !important;
+        top: 0;
         & .header_wrapper {
             // padding-bottom: 20px;
             // padding: 15px 0;
@@ -262,7 +266,7 @@
                 color: $darkgray1;
                 & .menu {
                     & li {
-                        padding: 0 13px;
+                        padding: 0 20px;
                     }
                 }
                 &.active {
@@ -594,3 +598,4 @@
         }
     }
 }
+

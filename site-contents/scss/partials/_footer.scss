@@ -27,9 +27,16 @@
     padding: 20px 0 30px;
     cursor: pointer;
     & a {
-        margin: 0 10px;
+        margin: 0 5px;
         &:hover {
             color: $green2;
+        }
+    }
+}
+@media #{$mobile}{
+    .social-links {
+        & a {
+            margin: 0 10px;
         }
     }
 }
