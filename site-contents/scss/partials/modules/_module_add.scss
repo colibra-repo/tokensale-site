@@ -331,6 +331,11 @@
         display: block;
     }
 }
+.thankyou_message {
+    color: $white;
+    text-align: center;
+    font-size: 20px;
+}
 @media #{$mobile} {
     .pricing_wrapper {
         margin-top: 20px;
@@ -381,6 +386,11 @@
     .subscribe_center {
         width: 70%;
         margin: 0 auto;
+    }
+    .thankyou_message {
+        color: $white;
+        text-align: center;
+        font-size: 20px;
     }
     .section__title.white.join {
         padding-bottom: 30px !important;

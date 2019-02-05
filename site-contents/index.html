@@ -8,13 +8,11 @@
 	<title>Colibra</title>
 
 	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico"/>
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet"/>
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/animations-ie-fix.css"/>
 	<link rel="stylesheet" href="css/animations.css"/>
 	<link rel="stylesheet" href="css/swiper.min.css"/>
-	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/slick.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
@@ -22,7 +20,6 @@
 	<link rel="stylesheet" href="vendors/jquery-custom-content-scroller.js/jquery.mCustomScrollbar.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<!-- Resources -->
-	<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 	<!-- Hotjar Tracking Code -->
 	<script>
 		(function(h,o,t,j,a,r){
@@ -50,7 +47,7 @@
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-NBX3GB8');</script>
 	<!-- End Google Tag Manager -->
 	<!-- Mailchimp -->
-	<scriptid="mcjs">
+	<script id="mcjs">
 		!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/334c93a8c8bb3f4ea25fa3018/d6ecca77f505aec982dd7d1d6.js");
 	</script>
 </head>
@@ -1312,8 +1309,8 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 					<ul class="logos_partners">
 						<li class=""><a href="https://limechain.tech/" target="_blank"><img src="css/images/Lime-logo.png"></a></li>
 						<li class="kleros"><a href="https://kleros.io/" target="_blank"><img src="css/images/kleros-logo.png"></a></li>
-						<li class=""><a href="https://kleros.io/" target="_blank"><img src="css/images/eleven_logo.png"></a></li>
-						<li class=""><a href="https://kleros.io/" target="_blank"><img src="css/images/truebit.png"></a></li>
+						<li class=""><a href="https://www.11.me/" target="_blank"><img src="css/images/eleven_logo.png"></a></li>
+						<li class=""><a href="https://truebit.io/" target="_blank"><img src="css/images/truebit.png"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -1334,7 +1331,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		</div>
 		<div class="section_body">
 			<div class="shell">
-				<form id="subscribeForm" method="POST" action="sendmail.php">
+				<form id="subscribeForm">
 					<div class="subscribe_wrapper">
 						<div class="subscribe_center">
 							<div class="col">
@@ -1354,7 +1351,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<div class="form-group">
 											<div class="form-group-inner">
 												<div class="form__control">
-													<input type="submit" value="Subscribe" class="btn toggleForm">
+													<input onClick="postMail()" type="button" value="Subscribe" class="btn toggleForm">
 
 												</div>
 											</div>
@@ -1374,11 +1371,6 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 			</div>
 		</div>
 	</section>
-	<!-- <section class="chat_icon">
-		<a href="https://t.me/wearecolibra" target="_blank" class="telegram_chat" target="_blank">
-			<img src="css/images/telegram-big.png">
-		</a>
-	</section> -->
 	<footer class="footer">
 		<div class="shell">
 			<div class="social_icons">
@@ -1389,9 +1381,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 					<li><a class="youTube" href="https://www.youtube.com/channel/UCDAZCmrMYbKnf9miFDFLFhQ" target="_blank"><img src="css/images/gray-8.png"></a></li>
 					<li><a class="linkin" href="https://www.linkedin.com/company/wearecolibra/" target="_blank"><img src="css/images/linkedin-gray.png"></a></li>
 					<li><a class="reddit" href="https://www.reddit.com/user/wearecolibra" target="_blank"><img src="css/images/gray-2.png"></a></li>
-					<!-- <li><a class="instagram" href="https://www.instagram.com/wearecolibra/" target="blank"><img src="css/images/instagram-gray.png"></a></li> -->
 					<li><a class="github" href="https://github.com/orgs/colibra-repo/dashboard" target="blank"><img src="css/images/github-gray.png"></a></li>
-					<!-- <li><a class="steemit" href="https://steemit.com/@wearecolibra/" target="blank"><img src="css/images/steemit.png"></a></li> -->
 				</ul>
 			</div>
 			<div class="social-links">
@@ -1564,11 +1554,6 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 <script src="vendors/swiper.min.js"></script>
 <script src="vendors/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
-<script src="vendors/bootstrap/bootstrap.min.js"></script>
-<script src="vendors/formValidation/formValidator.js"></script>
-<script src="vendors/threejs/three.min.js"></script>
-<script src="vendors/threejs/OrbitControls.min.js"></script>
-<script src="vendors/threejs/OBJLoader.min.js"></script>
 <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
 <script src="vendors/jquery-custom-content-scroller.js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
@@ -1581,6 +1566,36 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 </script>
 
 <script>
+	function postMail() {
+
+		var data 		= {};
+		data.email 		= $('#email').val();
+		// data.firstName 	= $('#firstName').val();
+		// data.lastName 	= $('#lastName').val();
+		// data.country 	= $('#country').val();
+		// data.amount 	= $('#amount').val();
+		// data.question 	= $('#question').val();
+
+		$.ajaxSetup( { headers: { 'Content-type': "application/json" } } );
+		$.ajax({
+			method: "POST",
+			url: "/colibra_full_vertion/sendmail.php",
+			// dataType: "json",
+			data: data,
+			success: function () {
+				$('.subscribe_wrapper .subscribe_center .col').html('<p class="thankyou_message">Mail Sent. Thank you , we will contact you shortly</p>');
+				// $('.section_foot').removeClass('visible');
+				// $('.btn.toggleForm').css('display', 'inline-block');
+				document.location = document.location.href+"#join";
+			},
+			error: function (response) {
+				alert('error');
+				$('.subscribe_wrapper .subscribe_center .col').html('<p class="thankyou_message">Mail Sent. Thank you , we will contact you shortly</p>');
+				document.location = document.location.href+"#join";
+			},
+		});
+	}
+
 	(function($){
 		   $(window).on("load",function(){
 			   $(".cd-popup-wrapper-body").mCustomScrollbar();

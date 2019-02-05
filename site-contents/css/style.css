@@ -4381,6 +4381,12 @@ tbody {
   display: block;
 }
 
+.thankyou_message {
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+}
+
 @media only screen and (min-width: 480px) {
   .pricing_wrapper {
     margin-top: 20px;
@@ -4426,6 +4432,11 @@ tbody {
   .subscribe_center {
     width: 70%;
     margin: 0 auto;
+  }
+  .thankyou_message {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
   }
   .section__title.white.join {
     padding-bottom: 30px !important;
@@ -4598,6 +4609,10 @@ tbody {
 /* ------------------------------------------------------------ *\
    Timeline
 \* ------------------------------------------------------------ */
+#vertical-slider .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  background-color: #ffc200;
+}
+
 .ui-slider-float .ui-slider-tip, .ui-slider-float .ui-slider-tip-label {
   width: 50px;
 }
@@ -4710,7 +4725,7 @@ tbody {
 .slider-question .slider-question-wrapper .slider-left .min {
   font-size: 46px;
   font-family: "Cairo", sans-serif;
-  color: #0a9372;
+  color: #ffc200;
   font-weight: 600;
   display: inline-block;
 }
@@ -4723,7 +4738,7 @@ tbody {
 .slider-question .slider-question-wrapper .slider-right .currency {
   font-size: 46px;
   font-family: "Cairo", sans-serif;
-  color: #0a9372;
+  color: #ffc200;
   font-weight: 600;
   display: inline-block;
 }
@@ -4739,7 +4754,7 @@ tbody {
 
 .slider-question .slider-question-wrapper .green-label,
 .slider-question .slider-question-wrapper .euro-label {
-  color: #0a9372;
+  color: #ffc200;
   font-size: 40px;
   font-family: "Cairo", sans-serif;
   font-weight: 400;
@@ -4850,7 +4865,7 @@ tbody {
     margin-right: -13px;
   }
   .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
-    background: #ffc200;
+    background-color: #ffc200;
   }
   .slider-question .slider-question-wrapper .slider-left .min {
     color: #ffc200;

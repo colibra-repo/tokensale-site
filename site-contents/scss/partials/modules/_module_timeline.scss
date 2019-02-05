@@ -1,6 +1,9 @@
 /* ------------------------------------------------------------ *\
    Timeline
 \* ------------------------------------------------------------ */
+#vertical-slider .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+  background-color: $yellow;
+}
 .ui-slider-float .ui-slider-tip, .ui-slider-float .ui-slider-tip-label {
   width: 50px;
 }
@@ -101,7 +104,8 @@
         font-size: 46px;
         font-family: $font-family;
         // color: #0a9372;
-        color: $green;
+        // color: $green;
+        color: $yellow;
         font-weight: 600;
         display: inline-block;
       }
@@ -113,7 +117,8 @@
         font-size: 46px;
         font-family: $font-family;
         //color: #0a9372;
-        color: $green;
+        // color: $green;
+        color: $yellow;
         font-weight: 600;
         display: inline-block;
       }
@@ -129,7 +134,8 @@
     & .green-label,
     & .euro-label {
       //color: #05bc70;
-      color: $green;
+      // color: $green;
+      color: $yellow;
       // font-size: 35px;
       font-size: 40px;
       font-family: $font-family;
@@ -247,7 +253,7 @@
     margin-right: -13px;
   }
   .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
-      background: $yellow;
+      background-color: $yellow;
   }
   .slider-question {
     & .slider-question-wrapper {
