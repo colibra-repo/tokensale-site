@@ -3,18 +3,12 @@
 /* 
 $_POST variables
 	- email
-	- firstName
-	- lastName
-	- country
-	- amount
-	- question
-
 	usage: $_POST['variable'];
 */
 
 $to      = $_POST['email']; 
 $subject = 'the subject';
-$message = 'hello';
+$message = file_get_contents('mail_template.html');
 $headers = 'From: webmaster@example.com' . "\r\n" .
     'Reply-To: webmaster@example.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
