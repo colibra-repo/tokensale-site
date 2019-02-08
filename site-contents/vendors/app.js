@@ -185,6 +185,10 @@ $(document).ready(function() {
     }).on("slidechange", function( e, ui ) {
     });
     $("#vertical-slider").draggable();
+
+
+
+    
 });
 
 var lastScrollTop = 0;

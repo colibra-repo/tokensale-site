@@ -1329,7 +1329,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		</div>
 		<div class="section_body">
 			<div class="shell">
-				<form id="subscribeForm">
+				<form action="https://Colibra.us20.list-manage.com/subscribe/post?u=334c93a8c8bb3f4ea25fa3018&amp;id=ab630730ba" method="post" id="mc-embedded-subscribe-form subscribeForm" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 					<div class="subscribe_wrapper">
 						<div class="subscribe_center">
 							<div class="col">
@@ -1338,7 +1338,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<div class="form-group">
 											<div class="form-group-inner">
 												<div class="form__control">
-													<input id="email" name="email" type="text" class="form-control field" placeholder="Enter Email "/>
+													<input type="email" value="" name="EMAIL" class="required email form-control field" id="mce-EMAIL mceEMAIL" placeholder="Enter Email " required minlength="5" maxlength="30">
 												</div>
 											</div>
 										</div>
@@ -1349,8 +1349,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<div class="form-group">
 											<div class="form-group-inner">
 												<div class="form__control">
-													<input onClick="postMail()" type="button" value="Subscribe" class="btn toggleForm">
-
+													<input type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe" class="btn ">
 												</div>
 											</div>
 										</div>
@@ -1564,36 +1563,34 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 </script>
 
 <script>
-	function postMail() {
+	// $(document).ready(function() {
+	// 	$( "#mc-embedded-subscribe" ).click(function() {
+	// 		$('.subscribe_wrapper .subscribe_center .col').html('<p class="thankyou_message">Mail Sent. Thank you , we will contact you shortly</p>');
+	// 		document.location = document.location.href+"#join";
+	// 	});
+	// });
+	// function postMail() {
 
-		var data 		= {};
-		data.email 		= $('#email').val();
-		// data.firstName 	= $('#firstName').val();
-		// data.lastName 	= $('#lastName').val();
-		// data.country 	= $('#country').val();
-		// data.amount 	= $('#amount').val();
-		// data.question 	= $('#question').val();
+	// 	var data 		= {};
+	// 	data.email 		= $('#email').val();
 
-		$.ajaxSetup( { headers: { 'Content-type': "application/json" } } );
-		$.ajax({
-			method: "POST",
-			url: "/colibra_full_vertion/sendmail.php",
-			// dataType: "json",
-			data: data,
-			success: function () {
-				$('.subscribe_wrapper .subscribe_center .col').html('<p class="thankyou_message">Mail Sent. Thank you , we will contact you shortly</p>');
-				// $('.section_foot').removeClass('visible');
-				// $('.btn.toggleForm').css('display', 'inline-block');
-				document.location = document.location.href+"#join";
-			},
-			error: function (response) {
-				alert('error');
-				$('.subscribe_wrapper .subscribe_center .col').html('<p class="thankyou_message">Mail Sent. Thank you , we will contact you shortly</p>');
-				document.location = document.location.href+"#join";
-			},
-		});
-	}
-
+	// 	$.ajaxSetup( { headers: { 'Content-type': "application/json" } } );
+	// 	$.ajax({
+	// 		method: "POST",
+	// 		url: "/colibra_full_vertion/sendmail.php",
+	// 		// dataType: "json",
+	// 		data: data,
+	// 		success: function () {
+	// 			$('.subscribe_wrapper .subscribe_center .col').html('<p class="thankyou_message">Mail Sent. Thank you , we will contact you shortly</p>');
+	// 			document.location = document.location.href+"#join";
+	// 		},
+	// 		error: function (response) {
+	// 			alert('error');
+	// 			$('.subscribe_wrapper .subscribe_center .col').html('<p class="thankyou_message">Mail Sent. Thank you , we will contact you shortly</p>');
+	// 			document.location = document.location.href+"#join";
+	// 		},
+	// 	});
+	// }
 	(function($){
 		   $(window).on("load",function(){
 			   $(".cd-popup-wrapper-body").mCustomScrollbar();
