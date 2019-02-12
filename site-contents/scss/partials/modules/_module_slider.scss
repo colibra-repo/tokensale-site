@@ -49,18 +49,18 @@
     background-image: none;
 }
 .swiper-button-next {
-    background-image: url("../css/images/next.png");
+    // background-image: url("../css/images/next.png");
     background-size: 17px 28px;
     background-repeat: no-repeat;
     display: inline-block;
-    right: -5px;
+    // right: -5px;
 }
 .swiper-button-prev {
-    background-image: url("../css/images/previous.png");
+    // background-image: url("../css/images/previous.png");
     background-size: 17px 28px;
     background-repeat: no-repeat;
     display: inline-block;
-    left: -5px;
+    // left: -5px;
 }
 
 @media #{$tablet} {

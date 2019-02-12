@@ -373,12 +373,12 @@ h3 {
 	Sprite
 \* ------------------------------------------------------------ */
 [class^="ico-"] {
-  background-image: url("../css/images/sprite_solution_green.png");
+  background-image: url("../css/images/all_sprites.png");
   display: inline-block;
   vertical-align: middle;
 }
 
-.num-2 {
+.ico-num-2 {
   display: inline-block;
   margin-right: 10px;
   vertical-align: top;
@@ -387,43 +387,26 @@ h3 {
   border: none;
   box-shadow: 0 0 0 0 rgba(101, 212, 166, 0.1);
   border-radius: 50%;
-  background-image: url("../css/images/solution green/num-2.png");
-  background-size: cover;
+  background-position: -10px -99px;
   background-repeat: no-repeat;
   animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
-.num-3 {
+.ico-num-3 {
   display: inline-block;
   margin-right: 10px;
   vertical-align: top;
   width: 41px;
   height: 30px;
+  background-position: -101px -10px;
   border: none;
   box-shadow: 0 0 0 0 rgba(101, 212, 166, 0.1);
-  background-image: url("../css/images/solution green/num-3.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-}
-
-.num-4 {
-  display: inline-block;
-  margin-right: 10px;
-  vertical-align: top;
-  width: 29px;
-  height: 36px;
-  border: none;
-  box-shadow: 0 0 0 0 rgba(101, 212, 166, 0.1);
-  background-image: url("../css/images/solution green/num-4.png");
-  background-size: cover;
   background-repeat: no-repeat;
   animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
 .num-2:hover,
-.num-3:hover,
-.num-4:hover {
+.num-3:hover {
   animation: none;
 }
 
@@ -431,6 +414,78 @@ h3 {
   to {
     box-shadow: 0 0 0 45px rgba(101, 212, 166, 0);
   }
+}
+
+.ico-star {
+  width: 71px;
+  height: 69px;
+  background-position: -10px -10px;
+}
+
+.ico-linkIn {
+  width: 25px;
+  height: 25px;
+  background-position: -162px -104px;
+}
+
+.ico-perspective {
+  width: 27px;
+  height: 16px;
+  background-position: -101px -60px;
+}
+
+.ico-next {
+  width: 17px;
+  height: 28px;
+  background-position: -209px -10px;
+}
+
+.ico-prev {
+  width: 17px;
+  height: 28px;
+  background-position: -209px -58px;
+}
+
+.ico-github {
+  width: 27px;
+  height: 27px;
+  background-position: -57px -99px;
+}
+
+.ico-reddit {
+  width: 27px;
+  height: 27px;
+  background-position: -104px -99px;
+}
+
+.ico-twitter {
+  width: 27px;
+  height: 27px;
+  background-position: -162px -10px;
+}
+
+.ico-facebook {
+  width: 27px;
+  height: 27px;
+  background-position: -162px -57px;
+}
+
+.ico-youtube {
+  width: 27px;
+  height: 27px;
+  background-position: -10px -149px;
+}
+
+.ico-linkedin {
+  width: 27px;
+  height: 27px;
+  background-position: -57px -149px;
+}
+
+.ico-medium {
+  width: 27px;
+  height: 27px;
+  background-image: -104px -149px;
 }
 
 /* ------------------------------------------------------------ *\
@@ -3364,19 +3419,15 @@ tbody {
 }
 
 .swiper-button-next {
-  background-image: url("../css/images/next.png");
   background-size: 17px 28px;
   background-repeat: no-repeat;
   display: inline-block;
-  right: -5px;
 }
 
 .swiper-button-prev {
-  background-image: url("../css/images/previous.png");
   background-size: 17px 28px;
   background-repeat: no-repeat;
   display: inline-block;
-  left: -5px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4493,7 +4544,7 @@ tbody {
     padding-left: 40px;
   }
   .section_flight {
-    background: url("../css/images/Graphics-up1.png") top left no-repeat, url("../css/images/Graphics-down1.png") bottom right no-repeat, linear-gradient(to right, #0e7476 0%, #06ba70 100%);
+    background: url("../css/images/Graphics-uptablet.png") top left no-repeat, url("../css/images/Graphics-downtablet.png") bottom right no-repeat, linear-gradient(to right, #0e7476 0%, #06ba70 100%);
     padding-top: 50px;
     height: 1000px;
     border-top: 0;

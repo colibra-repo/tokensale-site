@@ -10,7 +10,6 @@
 	<link rel="shortcut icon" type="image/x-icon" href="css/images/favicon.ico"/>
 	<link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet"/>
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/animations-ie-fix.css"/>
 	<link rel="stylesheet" href="css/animations.css"/>
 	<link rel="stylesheet" href="css/swiper.min.css"/>
 	<link rel="stylesheet" href="css/slick.css"/>
@@ -19,6 +18,23 @@
 	<link rel="stylesheet" href="css/jquery-ui-slider-pips.css"/>
 	<link rel="stylesheet" href="vendors/jquery-custom-content-scroller.js/jquery.mCustomScrollbar.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+
+	<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+	<script src="vendors/jquery-ui-slider-pips.js" defer></script>
+
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js" defer></script>
+
+	<script src="vendors/css3-animate-it.js" defer></script>
+	<script src="vendors/swiper.min.js" defer></script>
+	<script src="vendors/slick.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js" defer></script>
+	<script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+	<script src="vendors/jquery-custom-content-scroller.js/jquery.mCustomScrollbar.concat.min.js" defer></script>
+
+	<sript src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js" defer></sript>
+	<script src="vendors/app.js" defer></script>
+	
 	<!-- Resources -->
 	<!-- Hotjar Tracking Code -->
 	<script>
@@ -109,9 +125,9 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 	<div class="fb-customerchat"  
 	attribution=setup_tool  
 	page_id="1064943330348557"  
-	theme_color="#0a9372"  
-	logged_in_greeting="Welcome!  Log into messenger and see our project! "  
-	logged_out_greeting="Welcome!  Log into messenger and see our project! ">
+	theme_color="#0084ff"  
+	logged_in_greeting="Welcome to Colibra! Log into Messenger and learn how we’re Democratising insurance."
+	logged_out_greeting="Welcome to Colibra! Log into Messenger and learn how we’re Democratising insurance.">
 </div>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBX3GB8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -127,13 +143,13 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 						<span></span>
 					</a>
 					<a class="logo" href="index.html">
-						<img src="css/images/white-logo.png">
+						<img src="css/images/white-logo.png" alt="Colibra Logo" title="">
 					</a>
 					<a class="logo-mobile" href="index.html">
-						<img src="css/images/green-logo.png">
+						<img src="css/images/green-logo.png" alt="Colibra Logo" title="">
 					</a>
 					<a class="logo-fixed" href="index.html">
-						<img src="css/images/green-logo.png">
+						<img src="css/images/green-logo.png" alt="Colibra Logo" title="">
 					</a>
 					<nav class="nav">
 						<ul class="menu">
@@ -198,8 +214,8 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</a>
 								</div>
 							</div>
-							<div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"><i class="ico-next"></i></div>
+							<div class="swiper-button-prev"><i class="ico-prev"></i></div>
 						</div>
 					</div>
 				</div>
@@ -251,8 +267,8 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 					<div class="cd-60-right">
 						<div class="democratic_inner">
 							<figure class="democraticInsurance">
-								<img class="insuranceBounce"src="css/images/Insurance05.png">
-								<img class="insuranceImg" src="css/images/Insurance06.png">
+								<img class="insuranceBounce"src="css/images/Insurance05.png" alt="Democratic Insurance" title="">
+								<img class="insuranceImg" src="css/images/Insurance06.png" alt="Democratic Insurance" title="">
 							</figure>
 						</div>
 					</div>
@@ -291,32 +307,11 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 					<div class="cd-60-middle animated fadeInRight">
 						<figure class="image_wrapper_middle">
 							<img class="image1 animated fadeInRight slowest" src="css/images/scr-1.gif">
-							<img class="image2 animated fadeInRight slowest" src="css/images/IPhoneX-static-scr.png">
+							<img class="image2 animated fadeInRight slowest" src="css/images/IPhoneX-static-scr.png" alt="Instant Payment" title="">
 						</figure>
 					</div>
 				</div>
 			</section>
-			<!--<section id="section4" class="cd-section">
-				<div class="cd-section-wrapper animatedParent animateOnce">
-					<div class="cd-40 animated fadeInRight">
-						<div class="cd-40-wrapper last">
-							<div class="cd-40-content">
-								<h3 class="cd-40-title"><span class="num-4"></span>Effortless Experience</h3>
-								<p>Personalize and activate your insurance in just a few clicks, as simple as chatting with a friend. Anytime. Anywhere. Filing a claim is just as easy. </p>
-							</div>
-						</div>
-					</div>
-					<div class="cd-60-last animated fadeInLeft">
-						<a class="video_box_wrapper video2 fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/3xyor804W8A?autoplay=1&showinfo=0&controls=1" frameborder="0" allowfullscreen>
-							<figure class="image_wrapper">
-								<div class="video-image animated fadeInLeft slowest">
-									<div class="pulse-button"></div>
-								</div>
-							</figure>
-						</a>
-					</div>
-				</div>
-			</section>-->
 			<div class="widget animatedParent animateOnce">
 				<span class="blinking-line animated bounceIn"></span>
 				<div class="rotate">
@@ -347,18 +342,12 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								This service is based on Flight Compensation Regulation (EC) 261/2004 and it means that you swap your rights to receive a compensation under this directive in exchange for a fixed and instant payout that has higher probability of occuring.
 							</p>
 							<p class="flight_detiles down title left">*Conditions apply</p>
-							<!-- <ul class="flight_bullets">
-								<li>Bullet - 01</li>
-								<li>Bullet - 02</li>
-								<li>Bullet - 03</li>
-								<li>Bullet - 04</li>
-							</ul> -->
 						</div>
 					</div>
 				</div>
 				<div class="col col_2">
 					<div class="flight_img_center">
-						<img src="css/images/Smartphone-Section.png">
+						<img src="css/images/Smartphone-Section.png" alt="Flight's Delay" title="">
 					</div>
 				</div>
 			</div>
@@ -402,12 +391,6 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							This service is based on Flight Compensation Regulation (EC) 261/2004 and it means that you swap your rights to receive a compensation under this directive in exchange for a fixed and instant payout that has higher probability of occuring.
 						</p>
 						<p class="flight_detiles down title left">*Conditions apply</p>
-						<!-- <ul class="flight_bullets">
-							<li>Bullet - 01</li>
-							<li>Bullet - 02</li>
-							<li>Bullet - 03</li>
-							<li>Bullet - 04</li>
-						</ul> -->
 					</div>
 				</div>
 			</div>
@@ -423,13 +406,12 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		<div class="section_pricing_background">
 			<div class="shell">
 				<h2 class="pricing__title">Pricing</h2>
-				<!-- <p class="pricing__text pt20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ncididunt ut labore et dolore magna aliqua. Ut enim ad minim</p> -->
 				<div class="pricing_wrapper">
 					<div class="pricing_box">
 						<div class="box_head">
 							<h3 class="pricing_box_title">FAIR FLIGHT</h3>
 							<figure class="box_img">
-								<img src="css/images/icon-star.png">
+								<i class="ico-star"></i>
 							</figure>
 						</div>
 						<div class="box_body">
@@ -437,10 +419,6 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<li><i class="fas fa-check"></i>45 minutes should be renamed to 60 minutes</li>
 								<li><i class="fas fa-check"></i>Button text should be renamed to <b>Get Early Access</b></li>
 								<li><i class="fas fa-check"></i>Freepay should be renamed to …..</li>
-								<!-- <li><i class="fas fa-check"></i>Invite friends and increase payout</li> -->
-								<!-- <li><i class="fas fa-times"></i>sed do eiusmod</li>
-								<li><i class="fas fa-times"></i>ed do eiusmod</li>
-								<li><i class="fas fa-times"></i>tempor incididunt</li> -->
 							</ul>
 						</div>
 						<div class="box_foot">
@@ -450,29 +428,6 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 						</div>
 						<p class="pricing_foot_text">*This service is based on Flight Compensation Regulation (EC) 261/2004 and it means that you swap your rights to receive a compensation under this directive in exchange for a fixed and instant payout that has higher probability of occuring.</p>
 					</div>
-
-					<!-- <div class="pricing_box green_box">
-						<div class="box_head">
-							<h3 class="pricing_box_title green">Pro</h3>
-							<figure class="box_img">
-								<img src="css/images/icon-crown.png">
-							</figure>
-						</div>
-						<div class="box_body">
-							<ul class="box_list">
-								<li><i class="fas fa-check"></i>Lorem ipsum dolor</li>
-								<li><i class="fas fa-check"></i>sit amet, consectetur</li>
-								<li><i class="fas fa-check"></i>adipiscing elit,</li>
-								<li><i class="fas fa-check"></i>sed do eiusmod</li>
-								<li><i class="fas fa-check"></i>ed do eiusmod</li>
-								<li><i class="fas fa-check"></i>tempor incididunt</li>
-							</ul>
-						</div>
-						<div class="box_foot">
-							<p class="box_price">99<span class="price_cuurency">&euro; / mo</span></p>
-							<a class="btn pricing">Get started</a>
-						</div>
-					</div> -->
 				</div>
 			</div>
 		</div>
@@ -604,12 +559,12 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 				<div class="body_head">
 					<div class="logo_wrapper">
 						<ul class="logos">
-							<li><a href=""><img src="css/images/logo-1.png"></a></li>
-							<li><a href=""><img src="css/images/logo-8.png"></a></li>
-							<li><a href=""><img src="css/images/logo-9.png"></a></li>
-							<li><a href=""><img src="css/images/logo-10.png"></a></li>
-							<li><a href=""><img src="css/images/logo-11.png"></a></li>
-							<li><a href=""><img src="css/images/logo-7.png"></a></li>
+							<li><a href=""><img src="css/images/logo-1.png" alt="Google" title=""></a></li>
+							<li><a href=""><img src="css/images/logo-8.png" alt="IBM" title=""></a></li>
+							<li><a href=""><img src="css/images/logo-9.png" alt="Barcklays" title=""></a></li>
+							<li><a href=""><img src="css/images/logo-10.png" alt="MunichRe" title=""></a></li>
+							<li><a href=""><img src="css/images/logo-11.png" alt="Deutche Telecom" title=""></a></li>
+							<li><a href=""><img src="css/images/logo-7.png" alt="Willis Towers Wotson" title=""></a></li>
 						</ul>
 					</div>
 				</div>
@@ -620,7 +575,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Kalojan-Georgiev.png">
+											<img src="css/images/Kalojan-Georgiev.png" alt="Kalojan Georgiev" title="Kalojan Georgiev">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -630,7 +585,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="foot_part">
 										<p>Founding partner of K-Pharm Global Group (KPGG), worth $100M+</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/kalojan/" target="_blank">
-											<img src="css/images/linkIn-icon.png">
+											<i class="ico-linkIn"></i>
 										</a>
 									</div>
 								</div>
@@ -640,7 +595,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<p>Kalojan is the founding partner of K-Pharm Global Group (KPGG), а $100mln+ group of pharma-trading companies. The company is a one-stop shop, offering services such as logistics, distribution, marketing and regulatory support for pharmaceutical manufacturers, covering over 50 countries in Africa, Europe and Asia.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/kalojan/" target="_blank">
-											<img src="css/images/linkIn-icon.png">
+											<i class="ico-linkIn"></i>
 										</a>
 									</div>
 								</div>
@@ -651,7 +606,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Boris-Standjiev.png">
+											<img src="css/images/Boris-Standjiev.png" alt="Boris Standjiev" title="Boris Standjiev">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -663,7 +618,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>Google, Musala Soft</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/boris-strandjev-9a714325/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -675,7 +630,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/boris-strandjev-9a714325/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -687,7 +642,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="card-wrapper">
 										<div class="head_part">
 											<figure>
-												<img src="css/images/Miroslav-Zaporozhanov.png">
+												<img src="css/images/Miroslav-Zaporozhanov.png" alt="Miroslav Zaporozhanov" title="Miroslav Zaporozhanov">
 											</figure>
 										</div>
 										<div class="middle_part">
@@ -698,7 +653,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 											<p>Zapomedia, E.On, OMV</p>
 											<a class="linkedIn" href="https://www.linkedin.com/in/miroslavzaporozhanov/" target="_blank">
 												<figure>
-													<img src="css/images/linkIn-icon.png">
+													<i class="ico-linkIn"></i>
 												</figure>
 											</a>
 										</div>
@@ -710,7 +665,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<div class="back_head">
 											<a class="linkedIn" href="https://www.linkedin.com/in/miroslavzaporozhanov/" target="_blank">
 												<figure>
-													<img src="css/images/linkIn-icon.png">
+													<i class="ico-linkIn"></i>
 												</figure>
 											</a>
 										</div>
@@ -722,7 +677,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Ivan-Belomorski.png">
+											<img src="css/images/Ivan-Belomorski.png" alt="Ivan Belomorski" title="Ivan Belomorski">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -733,7 +688,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>IBM, Deutsche Telekom, Musala Soft</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/ivanbelomorski/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -745,7 +700,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/ivanbelomorski/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -757,7 +712,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Svetlin-Zhekov.jpg">
+											<img src="css/images/Svetlin-Zhekov.jpg" alt="Svetlin Zhekov" title="Svetlin Zhekov">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -768,7 +723,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>Munich Re</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/svetlinzhekov/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -780,7 +735,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/svetlinzhekov/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -792,7 +747,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Alexander-Ivanov.png">
+											<img src="css/images/Alexander-Ivanov.png" alt="Alexander Ivanov" title="Alexander Ivanov">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -803,7 +758,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>Urbanise.com, VMware, Musala Soft</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/aleksander-ivanov-1180475a/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -815,7 +770,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/aleksander-ivanov-1180475a/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -827,7 +782,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Mario-Ignatov.jpg">
+											<img src="css/images/Mario-Ignatov.jpg" alt="Mario-Ignatov" title="">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -838,7 +793,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>Qualifast Ltd, Musala Soft, VMware, MICROS Systems UK Limited</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/mario-ignatov-9a738367/?originalSubdomain=bg" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -850,7 +805,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/mario-ignatov-9a738367/?originalSubdomain=bg" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -876,7 +831,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Vassil-Terziev.png">
+											<img src="css/images/Vassil-Terziev.png" alt="Vassil Terziev" title="">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -887,7 +842,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>Telerik (Progress)</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/vassil-terziev-24242/?originalSubdomain=bg" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -899,7 +854,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/vassil-terziev-24242/?originalSubdomain=bg" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -911,7 +866,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/George-Spasov.png">
+											<img src="css/images/George-Spasov.png" alt="George Spasov" title="">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -922,7 +877,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>LimeChain</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/george-spasov-9b486094/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -934,7 +889,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/george-spasov-9b486094/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -946,7 +901,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/George-Stoyanov.png">
+											<img src="css/images/George-Stoyanov.png" alt="George Stoyanov" title="">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -957,7 +912,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>CX Engineer at Chronicle (a Google X company), Ex: Uber</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/george-stoyanov-3b6ba357/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -968,7 +923,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/george-stoyanov-3b6ba357/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -981,7 +936,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Atanas-Raykov.png">
+											<img src="css/images/Atanas-Raykov.png" alt="Atanas Raykov" title="">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -992,7 +947,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>Viber</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/atanasraykov/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1004,7 +959,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/atanasraykov/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1016,7 +971,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Tunio_zafer.png">
+											<img src="css/images/Tunio_zafer.png" alt="Tunio Zafer" title="">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -1027,7 +982,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>pCloud, Host.bg</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/tunioz/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1039,7 +994,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/tunioz/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1051,7 +1006,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Anton-Titov.png">
+											<img src="css/images/Anton-Titov.png" alt="Anton Titov" title="">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -1062,7 +1017,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>pCloud, Host.bg</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/anton-titov-3368bb5b/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1074,7 +1029,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/anton-titov-3368bb5b/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1086,7 +1041,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Velizar-Velichkov.png">
+											<img src="css/images/Velizar-Velichkov.png" alt="Velizar Velichkov" title="">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -1097,7 +1052,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>Trendo.bg, Grabo.bg</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/velizar-velichkov-2615ab27" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1108,7 +1063,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/velizar-velichkov-2615ab27" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1121,7 +1076,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Nikolay-Todorov.jpg">
+											<img src="css/images/Nikolay-Todorov.jpg" alt="Nikolay Todorov" title="">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -1132,7 +1087,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>LimeChain</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/nicktodorov/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1143,7 +1098,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/nicktodorov/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1156,7 +1111,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Martin-Panekov.png">
+											<img src="css/images/Martin-Panekov.png" alt="Martin Panekov" title="">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -1167,7 +1122,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>Coca-Cola Hellenic</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/marin-panekov-2227bb69/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1178,7 +1133,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/marin-panekov-2227bb69/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1191,7 +1146,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Ivaylo-Standjiev.png">
+											<img src="css/images/Ivaylo-Standjiev.png" alt="Vaylo Standjiev" title="">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -1202,7 +1157,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>Google, VMWare, HyperScience</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/ivaylo-strandjev-84889239/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1214,7 +1169,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/ivaylo-strandjev-84889239/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1226,7 +1181,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Zlatolina-Mukova.png">
+											<img src="css/images/Zlatolina-Mukova.png" alt="Zlatolina Mukova" title="">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -1237,7 +1192,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>NEVEQ, Euroins, Deputy Minister of Bulgaria</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/zlatolina-mukova-b5765b27" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1249,7 +1204,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/zlatolina-mukova-b5765b27" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1261,7 +1216,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="card-wrapper">
 									<div class="head_part">
 										<figure>
-											<img src="css/images/Shmuel_Zamir.png">
+											<img src="css/images/Shmuel_Zamir.png" alt="Shmuel Zamir" title="">
 										</figure>
 									</div>
 									<div class="middle_part">
@@ -1273,7 +1228,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<p>The Hebrew University of Jerusalem</p>
 										<a class="linkedIn" href="http://www.ma.huji.ac.il/~zamir/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1285,7 +1240,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="back_head">
 										<a class="linkedIn" href="http://www.ma.huji.ac.il/~zamir/" target="_blank">
 											<figure>
-												<img src="css/images/linkIn-icon.png">
+												<i class="ico-linkIn"></i>
 											</figure>
 										</a>
 									</div>
@@ -1313,10 +1268,10 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 			<div class="shell">
 				<div class="logo_wrapper partners">
 					<ul class="logos_partners">
-						<li class=""><a href="https://limechain.tech/" target="_blank"><img src="css/images/Lime-logo.png"></a></li>
-						<li class="kleros"><a href="https://kleros.io/" target="_blank"><img src="css/images/kleros-logo.png"></a></li>
-						<li class=""><a href="https://www.11.me/" target="_blank"><img src="css/images/eleven_logo.png"></a></li>
-						<li class=""><a href="https://truebit.io/" target="_blank"><img src="css/images/truebit.png"></a></li>
+						<li class=""><a href="https://limechain.tech/" target="_blank"><img src="css/images/Lime-logo.png" alt="Lime Logo" title=""></a></li>
+						<li class="kleros"><a href="https://kleros.io/" target="_blank"><img src="css/images/kleros-logo.png" alt="Kleros Logo" title=""></a></li>
+						<li class=""><a href="https://www.11.me/" target="_blank"><img src="css/images/eleven_logo.png" alt="Eleven Logo" title=""></a></li>
+						<li class=""><a href="https://truebit.io/" target="_blank"><img src="css/images/truebit.png" alt="Truebit Logo" title=""></a></li>
 					</ul>
 				</div>
 			</div>
@@ -1380,24 +1335,24 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		<div class="shell">
 			<div class="social_icons">
 				<ul class="list_icons">
-					<li><a class="medium" href="https://medium.com/colibra" target="_blank"><img src="css/images/medium-gray.png"></a></li>
-					<li><a class="facebook" href="https://www.facebook.com/WeAreColibra/" target="_blank"><img src="css/images/gray-4.png"></a></li>
-					<li><a class="twitter" href="https://twitter.com/wearecolibra" target="_blank"><img src="css/images/gray-3.png"></a></li>
-					<li><a class="youTube" href="https://www.youtube.com/channel/UCDAZCmrMYbKnf9miFDFLFhQ" target="_blank"><img src="css/images/gray-8.png"></a></li>
-					<li><a class="linkin" href="https://www.linkedin.com/company/wearecolibra/" target="_blank"><img src="css/images/linkedin-gray.png"></a></li>
-					<li><a class="reddit" href="https://www.reddit.com/user/wearecolibra" target="_blank"><img src="css/images/gray-2.png"></a></li>
-					<li><a class="github" href="https://github.com/orgs/colibra-repo/dashboard" target="blank"><img src="css/images/github-gray.png"></a></li>
+					<li><a class="medium" href="https://medium.com/colibra" target="_blank"><i class="ico-medium"></i></li>
+					<li><a class="facebook" href="https://www.facebook.com/WeAreColibra/" target="_blank"><i class="ico-facebook"></i></li>
+					<li><a class="twitter" href="https://twitter.com/wearecolibra" target="_blank"><i class="ico-twitter"></i></li>
+					<li><a class="youTube" href="https://www.youtube.com/channel/UCDAZCmrMYbKnf9miFDFLFhQ" target="_blank"><i class="ico-youtube"></i></li>
+					<li><a class="linkin" href="https://www.linkedin.com/company/wearecolibra/" target="_blank"><i class="ico-linkedin"></i></li>
+					<li><a class="reddit" href="https://www.reddit.com/user/wearecolibra" target="_blank"><i class="ico-reddit"></i></li>
+					<li><a class="github" href="https://github.com/orgs/colibra-repo/dashboard" target="blank"><i class="ico-github"></i></li>
 				</ul>
 			</div>
 			<div class="social-links">
 				<a class="privacy">Privacy Policy</a>
 				<a class="cookies">Cookie Policy</a>
-				<a class="colySign" target="_blank" href="https://perspectiveweb.eu/en">Created by <img src="css/images/perspective-logo.png">
+				<a class="colySign" target="_blank" href="https://perspectiveweb.eu/en">Created by <i class="ico-perspective"></i>
 			</div>
 		</div>
 	</footer>
 </div>
-<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+
 
 <div class="cd-popup cookies-policy">
 	<div class="cd-popup-container">
@@ -1554,24 +1509,8 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
         </div>
 	</div>
 </div>
-<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 
-<script src="vendors/css3-animate-it.js"></script>
-<script src="vendors/swiper.min.js"></script>
-<script src="vendors/slick.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
-<script src="https://medium-widget.pixelpoint.io/widget.js"></script>
-<script src="vendors/jquery-custom-content-scroller.js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-<script src="vendors/jquery-ui-slider-pips.js"></script>
-<sript src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></sript>
-
-<script src="vendors/app.js"></script>
-<script>
-	MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/colibra","postsPerLine":4,"limit":4,"picture":"small","fields":["description","claps","publishAt"],"ratio":"landscape"}})
-</script>
-
-<script>
+<script type="text/javascript">
 	// $(document).ready(function() {
 	// 	$( "#mc-embedded-subscribe" ).click(function() {
 	// 		$('.subscribe_wrapper .subscribe_center .col').html('<p class="thankyou_message">Mail Sent. Thank you , we will contact you shortly</p>');
@@ -1606,28 +1545,28 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		   });
 	   })(jQuery);
 	//close popup
-    $('.cd-popup').on('click', function (event) {
-        if ($(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup')) {
-            event.preventDefault();
-            $(this).removeClass('is-visible');
-        }
-    });
+	$('.cd-popup').on('click', function (event) {
+		if ($(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup')) {
+			event.preventDefault();
+			$(this).removeClass('is-visible');
+		}
+	});
 
-    //close popup when clicking the esc keyboard button
-    $(document).keyup(function (event) {
-        if (event.which == '27') {
-            $('.cd-popup').removeClass('is-visible');
-        }
-    });
+	//close popup when clicking the esc keyboard button
+	$(document).keyup(function (event) {
+		if (event.which == '27') {
+			$('.cd-popup').removeClass('is-visible');
+		}
+	});
 
 	$('.cookies').on('click', function (event) {
-        event.preventDefault();
-        $('.cd-popup.cookies-policy').addClass('is-visible');
-    });
+		event.preventDefault();
+		$('.cd-popup.cookies-policy').addClass('is-visible');
+	});
 	$('.privacy').on('click', function (event) {
-        event.preventDefault();
-        $('.cd-popup.privacy-policy').addClass('is-visible');
-    });
+		event.preventDefault();
+		$('.cd-popup.privacy-policy').addClass('is-visible');
+	});
 
 
 	var video = document.getElementById("laptopVideo");
@@ -1638,26 +1577,11 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 	});
 
 </script>
-<!-- <div class="fb-customerchat"
-page_id="1064943330348557"
-minimized="true">
-</div>
-<script>
-	window.fbAsyncInit = function() {
-	FB.init({
-		appId            : '912333495590130',
-		autoLogAppEvents : true,
-		xfbml            : true,
-		version          : 'v2.11'
-	});
-	};
-	(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script> -->
+
+<script type="text/javascript">
+	MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/colibra","postsPerLine":4,"limit":4,"picture":"small","fields":["description","claps","publishAt"],"ratio":"landscape"}})
+</script>
+
+
 </body>
 </html>
