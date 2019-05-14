@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de-DE">
 <head>
 	<meta charset="utf-8"/>
 
@@ -134,17 +134,47 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 <!-- End Google Tag Manager (noscript) -->
 
 <style type="text/css">
-	
-	@media only screen and (min-width : 1200px) {
-		.nav .menu li {
-			padding: 0 18px;
-			
-		}
-		
-		.header.header-fixed .header_wrapper .nav .menu li {
-			padding: 0 18px;
-		}
-	}
+.btn_main {
+    min-width: 260px;
+}
+.slider-question .slider-question-wrapper .min-label {
+    line-height: 23px;
+}
+.section_roadmap .circle_text2 {
+    top: -27%;
+}
+@media only screen and (min-width: 1024px) {
+    .section_roadmap .circle_text2 {
+        top: 5%;
+    }
+}
+@media only screen and (min-width : 1200px) {
+    .nav .menu li {
+        padding: 0 8px;
+        display: inline-block;
+    }
+    .nav .menu li:last-child {
+        padding-right: 0;
+    }
+    .header.header-fixed .header_wrapper .nav .menu li {
+        padding: 0 8px;
+    }
+    .header.header-fixed .header_wrapper .nav .menu li:last-child {
+        padding-right: 0;
+    }
+    
+}
+@media only screen and (min-width : 1366px) {
+    .nav .menu li {
+        padding: 0 16px;
+    }
+    
+    .header.header-fixed .header_wrapper .nav .menu li {
+        padding: 0 16px;
+    }
+    
+}
+
 </style>
 <div class="main">
 	<section class="section_main" id="home">
@@ -167,29 +197,31 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 					</a>
 					<nav class="nav">
 						<ul class="menu">
-							<li><a onClick="scrollToEl('home')" >Home</a></li>
+							<li><a onClick="scrollToEl('home')" >Startseite</a></li>
 							<li><a onClick="scrollToEl('problem')" >Problem</a></li>
-							<li><a onClick="scrollToEl('solution')" >Solution</a></li>
-							<li><a onClick="scrollToEl('ico')" >Product</a></li>
-							<li><a onClick="scrollToEl('documents')" >Pricing</a></li>
+							<li><a onClick="scrollToEl('solution')" >Lösung</a></li>
+							<li><a onClick="scrollToEl('ico')" >Produkt</a></li>
+							<li><a onClick="scrollToEl('documents')" >Preisgestaltung</a></li>
 							<li><a onClick="scrollToEl('roadmap')" >Roadmap</a></li>
 							<li><a onClick="scrollToEl('blog')" >Blog</a></li>
 							<li><a onClick="scrollToEl('team')" >Team</a></li>
-							<li><a onClick="scrollToEl('partners')" >Partners</a></li>
-							<li><a onClick="scrollToEl('join')" >Join</a></li>
-							<li><a href="https://investor.colibra.io/"><img style="width: 20px; height:19px;" src="css/images/germany.png"></a></li>
+							<li><a onClick="scrollToEl('partners')" >Partner</a></li>
+                            <li><a onClick="scrollToEl('join')" >Beitreten</a></li>
+                            <li><a onClick="scrollToEl('join')" >Beitreten</a></li>
+                            <li><a href="#"><img style="width: 20px; height:19px;" src="css/images/united-kingdom.png"></a></li>
 						</ul>
-					</nav>
+                    </nav>
+                    
 				</div>
 			</div>
 		</header>
 		<div class="section_body home">
 			<div class="shell">
 				<div class="head_section">
-					<h1 class="head__title">Making Insurance<span class="main_break">Trustworthy Again</span></h1>
-					<p class="head_text"> Colibra is building the first client centric insurance company<span class="main_break"> by democratising the claim handling process. </span></p>
+					<h1 class="head__title">Versicherung wieder <span class="main_break">vertrauenswürdig machen</span></h1>
+					<p class="head_text">Colibra baut die erste kundenzentrische Versicherungsgesellschaft<span class="main_break">durch Demokratisierung des Schadensabwicklungsprozesses auf. </span></p>
 					<div class="main_btns-desktop">
-						<a data-fancybox-type="iframe" href="https://www.youtube.com/embed/_kA0PDStmYU?autoplay=0&showinfo=0&controls=1" frameborder="0" width="960" height="569" allowfullscreen class="video1 fancybox btn btn_main"><i class="far fa-play-circle"></i>Watch video</a>
+						<a data-fancybox-type="iframe" href="https://www.youtube.com/embed/_kA0PDStmYU?autoplay=0&showinfo=0&controls=1" frameborder="0" width="960" height="569" allowfullscreen class="video1 fancybox btn btn_main"><i class="far fa-play-circle"></i>Schauen Sie das Video</a>
 					</div>
 				</div>
 			</div>
@@ -199,8 +231,8 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		<div class="section_body">
 			<div class="shell">
 				<div class="section_problem_content">
-					<h2 class="section__title video-title">Insurance needs our help</h2>
-					<p class="section_problem_text">Over the years, insurance companies have become increasingly centralized, complex and profit-driven. Transparency about their solvency and claim handling is practically missing. Conflict of interest is ubiquitous, which means it's profitable for insurers to delay and reject their clients' claims. This makes fewer and fewer people use insurance to mitigate the risks to their health, business and property.</p>
+					<h2 class="section__title video-title">Versicherung braucht unsere Hilfe</h2>
+					<p class="section_problem_text">Im Laufe der Jahre sind Versicherungsunternehmen zunehmend zentralisiert, komplex und gewinnorientiert. Die Transparenz, hinsichtlich ihrer Zahlungsfähigkeit und Schadensabwicklung, fehlt praktisch. Interessenkonflikte sind allgegenwärtig, was bedeutet, dass es für die Versicherer profitabel ist, die Ansprüche ihrer Kunden zu verzögern und zurückzuweisen. Dies führt dazu, dass immer weniger Menschen eine Versicherung nutzen, um die Risiken für Gesundheit, Geschäft und Eigentum zu mindern.</p>
 					<div class="slider">
 						<div class="swiper-container">
 							<div class="swiper-wrapper">
@@ -208,7 +240,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<div class="slider_content">
 										<a href="http://image-src.bcg.com/Images/evolution_revolution_how_insurers_stay_relevant_digital_world_tcm9-165956.pdf" target="_blank">
 											<div class="slide_body">
-												<p>The insurance industry is on the brink of technology-driven change. The centralized claims handling process lacks transparency and fairness. The Morgan Stanley/BCG,Read Analysis</p>
+												<p>Die Versicherungsbranche steht vor dem technologiegetriebenen Wandel. Dem zentralisierten Forderungsabwicklungsprozess mangelt es an Transparenz und Gerechtigkeit. Dr Morgan Stanley BCG, Analyse lesen Problem</p>
 											</div>
 										</a>
 									</div>
@@ -216,7 +248,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								<div class="swiper-slide">
 									<a href="http://www-935.ibm.com/services/us/gbs/bus/pdf/gbe03008-usen-02-insurancet3.pdf" target="_blank">
 										<div class="slide_body">
-											<p>IBM validated that at least 58% show distrust in insurance industry. Issues at focus are Personal Experience and Transparancy of Price and Terms&Conditions. IBM Global Services Institute, Read Analysis</p>
+											<p>IBM hat bestätigt, dass mindestens 58% Misstrauen in der Versicherungsbranche zeigen. Im Mittelpunkt stehen die persönlichen Erfahrungen und die Transparenz der Preise und der Geschäftsbedingungen. IBM Global Service Institute, Analyse lesen   Eine von PwC in Großbritannien durchgeführte Umfrage zeigt, dass 73% Misstrauen gegenüber Versicherern bestehen. PWC Großbritannien, Umfrageergebnisse anzeigen  Die Versicherungsbranche steht vor dem technologiegetriebenen Wandel. Dem zentralisierten Forderungsabwicklungsprozess mangelt es an Transparenz und Gerechtigkeit. Dr Morgan Stanley BCG, Analyse lesen  Problem</p>
 										</div>
 									</a>
 								</div>
@@ -224,7 +256,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									<a href="https://www.pwc.co.uk/assets/pdf/fsrr-consumer-survey-final.pdf" target="_blank">
 
 										<div class="slide_body">
-											<p>A survey done by PwC in the UK found that there is 73% distrust in insurance providers. PWC United Kingdom,View Survey Results</p>
+											<p>Eine von PwC in Großbritannien durchgeführte Umfrage zeigt, dass 73% Misstrauen gegenüber Versicherern bestehen. PWC Großbritannien, Umfrageergebnisse anzeigen Die Versicherungsbranche steht vor dem technologiegetriebenen Wandel. Dem zentralisierten Forderungsabwicklungsprozess mangelt es an Transparenz und Gerechtigkeit. Dr Morgan Stanley BCG, Analyse lesen Problem</p>
 										</div>
 									</a>
 								</div>
@@ -274,8 +306,8 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 					<div class="cd-40-left">
 						<div class="cd-40-wrapper">
 							<div class="cd-40-content">
-								<h2 class="section__title solution">The Democratic Insurance Company</h2>
-								<p>Combining the power of blockchain, smart contracts, stablecoins, tokens, oracles, AI and gamified crowdsourced claim decisions, Colibra is building a new type of insurance company that can change the insurance industry for good.</p>
+								<h2 class="section__title solution">Die demokratische Versicherungsgesellschaft</h2>
+								<p>Colibra kombiniert die Kraft von Blockchain, intelligenten Verträgen, stabilen Münzen, Spielmarken, Orakeln und gamifizierten Crowdsourcing - Entschädigungsentscheidungen und baut eine neue Art von Versicherungsunternehmen auf, die die Versicherungswirtschaft endgültig verändern kann.</p>
 							</div>
 						</div>
 					</div>
@@ -294,9 +326,9 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 					<div class="cd-40 animated fadeInRight">
 						<div class="cd-40-wrapper">
 							<div class="cd-40-content">
-								<h3 class="cd-40-title"><span class="num-2"></span>Democratic Claim Handling</h3>
-								<p>Colibra can’t reject or delay claim payments like traditional insurers because the claim handling process is outsourced to independent jurors on the blockchain.</p>
-								<p class="pt10">See how our democratic claim handling platform works:</p>
+								<h3 class="cd-40-title"><span class="num-2"></span>Umgang mit demokratischen Forderungen</h3>
+								<p>Colibra kann Schadenszahlungen nicht wie traditionelle Versicherer ablehnen oder verzögern, da der Schadenbearbeitungsprozess an unabhängige Juroren der Blockchain ausgelagert wird.</p>
+								<p class="pt10">Sehen Sie, wie unsere demokratische Plattform für Forderungsabwicklung funktioniert:</p>
 							</div>
 						</div>
 					</div>
@@ -314,8 +346,8 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 					<div class="cd-40-middle animated fadeInLeft">
 						<div class="cd-40-wrapper">
 							<div class="cd-40-content">
-								<h3 class="cd-40-title"><span class="num-3"></span></i>Instant Payments</h3>
-								<p>When a claim is approved by the community, a smart contract instantly triggers a payment to the client. 100% autonomously from the insurer.</p>
+								<h3 class="cd-40-title"><span class="num-3"></span></i>Sofortige Zahlungen</h3>
+								<p>Wenn ein Anspruch von der Gemeinde genehmigt wird, löst ein intelligenter Vertrag sofort eine Zahlung an den Kunden aus. 100% autonom vom Versicherer.</p>
 							</div>
 						</div>
 					</div>
@@ -329,8 +361,8 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 			</section>
 			<div class="widget animatedParent animateOnce">
 				<span class="blinking-line animated bounceIn"></span>
-				<div class="rotate">
-					<p>Solution</p>
+				<div class="rotate white">
+					<p>Lösung</p>
 				</div>
 			</div>
 		</div>
@@ -339,24 +371,24 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		<div class="shell mobile">
 			<div class="cols">
 				<div class="col col_2 left">
-					<h2 class="flight__title mobile">Product</h2>
-					<h2 class="flight__title desktop">Instantly Paid When Flight’s Delayed</h2>
-					<h3 class="flight_subtitle">Get an instant compensation of up to €100 if your flight gets delayed by 60 minutes or more at ZERO upfront cost*.</h3>
+					<h2 class="flight__title mobile">Produkt</h2>
+					<h2 class="flight__title desktop">Sofortige Bezahlung, wenn der Flug verspätet ist</h2>
+					<h3 class="flight_subtitle">Erhalten Sie eine sofortige Entschädigung von bis zu 100 Euro, wenn sich Ihr Flug 60 Minuten oder mehr bei NULL-Vorabkosten verzögert.</h3>
 					<div class="bg">
 						<div class="flight_img_center mobile">
 							<!-- <img src="css/images/Smartphone-Section.png"> -->
 						</div>
 
-						<p class="flight_detiles title">Here’s how it works:</p>
+						<p class="flight_detiles title">So funktioniert das:</p>
 						<p class="flight_detiles">
-							Use our mobile wallet to store your boarding pass. Choose a flight delay time which is greater than 60 minutes. If flight gets delayed with 1 hour you instantly get €25. All with ZERO upfront cost to you.
+							Nutzen Sie unsere mobile Brieftasche, um Ihre Bordkarte aufzubewahren. Wählen Sie eine Flugverspätungszeit von mehr als 60 Minuten. Wenn der Flug mehr als 1 Stunde verspätet ist, erhalten Sie sofort 25 Euro. Alles mit NULL-Kosten für Sie.
 						</p>
 						<div class="fligt-mobile">
-							<p class="flight_detiles down title left">Where’s the catch for the free money:</p>
+							<p class="flight_detiles down title left">Wo ist die Falle für das kostenlose Geld:</p>
 							<p class="flight_detiles down">
-								This service is based on Flight Compensation Regulation (EC) 261/2004 and it means that you swap your rights to receive a compensation under this directive in exchange for a fixed and instant payout that has higher probability of occuring.
+								Dieser Service basiert sich auf der Flug-Kompensation-Regulation (EU) 261/2004 und bedeutet, dass Sie Ihre Rechte gegen eine Entschädigung gemäß dieser Richtlinie und gegen eine feste und sofortige Auszahlung mit höherer Wahrscheinlichkeit eintauschen.
 							</p>
-							<p class="flight_detiles down title left">*Conditions apply</p>
+							<p class="flight_detiles down title left">*Bedingungen gelten</p>
 						</div>
 					</div>
 				</div>
@@ -374,11 +406,11 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							<div class="slider-question-wrapper" >
 								<div class="slider-left">
 									<p class="min">120<span class="green-label">min</span></p>
-									<span class="min-label">Delay</span>
+									<span class="min-label">Verspätung</span>
 								</div>
 								<div class="slider-right">
 									<p class="currency"><span class="euro-label">&euro;</span>65</p>
-									<span class="min-label">Compensation</span>
+									<span class="min-label">Kompensation</span>
 								</div>
 							</div>
 						</div>
@@ -389,11 +421,11 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							<div class="slider-question-wrapper" >
 								<div class="slider-left">
 									<p class="min">120<span class="green-label">min</span></p>
-									<span class="min-label">Delay</span>
+									<span class="min-label">Verspätung</span>
 								</div>
 								<div class="slider-right">
 									<p class="currency"><span class="euro-label">&euro;</span>65</p>
-									<span class="min-label">Compensation</span>
+									<span class="min-label">Kompensation</span>
 								</div>
 							</div>
 						</div>
@@ -401,11 +433,11 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 				</div>
 				<div class="col col_2">
 					<div class="fligt-desktop">
-						<p class="flight_detiles down title left">Where’s the catch for the free money:</p>
+						<p class="flight_detiles down title left">Wo ist die Falle für das kostenlose Geld:</p>
 						<p class="flight_detiles down">
-							This service is based on Flight Compensation Regulation (EC) 261/2004 and it means that you swap your rights to receive a compensation under this directive in exchange for a fixed and instant payout that has higher probability of occuring.
+							Dieser Service basiert sich auf der Flug-Kompensation-Regulation (EU) 261/2004 und bedeutet, dass Sie Ihre Rechte gegen eine Entschädigung gemäß dieser Richtlinie und gegen eine feste und sofortige Auszahlung mit höherer Wahrscheinlichkeit eintauschen.
 						</p>
-						<p class="flight_detiles down title left">*Conditions apply</p>
+						<p class="flight_detiles down title left">*Bedingungen gelten</p>
 					</div>
 				</div>
 			</div>
@@ -413,14 +445,14 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		<div class="widget animatedParent animateOnce">
 			<span class="blinking-line animated bounceIn"></span>
 			<div class="rotate white">
-				<p>Flight Delay Compensation</p>
+				<p>Flugverspätungsausgleich</p>
 			</div>
 		</div>
 	</section>
 	<section class="section_pricing" id="documents">
 		<div class="section_pricing_background">
 			<div class="shell">
-				<h2 class="pricing__title">Pricing</h2>
+				<h2 class="pricing__title">Preisgestaltung</h2>
 				<div class="pricing_wrapper">
 					<div class="pricing_box">
 						<div class="box_head">
@@ -431,26 +463,26 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 						</div>
 						<div class="box_body">
 							<ul class="box_list">
-								<li><i class="fas fa-check"></i>Scan Boarding Pass</li>
-								<li><i class="fas fa-check"></i>Choose delay time (60+ minutes)</li>
-								<li><i class="fas fa-check"></i>Get Instant pay when flight is delayed</li>
-								<li><i class="fas fa-check"></i>Invite friends and increase payout</li>
+								<li><i class="fas fa-check"></i>Bordkarte scannen</li>
+								<li><i class="fas fa-check"></i>Verzögerungszeit wählen (60+ Minuten)</li>
+								<li><i class="fas fa-check"></i>Erhalten Sie sofortige Bezahlung, wenn der Flug verspätet ist</li>
+								<li><i class="fas fa-check"></i>Freunde einladen und die Auszahlung erhöhen</li>
 							</ul>
 						</div>
 						<div class="box_foot">
 							<p class="box_price"><span class="dollar_sign">&euro;</span>0<span class="price_cuurency">*</span></p>
-							<p class="small_text">*Zero Upfront Cost</p>
-							<a href="https://www.colibra.io/" target="_blank" class="btn pricing">Get Early Access</a>
+							<p class="small_text">*Null Vorlaufkosten</p>
+							<a href="https://www.colibra.io/" target="_blank" class="btn pricing">Erhalten Sie einen frühen Zugang</a>
 						</div>
-						<p class="pricing_foot_text">*This service is based on Flight Compensation Regulation (EC) 261/2004 and it means that you swap your rights to receive a compensation under this directive in exchange for a fixed and instant payout that has higher probability of occuring.</p>
+						<p class="pricing_foot_text">*Dieser Service basiert sich auf der Flug-Kompensation-Regulation (EU) 261/2004 und bedeutet, dass Sie Ihre Rechte gegen eine Entschädigung gemäß dieser Richtlinie und gegen eine feste und sofortige Auszahlung mit höherer Wahrscheinlichkeit eintauschen.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="widget animatedParent animateOnce">
 			<span class="blinking-line animated bounceIn"></span>
-			<div class="rotate white">
-				<p>Pricing</p>
+			<div class="rotate">
+				<p>Preisgestaltung</p>
 			</div>
 		</div>
 	</section>
@@ -458,7 +490,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		<div class="section_head">
 			<div class="shell">
 				<h2 class="section__title">Roadmap</h2>
-				<h3 class="section__subtitle roadmap pt20">This is our action plan for reinventing the insurance industry:</h3>
+				<h3 class="section__subtitle roadmap pt20">Das ist unser Aktionsplan zur Neuerfindung der Versicherungsbranche:</h3>
 			</div>
 		</div>
 		<div class="section_body">
@@ -472,7 +504,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 						<span class="ellipse4 animated fadeIn" data-id="5"></span>
 						<span class="circle_text1 animated fadeIn" data-id="6">
 							<p class="circleTitle">MVP</p>
-							<p>Completed a functional prototype of the decentralized claim handling platform. This prototype will be used to rigorously test and fine tune our idea.</p>
+							<p>Fertigstellung eines funktionalen Prototyps der dezentralen Plattform für die Schadensabwicklung. Dieser Prototyp wird verwendet, um unsere Idee rigoros zu testen und zu optimieren.</p>
 						</span>
 					</div>
 					<div class="circle2 animatedParent animateOnce " data-sequence="300" >
@@ -482,8 +514,8 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 						<span class="ellipse3 animated fadeIn" data-id="4"></span>
 						<span class="ellipse4 animated fadeIn" data-id="5"></span>
 						<span class="circle_text2 animated fadeIn" data-id="6">
-							<p class="circleTitle">Colibra 1.0 - Flight Reimbursement Tool</p>
-							<p>First service - Instant Flight Delay Compensation on flights delayed more than 45 min. at $0 upfront cost. User base to be used to upsell w/ travel insurance.</p>
+							<p class="circleTitle">Colibra 1.0 - Tool zur Flugrückerstattung</p>
+							<p> Erster Service - Sofortige Flugverspätungsentschädigung bei Flügen mit Verspätung von mehr als 45 Minuten zu 0 Dollar Vorabkosten, die zum Upselling von Reiseversicherungen verwendet werden soll.</p>
 						</span>
 					</div>
 					<div class="circle3 animatedParent animateOnce" data-sequence="300" style="direction:rtl";>
@@ -494,7 +526,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 						<span class="ellipse4 animated fadeIn" data-id="5"></span>
 						<span class="circle_text3 animated fadeIn" data-id="6">
 							<p class="circleTitle">Crowdfunding</p>
-							<p>Part of our funding will be raised via a crowdfunding event. This will help jumpstart the claim handling platform with voters & clients.</p>
+							<p>Ein Teil unserer Mittel wird durch ein Crowdfunding-Event aufgebracht. Dies wird dazu beitragen, die Antragsbearbeitungsplattform mit Wählern und Kunden voranzutreiben.</p>
 						</span>
 					</div>
 					<div class="circle4 animatedParent animateOnce" data-sequence="300">
@@ -505,7 +537,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 						<span class="ellipse4 animated fadeIn" data-id="5"></span>
 						<span class="circle_text4 animated fadeIn" data-id="6">
 							<p class="circleTitle">Colibra 2.0</p>
-							<p>Insurance license. Full Travel insurance service with decentralized & democratic claim handling. Dynamic policy pricing pricing and automatic payments.</p>
+							<p>Versicherungslizenz. Umfassender Reiseversicherungsservice mit dezentraler und demokratischer Schadenabwicklung. Dynamische Preisgestaltung und automatische Zahlungen.</p>
 						</span>
 					</div>
 				</div>
@@ -514,28 +546,28 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 						<span class="map animated fadeIn" data-id="1">Q4 2018</span>
 						<span class="circle_text1 animated fadeIn" data-id="2">
 							<p class="circleTitle">MVP</p>
-							<p>Completed a functional prototype of the decentralized claim handling platform. This prototype will be used to rigorously test and fine tune our idea.</p>
+							<p>Fertigstellung eines funktionalen Prototyps der dezentralen Plattform für die Schadensabwicklung. Dieser Prototyp wird verwendet, um unsere Idee rigoros zu testen und zu optimieren.</p>
 						</span>
 					</div>
 					<div class="circle2 animatedParent animateOnce " data-sequence="300" >
 						<span class="map up animated fadeIn"  data-id="1">Q1 2019</span>
 						<span class="circle_text2 animated fadeIn" data-id="3">
-							<p class="circleTitle">Colibra 1.0 - Flight Reimbursement Tool</p>
-							<p>First service - Instant Flight Delay Compensation on flights delayed more than 45 min. at $0 upfront cost. User base to be used to upsell w/ travel insurance.</p>
+							<p class="circleTitle">Colibra 1.0 - Tool zur Flugrückerstattung</p>
+							<p>Erster Service - Sofortige Flugverspätungsentschädigung bei Flügen mit Verspätung von mehr als 45 Minuten zu 0 Dollar Vorabkosten, die zum Upselling von Reiseversicherungen verwendet werden soll.</p>
 						</span>
 					</div>
 					<div class="circle3 animatedParent animateOnce" data-sequence="300" style="direction:rtl";>
 						<span class="map animated fadeIn" data-id="1">Q1 2020</span>
 						<span class="circle_text3 animated fadeIn" data-id="2">
 							<p class="circleTitle">Crowdfunding</p>
-							<p>Part of our funding will be raised via a crowdfunding event. This will help jumpstart the claim handling platform with voters & clients.</p>
+							<p> Ein Teil unserer Mittel wird durch ein Crowdfunding-Event aufgebracht. Dies wird dazu beitragen, die Antragsbearbeitungsplattform mit Wählern und Kunden voranzutreiben.</p>
 						</span>
 					</div>
 					<div class="circle4 animatedParent animateOnce" data-sequence="300">
 						<span class="map up animated fadeIn" data-id="1">Q4 2020</span>
 						<span class="circle_text4 animated fadeIn" data-id="2">
 							<p class="circleTitle">Colibra 2.0</p>
-							<p>Insurance license. Full Travel insurance service with decentralized & democratic claim handling. Dynamic policy pricing pricing and automatic payments.</p>
+							<p>Versicherungslizenz. Umfassender Reiseversicherungsservice mit dezentraler und demokratischer Schadenabwicklung. Dynamische Preisgestaltung und automatische Zahlungen.</p>
 						</span>
 					</div>
 				</div>
@@ -551,7 +583,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 	<section class="section_small section_updates" id="blog">
 		<div class="section_head">
 			<div class="shell">
-				<h3 class="section__subtitle1">Read the latest updates on the project progress on our blog</h3>
+				<h3 class="section__subtitle1">Lesen Sie die neuesten Updates zum Projektfortschritt in unserem Blog</h3>
 			</div>
 		</div>
 		<div class="section_body">
@@ -560,14 +592,14 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 			</div>
 		</div>
 		<div class="section_down">
-			<a href="https://medium.com/colibra" target="_blank" class="btn read_more">read more</a>
+			<a href="https://medium.com/colibra" target="_blank" class="btn read_more">Weiterlesen</a>
 		</div>
 	</section>
 	<section class="section_med section_team" id="team">
 		<div class="section_head">
 
 			<h2 class="section__title">Team</h2>
-			<h3 class="section__subtitle team">Our Founding Team has background in these organizations:</h3>
+			<h3 class="section__subtitle team">Unser Gründungsteam hat Hintergrund in diesen Organisationen:</h3>
 
 		</div>
 		<div class="section_body">
@@ -596,10 +628,10 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Kalojan Georgiev</h2>
-										<h3 class="subtitle">Chief Executive Officer</h3>
+										<h3 class="subtitle">Geschäftsführer</h3>
 									</div>
 									<div class="foot_part">
-										<p>Founding partner of K-Pharm Global Group (KPGG), worth $100M+</p>
+										<p>Gründungspartner von K-Pharm Global Group (KPGG), im Wert von 100 Millionen Dollar</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/kalojan/" target="_blank">
 											<i class="ico-linkIn"></i>
 										</a>
@@ -608,7 +640,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 							<div class="back">
 								<div class="card-wrapper">
-									<p>Kalojan is the founding partner of K-Pharm Global Group (KPGG), а $100mln+ group of pharma-trading companies. The company is a one-stop shop, offering services such as logistics, distribution, marketing and regulatory support for pharmaceutical manufacturers, covering over 50 countries in Africa, Europe and Asia.</p>
+									<p>Kalojan ist der Gründungspartner von K-Pharm Global Group (KPGG), eine 100-Millionen-Dollar-Gruppe von Pharma-Handelsunternehmen. Das Unternehmen bietet alles aus erster Hand und bietet Diensleistungen wie Logistik, Vertrieb, Marketing und Unterstützung für pharmazeutische Hersteller in über 50 Ländern in Afrika, Europa und Asien an.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/kalojan/" target="_blank">
 											<i class="ico-linkIn"></i>
@@ -627,8 +659,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Boris Strandjev</h2>
-										<h3 class="subtitle">Chief Technology Officer</h3>
-
+										<h3 class="subtitle">Cheftechnologe</h3>
 									</div>
 									<div class="foot_part">
 										<p>Google, Musala Soft</p>
@@ -642,7 +673,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 							<div class="back">
 								<div class="card-wrapper">
-									<p>Boris is a solutions architect that has a long proven track record of designing and delivering complex technical solutions with multiple front-end applications and high-availability backend systems. He has a BSc in Informatics and a MSc in Artificial Intelligence. He has worked at Google, as well as Musala Soft, where he developed software solutions for companies such as IBM, Deutsche Telekom, Commerzbank and many more.</p>
+									<p>Boris ist ein Lösungsarchitekt, der bereits in der Entwicklung und Bereitstellung komplexer technischer Lösungen mit mehreren Front-End-Anwendungen und Backendsystemen mit hoher Verfügbarkeit vorweisen kann. Er vrfügt über einen BSc in informatik und einen MSc in Artificial Intelligence. Er hat sowohl bei Google, als auch bei Musala Soft gearbeitet, wo er Softwarelösungen für Unternehmen wie IBM, Deutsche Telekom, Commerzbank und viele andere entwickelt hat.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/boris-strandjev-9a714325/" target="_blank">
 											<figure>
@@ -663,7 +694,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										</div>
 										<div class="middle_part">
 											<h2 class="card_title">Miroslav Zaporozhanov</h2>
-											<h3 class="subtitle">Chief Marketing Officer</h3>
+											<h3 class="subtitle">Marketing-Chef</h3>
 										</div>
 										<div class="foot_part">
 											<p>Zapomedia, E.On, OMV</p>
@@ -677,7 +708,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 								</div>
 								<div class="back">
 									<div class="card-wrapper">
-										<p>Miroslav is a former business consultant to some of the largest energy companies in Europe, including OMV and E.ON. He’s also the co-founder of Zapomedia, one of the most prominent digital marketing companies in Bulgaria. Miroslav is a former international stock broker at the largest investment company in Bulgaria - Karoll.</p>
+										<p>Miroslav war früher Unternehmensberater für einige der größten Energieunternehmen in Europa, darunter OMV und E.ON. Er ist auch Mitbegründer von Zapomedia, einem der bekanntesten Unternehmen für digitales Marketing in Bulgarien. Miroslav ist ehemaliger internationaler Börsenmakler bei der größten Investitionsgesellschaft in Bulagarien - Karoll.</p>
 										<div class="back_head">
 											<a class="linkedIn" href="https://www.linkedin.com/in/miroslavzaporozhanov/" target="_blank">
 												<figure>
@@ -698,7 +729,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Ivan Belomorski</h2>
-										<h3 class="subtitle">Chief Operating Officer</h3>
+										<h3 class="subtitle">Betriebsleiter</h3>
 									</div>
 									<div class="foot_part">
 										<p>IBM, Deutsche Telekom, Musala Soft</p>
@@ -712,7 +743,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 							<div class="back">
 								<div class="card-wrapper">
-									<p>Ivan has extensive experience as a Product and Project Manager in developing multiple successful mobile and backend systems. Understanding a product’s added value from a customer standpoint, he excels at using meaningful functional and UX design to translate this added value into a coherent software product. Ivan is experienced in developing large-scale operations with multiple teams and complex deliverables.</p>
+									<p>Ivan verfügt über umfassende Erfahrung als Produkt- und Projektmanager bei der Entwicklung mehrerer erfolgreicher Mobil- und Backendsysteme. Da er den Mehrwert eines Produkts aus Kundensicht versteht, kann er es mit einem sinnvollen Funktions- und UX-Design einsetzen, un diesen Mehrwert in ein kohärentes Softwareprodukt umzusetzen. Ivan hat Erfahrung in der Entwicklung umfangreicher Operationen mit mehreren Teams  und komplexen Leistungen.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/ivanbelomorski/" target="_blank">
 											<figure>
@@ -733,7 +764,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Svetlin Zhekov</h2>
-										<h3 class="subtitle">Full Stack Developer</h3>
+										<h3 class="subtitle">Voller Stack-Entwickler</h3>
 									</div>
 									<div class="foot_part">
 										<p>Munich Re</p>
@@ -747,7 +778,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 							<div class="back">
 								<div class="card-wrapper">
-									<p>Experienced hands-on Team Lead with a demonstrated history of working in the softwarе industry. Skilled in J2EE, Hibernate, Spring and Calypso.</p>
+									<p>Erfahrener Hands-on-Teamleiter mit einer nachgewiesenen Erfahrung in der Software-Branche. Mit Erfahrung in J2EE, Hibernate, Spring und Clypso.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/svetlinzhekov/" target="_blank">
 											<figure>
@@ -768,7 +799,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Alexander Ivanov</h2>
-										<h3 class="subtitle">Back-end Developer</h3>
+										<h3 class="subtitle">Back-End-Entwickler</h3>
 									</div>
 									<div class="foot_part">
 										<p>Urbanise.com, VMware, Musala Soft</p>
@@ -782,7 +813,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 							<div class="back">
 								<div class="card-wrapper">
-									<p>Software Еngineer, specialized in object-oriented design and analysis, Java EE architecture, code quality, and software development. Experienced in the full life cycle of the software design process, including requirements definition, prototyping, proof of concept, design and architecture, interface implementation, testing and maintenance.</p>
+									<p>Software-Ingenieur, spezialisiert auf objektorientiertes Design und Analyse, Java EE, Architektur, Codequalität und Softwareentwicklung. Mit Erfahrung im gesamten Lebenzyklus des Software-Design-Prozesses, einschließlich Anforderungsdefinition, Prototyping, Konzeptnachweis, Design und Architektur, Implementierung von Schnittstellen, Testen und Wartung.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/aleksander-ivanov-1180475a/" target="_blank">
 											<figure>
@@ -803,7 +834,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Mario Ignatov</h2>
-										<h3 class="subtitle">Full Stack Developer</h3>
+										<h3 class="subtitle">Voller Stack-Entwickler</h3>
 									</div>
 									<div class="foot_part">
 										<p>Qualifast Ltd, Musala Soft, VMware, MICROS Systems UK Limited</p>
@@ -817,7 +848,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 							<div class="back">
 								<div class="card-wrapper">
-									<p>Experienced Senior Software Engineer with a demonstrated history of working in the software industry. Skilled in Java, Spring framework and Spring projects like Data, MVC, Batch, Boot, Security, Hibernate.</p>
+									<p>Erfahrener Senior-Software-Ingenieur mir einer nachgewiesenen Erfahrung in der Software-Industrie. Mit Erfahrung in Java, Spring-Rahmenbedingungen und Spring-Projekte als Data, MVC, Batch, Boot, Security, Hibernate.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/mario-ignatov-9a738367/?originalSubdomain=bg" target="_blank">
 											<figure>
@@ -835,7 +866,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		</div>
 		<div class="section_head">
 			<div class="shell">
-				<h2 class="section__title">Advisors</h2>
+				<h2 class="section__title">Berater</h2>
 			</div>
 		</div>
 		<div class="section_body">
@@ -852,7 +883,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Vassil Terziev</h2>
-										<h3 class="subtitle">VC & Strategy</h3>
+										<h3 class="subtitle">VC und Strategie</h3>
 									</div>
 									<div class="foot_part">
 										<p>Telerik (Progress)</p>
@@ -864,9 +895,9 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 								</div>
 							</div>
-							<div class="back small">
+							<div class="back small" style="font-size: 13px;">
 								<div class="card-wrapper">
-									<p>Vassil is a co-Founder and co-CEO of Telerik. He played an instrumental role in growing the company from a small Bulgarian startup to a leading global enterprise software vendor with 9 offices in 7 countries and more than 130,000 customers, including over 450 of the Fortune 500 companies. Following Telerik’s acquisition by Progress Software (NASDAQ: PRGS) in December 2014, Vassil now serves as Chief Innovation Officer of the parent company where he is responsible for identifying growth strategies and new market opportunities, as well as promoting internal innovation.</p>
+									<p>Vassil ist Mitgründer und Co-CEO von Telerik. Er spielte eine wichtige Rolle beim Wachstum des Unternehmens von einem kleinen bulgarischen Startup zu einem führenden globalen Anbieter von Unternehmenssoftware mit 9 Niederlassungen in 7 Ländern und mehr als 130.000 Kunden, darunter über 450 der Fortune-500-Unternehmen. Nach der Übernahme von Progress Software (NASDAQ: PRGS) durch Telerik im Dezember 2014 fungiert Vassil nun als Chief Innovation Officer der Muttergesellschaft, wo er für die Ermittlung von Wachstumsstrategien und neuen Marktchancen sowie für die Förderung interner Innovationen verantwortlich ist.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/vassil-terziev-24242/?originalSubdomain=bg" target="_blank">
 											<figure>
@@ -887,7 +918,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">George Spasov</h2>
-										<h3 class="subtitle">Blockchain Architecture</h3>
+										<h3 class="subtitle">Blockchain-Architektur</h3>
 									</div>
 									<div class="foot_part">
 										<p>LimeChain</p>
@@ -901,7 +932,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 							<div class="back">
 								<div class="card-wrapper">
-									<p>Currently heading the technical team at Limechain, George has priceless experience leading the development of successful software projects for various companies - from startups like pCloud to international giants like IBM. In addition, his blockchain expertise has earned him recognition as a top performer of the inaugural Blockchain Developers Academy, run by ConsenSys.</p>
+									<p>George, der derzeit das technische Team in Limechain leitet, hat unschätzbare Erfahrung in der Entwicklung erfolgreicher Softwareprojekte für verschiedene Unternehmen - von Start-ups wie pCloud bis zu internationalen Konzernen wie IBM. Darüber hinaus wurde er mit seiner Blockchain-Expertise als Top-Performer der ersten Blockchain Developers Academy, die von ConsenSys betrieben wird, ausgezeichnet.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/george-spasov-9b486094/" target="_blank">
 											<figure>
@@ -922,10 +953,10 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">George Stoyanov</h2>
-										<h3 class="subtitle">Conversational AI</h3>
+										<h3 class="subtitle">Konversations-KI</h3>
 									</div>
 									<div class="foot_part">
-										<p>CX Engineer at Chronicle (a Google X company), Ex: Uber</p>
+										<p>CX Ingenieur bei Chronicle (ein Unternehmen von Google X), Ex: Uber</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/george-stoyanov-3b6ba357/" target="_blank">
 											<figure>
 												<i class="ico-linkIn"></i>
@@ -934,7 +965,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 								</div>
 							</div>
-							<div class="back small">
+							<div class="back small"  style="font-size: 14px;">
 								<div class="card-wrapper">
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/george-stoyanov-3b6ba357/" target="_blank">
@@ -943,7 +974,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 											</figure>
 										</a>
 									</div>
-									<p>George has launched two Deep Learning products with hundreds of thousands of users, processing millions of images per day and containing millions of analyzed events. His products were the first to commercially pioneer video style transfer. Currently focusing on bespoke Deep & Machine Learning consultancy - predictive and NLP solutions for some of the world’s top companies. Featured on the cover of Forbes Bulgaria as part of the 30 Under 30 list. He worked for Uber prior to starting his entrepreneurial journey.</p>
+									<p>George hat zwei Deep-Learning-Produkte mit Hunderttausenden von Benutzern auf den Markt gebracht, die täglich Millionen von Bildern verarbeiten und Millionen von analysierten Ereignissen enthalten. Seine Produkte waren die ersten, die einen kommerziellen Pionierfilmtransfer boten. Derzeit konzentriert sich das Unternehmen auf maßgeschneiderte Deep & Machine Learning-Beratung - Predictive- und NLP-Lösungen für einige der weltweit führenden Unternehmen. Auf dem Cover von Forbes Bulgaria als Teil der 30-Liste unter 30 aufgeführt. Vor seiner unternehmerischen Reise arbeitete er für Uber.</p>
 								</div>
 							</div>
 						</div>
@@ -957,7 +988,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Atanas Raykov</h2>
-										<h3 class="subtitle">Go-To-Market & Strategic Partnerships</h3>
+										<h3 class="subtitle">Go-To-Market und Strategic Partnerships</h3>
 									</div>
 									<div class="foot_part">
 										<p>Viber</p>
@@ -969,9 +1000,9 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 								</div>
 							</div>
-							<div class="back small">
+							<div class="back small" style="font-size: 12.5px;">
 								<div class="card-wrapper">
-									<p>As Director Business Development CIS & CEE at Viber, Atanas is currently responsible for leveraging Viber's incredible reach and exposure opportunities across 25 countries in the two regions. His goal is to build a strong ecosystem and partnership network that drives increased customer growth, user engagement and revenue. In his other role at Viber - as Head of Global Telecom Partnerships - he is responsible for the forging of strategic partnerships with the leading telecom groups around the world to create winning B2C propositions, based on Viber's cutting-edge technology.</p>
+									<p>Als Director Business Development CIS & CEE bei Viber ist Atanas derzeit dafür verantwortlich, die unglaubliche Reichweite und die Reichweite von Viber in 25 Ländern der beiden Regionen zu nutzen. Sein Ziel ist es, ein starkes Ökosystem- und Partnerschaftsnetzwerk aufzubauen, das das Kundenwachstum, das Engagement der Benutzer und den Umsatz vorantreibt. In seiner anderen Funktion bei Viber - als Leiter von Global Telecom Partnerschaften - ist er verantwortlich für den Aufbau strategischer Partnerschaften mit den führenden Telekommunikationskonzernen auf der ganzen Welt, um überzeugende B2C-Angebote auf der Grundlage der innovativen Technologie von Viber zu schaffen.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/atanasraykov/" target="_blank">
 											<figure>
@@ -992,7 +1023,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Tunio Zafer</h2>
-										<h3 class="subtitle">Business Strategy</h3>
+										<h3 class="subtitle">Geschäftsstrategie</h3>
 									</div>
 									<div class="foot_part">
 										<p>pCloud, Host.bg</p>
@@ -1006,7 +1037,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 							<div class="back">
 								<div class="card-wrapper">
-									<p>CEO of the pCloud - one of the world’s Top 5 cloud storage providers with 8+ million users. Former CSO at Hostbg - the largest hosting company in Bulgaria. An online marketing veteran with 12 years of invaluable global experience.</p>
+									<p>CEO der pCloud - einer der fünf weltweit führenden Cloud-Storage-Anbieter mit mehr als 8 Millionen Benutzern. Ehemaliger CSO bei Hostbg - das größte Hosting-Unternehmen in Bulgarien. Ein Online-Marketing-Veteran mit 12 Jahren unschätzbarer globaler Erfahrung.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/tunioz/" target="_blank">
 											<figure>
@@ -1027,7 +1058,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Anton Titov</h2>
-										<h3 class="subtitle">Security/Technology</h3>
+										<h3 class="subtitle">Sicherheit / Technologie</h3>
 									</div>
 									<div class="foot_part">
 										<p>pCloud, Host.bg</p>
@@ -1041,7 +1072,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 							<div class="back">
 								<div class="card-wrapper">
-									<p>Founder and CTO of 2 companies in Alexa’s Top 50. CTO of pCloud - a Top 5 Cloud storage provider with 8+ million users. pCloud features the most secure cloud storage on the web with bullet-proof client-side encryption. Atanas is also the co-founder and CTO of Host.bg - Bulgaria’s leading hosting company.</p>
+									<p>Gründer und CTO von 2 Unternehmen in Alexa's Top 50. CTO von pCloud - ein Top-5-Cloud-Speicheranbieter mit mehr als 8 Millionen Benutzern. pCloud bietet den sichersten Cloud-Speicher im Web mit kugelsicherer, kundenseitiger Verschlüsselung. Atanas ist auch Mitbegründer und CTO von Host.bg - Bulgariens führendem Hosting-Unternehmen.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/anton-titov-3368bb5b/" target="_blank">
 											<figure>
@@ -1062,7 +1093,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Velizar Velichkov</h2>
-										<h3 class="subtitle">Commercial Advisory</h3>
+										<h3 class="subtitle">Handelsberatung</h3>
 									</div>
 									<div class="foot_part">
 										<p>Trendo.bg, Grabo.bg</p>
@@ -1083,7 +1114,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 											</figure>
 										</a>
 									</div>
-									<p>Velizar is the co-founder of several online platforms with combined annual turnover of nearly EUR 30 mln. The first of them is Grabo.bg - the biggest daily-deal website in Bulgaria with 2 million visitors per month and EUR 15 mln. in annual revenues. He is also the co-founder of online shopping club Trendo.bg and a worldwide digital company for online personal meal plans, operating on more than 100 markets.</p>
+									<p>Velizar ist Mitbegründer mehrerer Online-Plattformen mit einem Jahresumsatz von fast 30 Mio. EUR. Der erste von ihnen ist Grabo.bg - die größte Website für den täglichen Handel in Bulgarien mit 2 Millionen Besuchern pro Monat und 15 Millionen Euro. im Jahresumsatz. Er ist auch Mitbegründer des Online-Shopping-Clubs Trendo.bg und ein weltweites digitales Unternehmen für persönliche Essenspläne, das in mehr als 100 Märkten tätig ist.</p>
 								</div>
 							</div>
 						</div>
@@ -1097,7 +1128,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Nikolay Todorov</h2>
-										<h3 class="subtitle">Blockchain Integration</h3>
+										<h3 class="subtitle">Blockchain-Integration</h3>
 									</div>
 									<div class="foot_part">
 										<p>LimeChain</p>
@@ -1118,7 +1149,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 											</figure>
 										</a>
 									</div>
-									<p>Nikolay combines the rare marketing experience of building both brands and companies, and applying blockchain technology. His deep understanding of business processes and his firm grasp of the technical capabilities of blockchain allow him to act as the crucial link between his team’s technical expertise and his clients’ needs.</p>
+									<p>Nikolay kombiniert die seltenen Marketingerfahrungen beim Aufbau von Marken und Unternehmen und die Anwendung der Blockchain-Technologie. Sein tiefes Verständnis für Geschäftsprozesse und sein tiefes Verständnis für die technischen Fähigkeiten von Blockchain ermöglichen es ihm, die entscheidende Verbindung zwischen dem technischen Know-how seines Teams und den Bedürfnissen seiner Kunden zu schaffen.</p>
 								</div>
 							</div>
 						</div>
@@ -1132,7 +1163,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Marin Panekov</h2>
-										<h3 class="subtitle">OCR & EDI</h3>
+										<h3 class="subtitle">OCR und EDI</h3>
 									</div>
 									<div class="foot_part">
 										<p>Coca-Cola Hellenic</p>
@@ -1144,7 +1175,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 								</div>
 							</div>
-							<div class="back small">
+							<div class="back small" style="font-size: 13px;">
 								<div class="card-wrapper">
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/marin-panekov-2227bb69/" target="_blank">
@@ -1153,7 +1184,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 											</figure>
 										</a>
 									</div>
-									<p>Marin has unparalleled experience as the document-management system designer at Coca-Cola Hellenic - a company famous for having one of the highest-volume document systems in Europe. He combines this with being a skilled Optical Character Recognition (OCR) manager and functionality designer, Electronic Data Interchange (EDI) expert and Document Archive specialist. Marin holds the key knowledge and skills to deliver a working and highly efficient claims-processing solution.</p>
+									<p>Marin verfügt über beispiellose Erfahrung als Designer für Dokumentenmanagementsysteme bei Coca-Cola Hellenic - einem Unternehmen, das für eines der Dokumentensysteme mit dem höchsten Volumen in Europa bekannt ist. Er kombiniert dies mit einem erfahrenen Manager für optische Zeichenerkennung (OCR) und Funktionsdesigner, einem EDI-Experten (Electronic Data Interchange) und einem Spezialisten für Dokumentenarchivierung. Marin besitzt das Schlüsselwissen und die Fähigkeiten, um eine funktionierende und hocheffiziente Schadensabwicklungslösung zu liefern.</p>
 								</div>
 							</div>
 						</div>
@@ -1167,7 +1198,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Ivaylo Strandjev</h2>
-										<h3 class="subtitle">Artificial Intelligence &amp; Machine Learning</h3>
+										<h3 class="subtitle">Künstliche Intelligenz und Maschinenlernen</h3>
 									</div>
 									<div class="foot_part">
 										<p>Google, VMWare, HyperScience</p>
@@ -1181,7 +1212,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 							<div class="back">
 								<div class="card-wrapper">
-									<p>An advanced Machine Learning and Artificial Intelligence solutions architect, Ivaylo excels at delivering high-performing algorithms for machine learning. He will help the team design the implementation of the self-learning Artificial Intelligence modules to monitor the system's performance and adjust product pricing, product generation, customer segmentation, etc.</p>
+									<p>Ivaylo ist ein fortschrittlicher Architekt für Maschinenlernen und künstliche Intelligenzlösungen und bietet hervorragende Algorithmen für Maschinenlernen. Er hilft dem Team bei der Entwicklung der selbstlernenden Artificial Intelligence-Module, um die Systemleistung zu überwachen und Produktpreise, Produktgenerierung, Kundensegmentierung usw. anzupassen.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/ivaylo-strandjev-84889239/" target="_blank">
 											<figure>
@@ -1202,10 +1233,10 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Zlatolina Mukova</h2>
-										<h3 class="subtitle">Insurance</h3>
+										<h3 class="subtitle">Versicherung</h3>
 									</div>
 									<div class="foot_part">
-										<p>NEVEQ, Euroins, Deputy Minister of Bulgaria</p>
+										<p>NEVEQ, Euroins, stellvertretender bulgarischer Minister</p>
 										<a class="linkedIn" href="https://www.linkedin.com/in/zlatolina-mukova-b5765b27" target="_blank">
 											<figure>
 												<i class="ico-linkIn"></i>
@@ -1216,7 +1247,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 							<div class="back">
 								<div class="card-wrapper">
-									<p>Zlatina is the Managing partner at NEVEQ - the largest private equity fund in Bulgaria. Former CEO of Euroins Bulgaria. Former deputy minister of transport and telecommunications. ACCA holder and Master of Mechanical Engineering.</p>
+									<p>Zlatina ist Managing Partner bei NEVEQ - dem größten Private-Equity-Fonds in Bulgarien. Ehemaliger CEO von Euroins Bulgaria. Ehemaliger stellvertretender Minister für Verkehr und Telekommunikation. ACCA-Inhaber und Meister des Maschinenbaus.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="https://www.linkedin.com/in/zlatolina-mukova-b5765b27" target="_blank">
 											<figure>
@@ -1237,11 +1268,11 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 									</div>
 									<div class="middle_part">
 										<h2 class="card_title">Shmuel Zamir</h2>
-										<h3 class="subtitle">Game Theory</h3>
+										<h3 class="subtitle">Spieltheorie</h3>
 									</div>
-									<div class="foot_part">
-										<p>Professor at the Center for the Study of Rationality</p>
-										<p>The Hebrew University of Jerusalem</p>
+									<div class="foot_part" style="font-size: 13px;">
+										<p>Professor am Zentrum für das Studium der Vernunft</p>
+										<p>Die Hebräische Universität von Jerusalem</p>
 										<a class="linkedIn" href="http://www.ma.huji.ac.il/~zamir/" target="_blank">
 											<figure>
 												<i class="ico-linkIn"></i>
@@ -1252,7 +1283,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 							</div>
 							<div class="back">
 								<div class="card-wrapper">
-									<p style="font-size:11px;">Founding member and fellow of the Center for the Study of Rationality, the Hebrew University of Jerusalem. He holds a Ph.D. degree in Mathematics from the same university in 1971. Since 1974 he has been working at the Hebrew University of Jerusalem. Chief Editor of the “International Journal of Game Theory”, a member of the editorial boards of journals “Games and Economic Behavior”, “Journal of Mathematical Economics”. Member of the Board of Game Theory Society, and the  Econometric Society. Visiting Professor in Johns Hopkins University. He has more than 80 articles in the high rating journals, in particular, such as “Econometrica”, “International Journal of Game Theory”, “American Economic Review”, etc. Finally he's co author on two major books on Game Theory and specifically his second book on Repeated Games.</p>
+									<p style="font-size:10.3px;">Gründungsmitglied und Stipendiat des Zentrums für Rationalitätsforschung der Hebräischen Universität von Jerusalem. Er hat einen Ph.D. 1971 studierte er Mathematik an derselben Universität. Seit 1974 arbeitet er an der Hebräischen Universität von Jerusalem. Chefredakteur des "International Journal of Game Theory", Mitglied der Herausgeber der Zeitschriften "Games and Economic Behavior", "Journal of Mathematical Economics". Vorstandsmitglied der Spieltheorie-Gesellschaft und der Econometric Society. Gastprofessor an der Johns Hopkins University. Er hat mehr als 80 Artikel in den hochrangigen Zeitschriften, insbesondere "Econometrica", "International Journal of Game Theory", "American Economic Review" usw. Schließlich ist er Co-Autor bei zwei großen Büchern über Spieltheorie und insbesondere sein zweites Buch über wiederholte Spiele.</p>
 									<div class="back_head">
 										<a class="linkedIn" href="http://www.ma.huji.ac.il/~zamir/" target="_blank">
 											<figure>
@@ -1270,14 +1301,14 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		<div class="widget animatedParent">
 			<span class="blinking-line animated bounceIn"></span>
 			<div class="rotate">
-				<p>Team &amp; Advisors</p>
+				<p>Team &amp; Berater</p>
 			</div>
 		</div>
 	</section>
 	<section class="section_med section_partners" id="partners">
 		<div class="section_head">
 			<div class="shell">
-				<h2 class="section__title">Partners</h2>
+				<h2 class="section__title">Partner</h2>
 			</div>
 		</div>
 		<div class="section_body">
@@ -1295,15 +1326,15 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		<div class="widget animatedParent">
 			<span class="blinking-line animated bounceIn"></span>
 			<div class="rotate">
-				<p>Partners</p>
+				<p>Partner</p>
 			</div>
 		</div>
 	</section>
 	<section class="section_med section_join" id="join">
 		<div class="section_head">
 			<div class="shell">
-				<h2 class="section__title white join">Subscribe to Our Newsletter</h2>
-				<h3 class="section__subtitle white registration">Just one step to follow us in order to receive the latest news & offers first.</h3>
+				<h2 class="section__title white join">Abonnieren Sie unseren Newsletter</h2>
+				<h3 class="section__subtitle white registration">Nur ein Schritt, um uns zu folgen und zuerst die neuesten Nachrichten und Angebote zu erhalten.</h3>
 			</div>
 		</div>
 		<div class="section_body">
@@ -1317,7 +1348,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<div class="form-group">
 											<div class="form-group-inner">
 												<div class="form__control">
-													<input type="email" value="" name="EMAIL" class="required email form-control field" id="mce-EMAIL mceEMAIL" placeholder="Enter Email " required minlength="5" maxlength="30">
+													<input type="email" value="" name="EMAIL" class="required email form-control field" id="mce-EMAIL mceEMAIL" placeholder="Geben Sie E-Mail ein" required minlength="5" maxlength="30">
 												</div>
 											</div>
 										</div>
@@ -1328,7 +1359,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 										<div class="form-group">
 											<div class="form-group-inner">
 												<div class="form__control">
-													<input type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe" class="btn ">
+													<input type="submit" name="subscribe" id="mc-embedded-subscribe" value="Abonnieren" class="btn ">
 												</div>
 											</div>
 										</div>
@@ -1343,7 +1374,7 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 		<div class="widget animatedParent">
 			<span class="blinking-line animated bounceIn"></span>
 			<div class="rotate white">
-				<p>Subscribe</p>
+				<p>Abonnieren</p>
 			</div>
 		</div>
 	</section>
@@ -1361,9 +1392,9 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
 				</ul>
 			</div>
 			<div class="social-links">
-				<a class="privacy">Privacy Policy</a>
-				<a class="cookies">Cookie Policy</a>
-				<a class="colySign" target="_blank" href="https://perspectiveweb.eu/en">Created by <i class="ico-perspective"></i>
+				<a class="privacy">Datenschutzrichtlinie</a>
+				<a class="cookies">Cookie-Richtlinie</a>
+				<a class="colySign" target="_blank" href="https://perspectiveweb.eu/en">Erstellt von<i class="ico-perspective"></i>
 			</div>
 		</div>
 	</footer>
