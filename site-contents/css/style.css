@@ -1988,6 +1988,7 @@ h3 {
   box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
   border-radius: 10px 10px 0 10px;
   position: relative;
+  background: #efefef;
 }
 
 .front:before {
@@ -2066,6 +2067,7 @@ h3 {
   font-size: 15px;
   line-height: 18px;
   position: relative;
+  background: #efefef;
 }
 
 .back .back_head {
