@@ -31,7 +31,7 @@ copy_file_to_remote_directory() {
 copy_dir_to_remote_directory() {
    source_directory_path=$1
    destination_directory_name=$2
-   scp -r -o StrictHostKeyChecking=no -i $private_key_path $source_directory_path/. $amazon_user@$amazon_host:$remote_work_dir/$destination_directory_name
+   scp -r -o StrictHostKeyChecking=no -i $private_key_path $source_directory_path/* $amazon_user@$amazon_host:$remote_work_dir/$destination_directory_name
 }
 
 # Copies a file from the remote working directory locally
